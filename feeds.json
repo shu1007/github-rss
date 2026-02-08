@@ -228,5 +228,15 @@
       "japan",
       "gadget"
     ]
+  },
+  {
+    "url": "https://gigazine.net/news/rss_2.0/",
+    "name": "GIGAZINE",
+    "labels": [
+      "tech",
+      "news",
+      "gadget",
+      "japan"
+    ]
   }
 ]
