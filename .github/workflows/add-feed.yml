@@ -24,10 +24,10 @@ jobs:
             const fs = require('fs');
             const body = context.payload.issue.body || '';
 
-            // Parse fields from issue body
-            const urlMatch = body.match(/### Feed URL\s*\n([^\n]+)/);
-            const nameMatch = body.match(/### Feed Name\s*\n([^\n]+)/);
-            const labelsMatch = body.match(/### Labels\s*\n([^\n]+)/);
+            // Parse fields from issue body (with or without ### headers)
+            const urlMatch = body.match(/(?:###\s*)?Feed URL\s*\n([^\n]+)/);
+            const nameMatch = body.match(/(?:###\s*)?Feed Name\s*\n([^\n]+)/);
+            const labelsMatch = body.match(/(?:###\s*)?Labels\s*\n([^\n]+)/);
 
             if (!urlMatch || !nameMatch) {
               await github.rest.issues.createComment({
