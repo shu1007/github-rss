@@ -14,6 +14,8 @@ jobs:
     if: contains(github.event.issue.title, 'add-feed')
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: publish
 
       - name: Parse issue and update feeds.json
         uses: actions/github-script@v7
