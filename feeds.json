@@ -2,126 +2,231 @@
   {
     "url": "https://hnrss.org/frontpage",
     "name": "Hacker News",
-    "labels": ["tech", "news"]
+    "labels": [
+      "tech",
+      "news"
+    ]
   },
   {
     "url": "https://github.blog/feed/",
     "name": "GitHub Blog",
-    "labels": ["tech", "dev"]
+    "labels": [
+      "tech",
+      "dev"
+    ]
   },
   {
     "url": "https://www.publickey1.jp/atom.xml",
     "name": "Publickey",
-    "labels": ["tech", "dev", "japan"]
+    "labels": [
+      "tech",
+      "dev",
+      "japan"
+    ]
   },
   {
     "url": "https://techcrunch.com/feed",
     "name": "TechCrunch",
-    "labels": ["tech", "startup", "news"]
+    "labels": [
+      "tech",
+      "startup",
+      "news"
+    ]
   },
   {
     "url": "https://www.theverge.com/rss/index.xml",
     "name": "The Verge",
-    "labels": ["tech", "news", "culture"]
+    "labels": [
+      "tech",
+      "news",
+      "culture"
+    ]
   },
   {
     "url": "https://zenn.dev/feed",
     "name": "Zenn",
-    "labels": ["tech", "dev", "japan"]
+    "labels": [
+      "tech",
+      "dev",
+      "japan"
+    ]
   },
   {
     "url": "https://qiita.com/popular-items/feed",
     "name": "Qiita",
-    "labels": ["tech", "dev", "japan"]
+    "labels": [
+      "tech",
+      "dev",
+      "japan"
+    ]
   },
   {
     "url": "http://googleresearch.blogspot.com/atom.xml",
     "name": "Google AI Blog",
-    "labels": ["tech", "ai", "research"]
+    "labels": [
+      "tech",
+      "ai",
+      "research"
+    ]
   },
   {
     "url": "https://devblogs.microsoft.com/feed/",
     "name": "Microsoft Developer Blogs",
-    "labels": ["tech", "dev", "microsoft"]
+    "labels": [
+      "tech",
+      "dev",
+      "microsoft"
+    ]
   },
   {
     "url": "https://azure.microsoft.com/en-us/blog/feed/",
     "name": "Azure Blog",
-    "labels": ["tech", "cloud", "microsoft"]
+    "labels": [
+      "tech",
+      "cloud",
+      "microsoft"
+    ]
   },
   {
     "url": "https://www.amazon.science/index.rss",
     "name": "Amazon Science",
-    "labels": ["tech", "ai", "research"]
+    "labels": [
+      "tech",
+      "ai",
+      "research"
+    ]
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/feed/",
     "name": "AWS Blog",
-    "labels": ["tech", "cloud", "aws"]
+    "labels": [
+      "tech",
+      "cloud",
+      "aws"
+    ]
   },
   {
     "url": "https://engineering.fb.com/feed/",
     "name": "Meta Engineering",
-    "labels": ["tech", "dev", "meta"]
+    "labels": [
+      "tech",
+      "dev",
+      "meta"
+    ]
   },
   {
     "url": "https://blog.google/technology/rss/",
     "name": "Google Blog - Technology",
-    "labels": ["tech", "google"]
+    "labels": [
+      "tech",
+      "google"
+    ]
   },
   {
     "url": "https://developer.chrome.com/blog/rss.xml",
     "name": "Chrome Developers",
-    "labels": ["tech", "dev", "web"]
+    "labels": [
+      "tech",
+      "dev",
+      "web"
+    ]
   },
   {
     "url": "https://android-developers.googleblog.com/feeds/posts/default",
     "name": "Android Developers",
-    "labels": ["tech", "dev", "android"]
+    "labels": [
+      "tech",
+      "dev",
+      "android"
+    ]
   },
   {
     "url": "https://developer.apple.com/news/rss/news.rss",
     "name": "Apple Developer News",
-    "labels": ["tech", "dev", "apple"]
+    "labels": [
+      "tech",
+      "dev",
+      "apple"
+    ]
   },
   {
     "url": "https://netflixtechblog.com/feed",
     "name": "Netflix Tech Blog",
-    "labels": ["tech", "dev", "engineering"]
+    "labels": [
+      "tech",
+      "dev",
+      "engineering"
+    ]
   },
   {
     "url": "https://eng.uber.com/feed/",
     "name": "Uber Engineering",
-    "labels": ["tech", "dev", "engineering"]
+    "labels": [
+      "tech",
+      "dev",
+      "engineering"
+    ]
   },
   {
     "url": "https://stackoverflow.blog/feed/",
     "name": "Stack Overflow Blog",
-    "labels": ["tech", "dev", "programming"]
+    "labels": [
+      "tech",
+      "dev",
+      "programming"
+    ]
   },
   {
     "url": "https://towardsdatascience.com/feed",
     "name": "Towards Data Science",
-    "labels": ["tech", "ai", "datascience"]
+    "labels": [
+      "tech",
+      "ai",
+      "datascience"
+    ]
   },
   {
     "url": "https://www.technologyreview.com/feed/",
     "name": "MIT Technology Review",
-    "labels": ["tech", "research", "news"]
+    "labels": [
+      "tech",
+      "research",
+      "news"
+    ]
   },
   {
     "url": "https://www.wired.com/feed/rss",
     "name": "Wired",
-    "labels": ["tech", "culture", "news"]
+    "labels": [
+      "tech",
+      "culture",
+      "news"
+    ]
   },
   {
     "url": "https://www.engadget.com/rss.xml",
     "name": "Engadget",
-    "labels": ["tech", "gadget", "news"]
+    "labels": [
+      "tech",
+      "gadget",
+      "news"
+    ]
   },
   {
     "url": "https://www.theguardian.com/technology/rss",
     "name": "The Guardian Tech",
-    "labels": ["tech", "news"]
+    "labels": [
+      "tech",
+      "news"
+    ]
+  },
+  {
+    "url": "https://www.gizmodo.jp/index.xml",
+    "name": "ギズモード・ジャパン",
+    "labels": [
+      "tech",
+      "japan",
+      "gadget"
+    ]
   }
 ]
