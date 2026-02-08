@@ -1,0 +1,102 @@
+name: Add Feed from Issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  add-feed:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, 'add-feed')
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Parse issue and update feeds.json
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = context.payload.issue.body || '';
+
+            // Parse fields from issue body
+            const urlMatch = body.match(/### Feed URL\s*\n([^\n]+)/);
+            const nameMatch = body.match(/### Feed Name\s*\n([^\n]+)/);
+            const labelsMatch = body.match(/### Labels\s*\n([^\n]+)/);
+
+            if (!urlMatch || !nameMatch) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: '❌ Feed URL または Feed Name が見つかりませんでした。テンプレートに従って記入してください。'
+              });
+              return;
+            }
+
+            const feedUrl = urlMatch[1].trim();
+            const feedName = nameMatch[1].trim();
+            const feedLabels = labelsMatch
+              ? labelsMatch[1].split(',').map(l => l.trim()).filter(Boolean)
+              : [];
+
+            // Validate URL
+            try { new URL(feedUrl); } catch {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: '❌ Feed URL が正しいURLではありません: ' + feedUrl
+              });
+              return;
+            }
+
+            // Update feeds.json
+            const feeds = JSON.parse(fs.readFileSync('feeds.json', 'utf-8'));
+
+            if (feeds.some(f => f.url === feedUrl)) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: '⚠️ このフィードは既に登録されています: ' + feedUrl
+              });
+              return;
+            }
+
+            feeds.push({ url: feedUrl, name: feedName, labels: feedLabels });
+            fs.writeFileSync('feeds.json', JSON.stringify(feeds, null, 2) + '\n');
+
+            // Export for later steps
+            core.exportVariable('FEED_ADDED', 'true');
+            core.exportVariable('FEED_NAME', feedName);
+
+      - name: Commit changes
+        if: env.FEED_ADDED == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add feeds.json
+          git commit -m "Add feed: $FEED_NAME"
+          git push
+
+      - name: Close issue with success comment
+        if: env.FEED_ADDED == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '✅ フィードを追加しました: **' + process.env.FEED_NAME + '**\n次回の定期更新時にHTMLに反映されます。'
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });

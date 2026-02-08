@@ -1,0 +1,5 @@
+[
+  {"url": "https://hnrss.org/frontpage", "name": "Hacker News", "labels": ["tech", "news"]},
+  {"url": "https://github.blog/feed/", "name": "GitHub Blog", "labels": ["tech", "dev"]},
+  {"url": "https://www.publickey1.jp/atom.xml", "name": "Publickey", "labels": ["tech", "dev"]}
+]

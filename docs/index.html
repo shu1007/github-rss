@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSS Reader</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+    header { margin-bottom: 24px; }
+    header h1 { font-size: 1.5rem; }
+    header .updated { font-size: 0.85rem; color: #888; margin-top: 4px; }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .filter-btn { background: #fff; border: 1px solid #ddd; border-radius: 20px; padding: 6px 16px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }
+    .filter-btn:hover { border-color: #1a73e8; color: #1a73e8; }
+    .filter-btn.active { background: #1a73e8; color: #fff; border-color: #1a73e8; }
+    .entry { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .entry.hidden { display: none; }
+    .entry .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .entry .source { display: inline-block; background: #e8f0fe; color: #1a73e8; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+    .entry .label { display: inline-block; background: #f0f0f0; color: #555; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; }
+    .add-feed { display: inline-block; background: #34a853; color: #fff; text-decoration: none; font-size: 0.85rem; padding: 6px 16px; border-radius: 20px; font-weight: 600; transition: background 0.2s; }
+    .add-feed:hover { background: #2d8e47; }
+    .entry h2 { font-size: 1.1rem; margin: 8px 0 4px; }
+    .entry h2 a { color: #1a1a1a; text-decoration: none; }
+    .entry h2 a:hover { text-decoration: underline; }
+    .entry time { font-size: 0.8rem; color: #888; }
+    .entry p { font-size: 0.9rem; color: #555; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>RSS Reader</h1>
+      <div class="updated">Last updated: 2026-02-08 11:25 UTC</div>
+      <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
+    </header>
+    <div class="filters">
+      <button class="filter-btn active" data-label="all">All</button>
+      <button class="filter-btn" data-label="dev">dev</button>
+      <button class="filter-btn" data-label="news">news</button>
+      <button class="filter-btn" data-label="tech">tech</button>
+    </div>
+    <main>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://www.abc.net.au/news/2026-02-08/australian-outback-nuclear-tests-listening-warramunga-facility/106307478" target="_blank" rel="noopener">In the Australian outback, we&#x27;re listening for nuclear tests</a></h2>
+        <time>2026-02-08 00:44</time>
+        <p>Article URL: https://www.abc.net.au/news/2026-02-08/australian-outback-nuclear-tests-listening-warramunga-facility/106307478
+Comments URL: https://news.ycombinator.com/item?id=46932845
+Points: 15
+# Co...</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://github.com/joshuanwalker/Raiders2600" target="_blank" rel="noopener">Reverse Engineering Raiders of the Lost Ark for the Atari 2600</a></h2>
+        <time>2026-02-08 00:10</time>
+        <p>Article URL: https://github.com/joshuanwalker/Raiders2600
+Comments URL: https://news.ycombinator.com/item?id=46932678
+Points: 14
+# Comments: 1</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://github.com/jingkaihe/matchlock" target="_blank" rel="noopener">Matchlock: Linux-based sandboxing for AI agents</a></h2>
+        <time>2026-02-07 23:07</time>
+        <p>Article URL: https://github.com/jingkaihe/matchlock
+Comments URL: https://news.ycombinator.com/item?id=46932343
+Points: 27
+# Comments: 2</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://donotnotify.com/opensource.html" target="_blank" rel="noopener">DoNotNotify is now Open Source</a></h2>
+        <time>2026-02-07 22:39</time>
+        <p>Article URL: https://donotnotify.com/opensource.html
+Comments URL: https://news.ycombinator.com/item?id=46932192
+Points: 167
+# Comments: 28</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://lineageos.org/Changelog-31/" target="_blank" rel="noopener">LineageOS 23.2</a></h2>
+        <time>2026-02-07 20:33</time>
+        <p>Article URL: https://lineageos.org/Changelog-31/
+Comments URL: https://news.ycombinator.com/item?id=46931595
+Points: 75
+# Comments: 17</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://techcrunch.com/2026/02/05/substack-confirms-data-breach-affecting-email-addresses-and-phone-numbers/" target="_blank" rel="noopener">Substack confirms data breach affects users’ email addresses and phone numbers</a></h2>
+        <time>2026-02-07 19:34</time>
+        <p>Article URL: https://techcrunch.com/2026/02/05/substack-confirms-data-breach-affecting-email-addresses-and-phone-numbers/
+Comments URL: https://news.ycombinator.com/item?id=46931347
+Points: 71
+# Comme...</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="http://oldvcr.blogspot.com/2026/02/the-scriptovision-super-micro-script.html" target="_blank" rel="noopener">The Scriptovision Super Micro Script video titler is almost a home computer</a></h2>
+        <time>2026-02-07 17:10</time>
+        <p>Article URL: http://oldvcr.blogspot.com/2026/02/the-scriptovision-super-micro-script.html
+Comments URL: https://news.ycombinator.com/item?id=46930634
+Points: 13
+# Comments: 1</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://haskellforall.com/2026/02/beyond-agentic-coding" target="_blank" rel="noopener">Haskell for all: Beyond agentic coding</a></h2>
+        <time>2026-02-07 16:55</time>
+        <p>Article URL: https://haskellforall.com/2026/02/beyond-agentic-coding
+Comments URL: https://news.ycombinator.com/item?id=46930565
+Points: 134
+# Comments: 40</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://github.com/localgpt-app/localgpt" target="_blank" rel="noopener">Show HN: LocalGPT – A local-first AI assistant in Rust with persistent memory</a></h2>
+        <time>2026-02-07 16:26</time>
+        <p>I built LocalGPT over 4 nights as a Rust reimagining of the OpenClaw assistant pattern (markdown-based persistent memory, autonomous heartbeat tasks, skills system).It compiles to a single ~27MB binar...</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://www.hpcwire.com/off-the-wire/brookhaven-labs-rhic-concludes-25-year-run-with-final-collisions/" target="_blank" rel="noopener">Brookhaven Lab&#x27;s RHIC concludes 25-year run with final collisions</a></h2>
+        <time>2026-02-07 10:07</time>
+        <p>Article URL: https://www.hpcwire.com/off-the-wire/brookhaven-labs-rhic-concludes-25-year-run-with-final-collisions/
+Comments URL: https://news.ycombinator.com/item?id=46926576
+Points: 83
+# Comments: 6...</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://code.claude.com/docs/en/fast-mode" target="_blank" rel="noopener">Speed up responses with fast mode</a></h2>
+        <time>2026-02-07 09:08</time>
+        <p>Article URL: https://code.claude.com/docs/en/fast-mode
+Comments URL: https://news.ycombinator.com/item?id=46926043
+Points: 195
+# Comments: 198</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://github.com/Momciloo/fun-with-clip-path" target="_blank" rel="noopener">Show HN: I saw this cool navigation reveal, so I made a simple HTML+CSS version</a></h2>
+        <time>2026-02-07 08:45</time>
+        <p>Two clip-paths, over the navigation:- The first clip-path is a circle (top-left corner)
+- The second clip-path is a polygon, that acts like a ray (hardcoded, can be improved)The original work by Ivent...</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://xorvoid.com/sectorc.html" target="_blank" rel="noopener">SectorC: A C Compiler in 512 bytes (2023)</a></h2>
+        <time>2026-02-07 08:39</time>
+        <p>Article URL: https://xorvoid.com/sectorc.html
+Comments URL: https://news.ycombinator.com/item?id=46925741
+Points: 318
+# Comments: 62</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://spillhistorie.no/2026/02/06/interview-with-sierra-veteran-al-lowe/" target="_blank" rel="noopener">Al Lowe on model trains, funny deaths and working with Disney</a></h2>
+        <time>2026-02-07 06:52</time>
+        <p>Article URL: https://spillhistorie.no/2026/02/06/interview-with-sierra-veteran-al-lowe/
+Comments URL: https://news.ycombinator.com/item?id=46924790
+Points: 114
+# Comments: 25</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://arxiv.org/abs/2602.05192" target="_blank" rel="noopener">First Proof</a></h2>
+        <time>2026-02-07 06:25</time>
+        <p>Article URL: https://arxiv.org/abs/2602.05192
+Comments URL: https://news.ycombinator.com/item?id=46924591
+Points: 155
+# Comments: 94</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://factory.strongdm.ai/" target="_blank" rel="noopener">Software factories and the agentic moment</a></h2>
+        <time>2026-02-07 06:05</time>
+        <p>See also https://simonwillison.net/2026/Feb/7/software-factory/
+
+Comments URL: https://news.ycombinator.com/item?id=46924426
+Points: 238
+# Comments: 397</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://susam.net/twenty-five-years-of-computing.html" target="_blank" rel="noopener">Stories from 25 Years of Software Development</a></h2>
+        <time>2026-02-07 05:42</time>
+        <p>Article URL: https://susam.net/twenty-five-years-of-computing.html
+Comments URL: https://news.ycombinator.com/item?id=46924264
+Points: 209
+# Comments: 24</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://www.spritely.institute/hoot/" target="_blank" rel="noopener">Hoot: Scheme on WebAssembly</a></h2>
+        <time>2026-02-07 03:18</time>
+        <p>Article URL: https://www.spritely.institute/hoot/
+Comments URL: https://news.ycombinator.com/item?id=46923254
+Points: 197
+# Comments: 36</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://www.washingtonpost.com/technology/2026/02/07/ai-spending-economy-shortages/" target="_blank" rel="noopener">The AI boom is causing shortages everywhere else</a></h2>
+        <time>2026-02-07 02:21</time>
+        <p>Article URL: https://www.washingtonpost.com/technology/2026/02/07/ai-spending-economy-shortages/
+Comments URL: https://news.ycombinator.com/item?id=46922969
+Points: 355
+# Comments: 587</p>
+      </article>
+      <article class="entry" data-labels="tech news">
+        <div class="meta">
+          <span class="source">Hacker News</span>
+          <span class="label">tech</span> <span class="label">news</span>
+        </div>
+        <h2><a href="https://jesperordrup.github.io/vocal-guide/" target="_blank" rel="noopener">Vocal Guide – belt sing without killing yourself</a></h2>
+        <time>2026-02-06 22:37</time>
+        <p>Article URL: https://jesperordrup.github.io/vocal-guide/
+Comments URL: https://news.ycombinator.com/item?id=46922049
+Points: 373
+# Comments: 112</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">GitHub Blog</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/" target="_blank" rel="noopener">Continuous AI in practice: What developers can automate today with agentic CI</a></h2>
+        <time>2026-02-05 08:00</time>
+        <p>Think of Continuous AI as background agents that operate in your repository for tasks that require reasoning.
+The post Continuous AI in practice: What developers can automate today with agentic CI app...</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">Publickey</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://www.publickey1.jp/blog/26/aiacpagent_client_protocolgemini_cligithub_copilotopencode.html" target="_blank" rel="noopener">コードエディタに統合するAIエージェントを自由に選べる「ACP（Agent Client Protocol）レジストリ」始動。Gemini CLIやGitHub Copilot、OpenCodeなどが対応</a></h2>
+        <time>2026-02-05 06:36</time>
+        <p>JetBrainsとZedは、AIエージェントをどのコードエディタでも使えるようにする「ACP（Agent Client Protocol）」に対応したAIエージェントのレジストリ「ACPレジストリ」の公開を発表しました（JetBrains...</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">GitHub Blog</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/" target="_blank" rel="noopener">Pick your agent: Use Claude and Codex on Agent HQ</a></h2>
+        <time>2026-02-04 08:00</time>
+        <p>Claude by Anthropic and OpenAI Codex are now available in public preview on GitHub and VS Code with a Copilot Pro+ or Copilot Enterprise subscription. Here&#x27;s what you need to know and how to get start...</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">Publickey</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://www.publickey1.jp/blog/26/aiagent_tracecursorcognitiongoogle_jules.html" target="_blank" rel="noopener">そのコードのその行をどのようにAIが生成し、なぜ変更されたのか。コードのコンテキスト履歴を記録する標準「Agent Trace」。Cursor、Cognition、Google Julesらが提唱</a></h2>
+        <time>2026-02-04 06:48</time>
+        <p>あるコードのある行がいつ、誰によって、どのような理由で書かれ、あるいは変更されてきたのかの履歴は、コードのコメントに記述する方法や、GitHubなどのソースコード管理ツールによってコードの更新時などに記録する方法があります。 しかしAIを用...</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">Publickey</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://www.publickey1.jp/blog/26/3_8.html" target="_blank" rel="noopener">さくらのクラウド、ガバメントクラウドの条件クリアまであと3つまで到達。残りは統制やセキュリティ認証、オブジェクトストレージなどの一部に</a></h2>
+        <time>2026-02-04 06:43</time>
+        <p>デジタル庁はガバメントクラウドの構築に関して、さくらのクラウドの開発計画の進捗状況を1月30日付けで公表しました。 5つのクラウドがガバメントクラウドに選出 ガバメントクラウドは日本政府共通のクラウドサービスの利用環境となるクラウドであり、...</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">Publickey</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://www.publickey1.jp/blog/26/dockerclaude_codegemini_climicroivmdocker_snadboxwindowsmac.html" target="_blank" rel="noopener">Claude CodeやGemini CLIなどのコーディングエージェントを安全に使えるMicroVMベースの分離環境「Docker Sandbox」。WindowsとMacに対応</a></h2>
+        <time>2026-02-03 17:35</time>
+        <p>Dockerは、WindowsとMacにコンテナ型仮想環境を容易に導入できるツール「Docker Desktop」に、MicroVMベースの分離環境を採用したDocker Sandbox機能を投入したことを発表しました。 For devs ...</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">GitHub Blog</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/" target="_blank" rel="noopener">What the fastest-growing tools reveal about how software is being built</a></h2>
+        <time>2026-02-03 08:00</time>
+        <p>What languages are growing fastest, and why? What about the projects that people are interested in the most? Where are new developers cutting their teeth? Let’s take a look at Octoverse data to find o...</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">Publickey</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://www.publickey1.jp/blog/26/aiaigitlab.html" target="_blank" rel="noopener">エージェント型AIの使用で仕事の満足度が向上、一方でAIツールの増加で複雑性が増しているなど。GitLabが日本国内の開発、セキュリティ、運用担当者を対象にした調査結果</a></h2>
+        <time>2026-02-03 06:50</time>
+        <p>GitLab社は、日本国内でソフトウェア開発（Dev）、セキュリティ（Sec）、運用（Ops）のいずれかに携わっているITエンジニア（以下、DevSecOps専門家）3266人を対象にした、AIに関する調査結果「インテリジェントソフトウェア...</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">GitHub Blog</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://github.blog/ai-and-ml/github-copilot/how-to-maximize-github-copilots-agentic-capabilities/" target="_blank" rel="noopener">How to maximize GitHub Copilot’s agentic capabilities</a></h2>
+        <time>2026-02-02 08:00</time>
+        <p>A senior engineer&#x27;s guide to architecting and extending Copilot&#x27;s real-world applications.
+The post How to maximize GitHub Copilot&amp;#8217;s agentic capabilities appeared first on The GitHub Blog.</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">Publickey</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://www.publickey1.jp/blog/26/bigqueryconversational_analytics.html" target="_blank" rel="noopener">BigQueryに会話型分析機能（Conversational Analytics）が登場。詳細な分析レポート生成、将来予測や非構造化データの分析も可能に</a></h2>
+        <time>2026-02-02 07:01</time>
+        <p>Google Cloudは、同社の大規模データベースであるBigQueryの新機能として、自然言語を使ってデータを分析できる会話型分析機能（Conversational Analytics）のプレビュー公開を発表しました。 この会話型分析機...</p>
+      </article>
+      <article class="entry" data-labels="tech dev">
+        <div class="meta">
+          <span class="source">Publickey</span>
+          <span class="label">tech</span> <span class="label">dev</span>
+        </div>
+        <h2><a href="https://www.publickey1.jp/blog/26/aivercel_sandbox.html" target="_blank" rel="noopener">人間よりも高速にコード生成、実行、テストを繰り返すAIエージェントに適した、高速に起動終了する安全な分離環境「Vercel Sandbox」正式リリース</a></h2>
+        <time>2026-02-02 06:56</time>
+        <p>Next.jsの開発元やWebホスティングサービスのプロバイダとして知られるVercelは、人間を上回る速度でAIエージェントが高速にコードの実行やテストを繰り返し行う能力に適した、高速に起動終了する安全に分離された実行環境「Vercel ...</p>
+      </article>
+    </main>
+  </div>
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const label = btn.dataset.label;
+        document.querySelectorAll('.entry').forEach(entry => {
+          if (label === 'all' || entry.dataset.labels.split(' ').includes(label)) {
+            entry.classList.remove('hidden');
+          } else {
+            entry.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
