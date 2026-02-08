@@ -70,6 +70,13 @@ def collect_all_labels(articles: list[dict]) -> list[str]:
     return sorted(labels)
 
 
+def collect_all_sources(articles: list[dict]) -> list[str]:
+    sources = set()
+    for a in articles:
+        sources.add(a["source"])
+    return sorted(sources)
+
+
 REPO = "shu1007/github-rss"
 
 ISSUE_TEMPLATE_BODY = """\
@@ -87,6 +94,7 @@ ISSUE_TEMPLATE_BODY = """\
 def generate_html(articles: list[dict], updated_at: datetime) -> str:
     updated_str = updated_at.strftime("%Y-%m-%d %H:%M UTC")
     all_labels = collect_all_labels(articles)
+    all_sources = collect_all_sources(articles)
 
     from urllib.parse import quote
     issue_url = (
@@ -96,13 +104,21 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
         f"&labels={quote('add-feed')}"
     )
 
-    # フィルターボタン
-    filter_buttons = ['      <button class="filter-btn active" data-label="all">All</button>']
-    for label in all_labels:
-        filter_buttons.append(
-            f'      <button class="filter-btn" data-label="{escape(label)}">{escape(label)}</button>'
+    # ソースフィルターボタン
+    source_buttons = ['        <button class="filter-btn source-btn active" data-source="all">All</button>']
+    for source in all_sources:
+        source_buttons.append(
+            f'        <button class="filter-btn source-btn" data-source="{escape(source)}">{escape(source)}</button>'
         )
-    filters_html = "\n".join(filter_buttons)
+    sources_html = "\n".join(source_buttons)
+
+    # ラベルフィルターボタン
+    label_buttons = ['      <button class="filter-btn label-btn active" data-label="all">All</button>']
+    for label in all_labels:
+        label_buttons.append(
+            f'      <button class="filter-btn label-btn" data-label="{escape(label)}">{escape(label)}</button>'
+        )
+    labels_html = "\n".join(label_buttons)
 
     # 記事一覧
     rows = []
@@ -112,7 +128,7 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
         label_spans = " ".join(
             f'<span class="label">{escape(l)}</span>' for l in a["labels"]
         )
-        rows.append(f"""      <article class="entry" data-labels="{escape(labels_attr)}">
+        rows.append(f"""      <article class="entry" data-source="{escape(a['source'])}" data-labels="{escape(labels_attr)}">
         <div class="meta">
           <span class="source">{escape(a['source'])}</span>
           {label_spans}
@@ -138,6 +154,9 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
     header h1 {{ font-size: 1.5rem; }}
     header .updated {{ font-size: 0.85rem; color: #888; margin-top: 4px; }}
     .filters {{ display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }}
+    .sources {{ margin-bottom: 20px; }}
+    .sources summary {{ cursor: pointer; font-size: 0.9rem; font-weight: 600; color: #555; padding: 8px 0; }}
+    .sources .source-list {{ display: flex; flex-wrap: wrap; gap: 8px; padding-top: 10px; }}
     .filter-btn {{ background: #fff; border: 1px solid #ddd; border-radius: 20px; padding: 6px 16px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }}
     .filter-btn:hover {{ border-color: #1a73e8; color: #1a73e8; }}
     .filter-btn.active {{ background: #1a73e8; color: #fff; border-color: #1a73e8; }}
@@ -162,26 +181,46 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
       <div class="updated">Last updated: {updated_str}</div>
       <a class="add-feed" href="{issue_url}" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
+    <details class="sources">
+      <summary>Sources ({len(all_sources)})</summary>
+      <div class="source-list">
+{sources_html}
+      </div>
+    </details>
     <div class="filters">
-{filters_html}
+{labels_html}
     </div>
     <main>
 {entries_html}
     </main>
   </div>
   <script>
-    document.querySelectorAll('.filter-btn').forEach(btn => {{
+    let activeSource = 'all';
+    let activeLabel = 'all';
+
+    function applyFilters() {{
+      document.querySelectorAll('.entry').forEach(entry => {{
+        const matchSource = activeSource === 'all' || entry.dataset.source === activeSource;
+        const matchLabel = activeLabel === 'all' || entry.dataset.labels.split(' ').includes(activeLabel);
+        entry.classList.toggle('hidden', !(matchSource && matchLabel));
+      }});
+    }}
+
+    document.querySelectorAll('.source-btn').forEach(btn => {{
       btn.addEventListener('click', () => {{
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        const label = btn.dataset.label;
-        document.querySelectorAll('.entry').forEach(entry => {{
-          if (label === 'all' || entry.dataset.labels.split(' ').includes(label)) {{
-            entry.classList.remove('hidden');
-          }} else {{
-            entry.classList.add('hidden');
-          }}
-        }});
+        activeSource = btn.dataset.source;
+        applyFilters();
+      }});
+    }});
+
+    document.querySelectorAll('.label-btn').forEach(btn => {{
+      btn.addEventListener('click', () => {{
+        document.querySelectorAll('.label-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeLabel = btn.dataset.label;
+        applyFilters();
       }});
     }});
   </script>
