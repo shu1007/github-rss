@@ -20,6 +20,39 @@ def strip_html(text: str) -> str:
     return re.sub(r"<[^>]+>", "", text)
 
 
+def extract_image(entry):
+    """Extract image URL from RSS entry (enclosures, media, or inline img)."""
+    # 1. enclosures with image type
+    for enc in getattr(entry, "enclosures", []):
+        if enc.get("type", "").startswith("image/"):
+            return enc.get("href")
+
+    # 2. media_thumbnail
+    for mt in getattr(entry, "media_thumbnail", []):
+        if mt.get("url"):
+            return mt["url"]
+
+    # 3. media_content with image type
+    for mc in getattr(entry, "media_content", []):
+        if mc.get("medium") == "image" or mc.get("type", "").startswith("image/"):
+            return mc.get("url")
+
+    # 4. First <img> in summary or content
+    for field in ("summary", "content"):
+        text = ""
+        if field == "content":
+            content = entry.get("content", [])
+            if content and isinstance(content, list):
+                text = content[0].get("value", "")
+        else:
+            text = getattr(entry, field, "") or ""
+        match = re.search(r'<img[^>]+src=["\']([^"\']+)', text)
+        if match:
+            return match.group(1)
+
+    return None
+
+
 def fetch_articles(feeds: list[dict], cutoff: datetime) -> list[dict]:
     articles = []
     for feed_info in feeds:
@@ -56,6 +89,7 @@ def fetch_articles(feeds: list[dict], cutoff: datetime) -> list[dict]:
                     "labels": labels,
                     "published": published,
                     "summary": summary_text,
+                    "image": extract_image(entry),
                 }
             )
 
@@ -128,12 +162,16 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
         label_spans = " ".join(
             f'<span class="label">{escape(l)}</span>' for l in a["labels"]
         )
+        img_html = ""
+        if a.get("image"):
+            img_html = f'<a href="{escape(a["link"])}" target="_blank" rel="noopener"><img class="thumb" src="{escape(a["image"])}" alt="" loading="lazy"></a>'
         rows.append(f"""      <article class="entry" data-source="{escape(a['source'])}" data-labels="{escape(labels_attr)}">
         <div class="meta">
           <span class="source">{escape(a['source'])}</span>
           {label_spans}
         </div>
         <h2><a href="{escape(a['link'])}" target="_blank" rel="noopener">{escape(a['title'])}</a></h2>
+        {img_html}
         <time>{escape(pub_str)}</time>
         <p>{escape(a['summary'])}</p>
       </article>""")
@@ -162,6 +200,7 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
     .filter-btn.active {{ background: #1a73e8; color: #fff; border-color: #1a73e8; }}
     .entry {{ background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }}
     .entry.hidden {{ display: none; }}
+    .thumb {{ width: 100%; max-height: 300px; object-fit: cover; border-radius: 6px; margin: 8px 0; }}
     .entry .meta {{ display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }}
     .entry .source {{ display: inline-block; background: #e8f0fe; color: #1a73e8; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: 600; }}
     .entry .label {{ display: inline-block; background: #f0f0f0; color: #555; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; }}
