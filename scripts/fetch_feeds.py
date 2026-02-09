@@ -247,39 +247,29 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
       }});
     }}
 
-    document.querySelectorAll('.source-btn').forEach(btn => {{
-      btn.addEventListener('click', () => {{
-        document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        activeSource = btn.dataset.source;
-        applyFilters();
-      }});
-    }});
-
-    document.querySelectorAll('.label-btn').forEach(btn => {{
-      btn.addEventListener('click', () => {{
-        document.querySelectorAll('.label-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        activeLabel = btn.dataset.label;
-        applyFilters();
-      }});
-    }});
-
     function selectSource(name) {{
-      document.querySelectorAll('.source-btn').forEach(b => {{
-        b.classList.toggle('active', b.dataset.source === name);
-      }});
       activeSource = name;
+      activeLabel = 'all';
+      document.querySelectorAll('.source-btn').forEach(b => b.classList.toggle('active', b.dataset.source === name));
+      document.querySelectorAll('.label-btn').forEach(b => b.classList.toggle('active', b.dataset.label === 'all'));
       applyFilters();
     }}
 
     function selectLabel(name) {{
-      document.querySelectorAll('.label-btn').forEach(b => {{
-        b.classList.toggle('active', b.dataset.label === name);
-      }});
       activeLabel = name;
+      activeSource = 'all';
+      document.querySelectorAll('.label-btn').forEach(b => b.classList.toggle('active', b.dataset.label === name));
+      document.querySelectorAll('.source-btn').forEach(b => b.classList.toggle('active', b.dataset.source === 'all'));
       applyFilters();
     }}
+
+    document.querySelectorAll('.source-btn').forEach(btn => {{
+      btn.addEventListener('click', () => selectSource(btn.dataset.source));
+    }});
+
+    document.querySelectorAll('.label-btn').forEach(btn => {{
+      btn.addEventListener('click', () => selectLabel(btn.dataset.label));
+    }});
 
     document.querySelectorAll('[data-filter-source]').forEach(el => {{
       el.addEventListener('click', () => selectSource(el.dataset.filterSource));
