@@ -160,14 +160,14 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
         pub_str = a["published"].strftime("%Y-%m-%d %H:%M")
         labels_attr = " ".join(a["labels"])
         label_spans = " ".join(
-            f'<span class="label">{escape(l)}</span>' for l in a["labels"]
+            f'<span class="label" data-filter-label="{escape(l)}">{escape(l)}</span>' for l in a["labels"]
         )
         img_html = ""
         if a.get("image"):
             img_html = f'<a href="{escape(a["link"])}" target="_blank" rel="noopener"><img class="thumb" src="{escape(a["image"])}" alt="" loading="lazy"></a>'
         rows.append(f"""      <article class="entry" data-source="{escape(a['source'])}" data-labels="{escape(labels_attr)}">
         <div class="meta">
-          <span class="source">{escape(a['source'])}</span>
+          <span class="source" data-filter-source="{escape(a['source'])}">{escape(a['source'])}</span>
           {label_spans}
         </div>
         <h2><a href="{escape(a['link'])}" target="_blank" rel="noopener">{escape(a['title'])}</a></h2>
@@ -202,8 +202,10 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
     .entry.hidden {{ display: none; }}
     .thumb {{ width: 100%; max-height: 300px; object-fit: cover; border-radius: 6px; margin: 8px 0; }}
     .entry .meta {{ display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }}
-    .entry .source {{ display: inline-block; background: #e8f0fe; color: #1a73e8; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: 600; }}
-    .entry .label {{ display: inline-block; background: #f0f0f0; color: #555; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; }}
+    .entry .source {{ display: inline-block; background: #e8f0fe; color: #1a73e8; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: 600; cursor: pointer; }}
+    .entry .source:hover {{ background: #d2e3fc; }}
+    .entry .label {{ display: inline-block; background: #f0f0f0; color: #555; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; cursor: pointer; }}
+    .entry .label:hover {{ background: #e0e0e0; }}
     .add-feed {{ display: inline-block; background: #34a853; color: #fff; text-decoration: none; font-size: 0.85rem; padding: 6px 16px; border-radius: 20px; font-weight: 600; transition: background 0.2s; }}
     .add-feed:hover {{ background: #2d8e47; }}
     .entry h2 {{ font-size: 1.1rem; margin: 8px 0 4px; }}
@@ -261,6 +263,30 @@ def generate_html(articles: list[dict], updated_at: datetime) -> str:
         activeLabel = btn.dataset.label;
         applyFilters();
       }});
+    }});
+
+    function selectSource(name) {{
+      document.querySelectorAll('.source-btn').forEach(b => {{
+        b.classList.toggle('active', b.dataset.source === name);
+      }});
+      activeSource = name;
+      applyFilters();
+    }}
+
+    function selectLabel(name) {{
+      document.querySelectorAll('.label-btn').forEach(b => {{
+        b.classList.toggle('active', b.dataset.label === name);
+      }});
+      activeLabel = name;
+      applyFilters();
+    }}
+
+    document.querySelectorAll('[data-filter-source]').forEach(el => {{
+      el.addEventListener('click', () => selectSource(el.dataset.filterSource));
+    }});
+
+    document.querySelectorAll('[data-filter-label]').forEach(el => {{
+      el.addEventListener('click', () => selectLabel(el.dataset.filterLabel));
     }});
   </script>
 </body>
