@@ -39,15 +39,16 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-02-15 19:30 UTC</div>
+      <div class="updated">Last updated: 2026-02-15 20:32 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (19)</summary>
+      <summary>Sources (20)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -80,6 +81,7 @@
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
       <button class="filter-btn label-btn" data-label="meta">meta</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -87,6 +89,43 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://developer.apple.com/events/view/TUHA23T82K/dashboard" target="_blank" rel="noopener">With Apple: Fortify your app: Essential strategies to strengthen security</a></h2>
+        
+        <time>2026-02-15 20:10</time>
+        <p>Article URL: https://developer.apple.com/events/view/TUHA23T82K/dashboard
+Comments URL: https://news.ycombinator.com/item?id=47027044
+Points: 5
+# Comments: 0</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://reclaimthenet.org/40-attorneys-general-back-ids-online-safety-act" target="_blank" rel="noopener">State Attorneys General Want to Tie Online Access to ID</a></h2>
+        
+        <time>2026-02-15 19:49</time>
+        <p>Article URL: https://reclaimthenet.org/40-attorneys-general-back-ids-online-safety-act
+Comments URL: https://news.ycombinator.com/item?id=47026848
+Points: 31
+# Comments: 15</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://github.com/gpasquero/voog" target="_blank" rel="noopener">Show HN: VOOG – Moog-style polyphonic synthesizer in Python with tkinter GUI</a></h2>
+        
+        <time>2026-02-15 19:40</time>
+        <p>Body:
+  I built a polyphonic synthesizer in Python with a tkinter GUI styled after the Moog Subsequent 37.  Features: 3 oscillators, Moog ladder filter (24dB/oct), dual ADSR envelopes, LFO, glide, noi...</p>
+      </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
           <span class="source" data-filter-source="Engadget">Engadget</span>
@@ -102,39 +141,39 @@
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://phys.org/news/2026-01-scientists-million-year-brain-rhythm.html" target="_blank" rel="noopener">Scientists observe a 300M-year-old brain rhythm in several animal species</a></h2>
-        
-        <time>2026-02-15 18:52</time>
-        <p>Article URL: https://phys.org/news/2026-01-scientists-million-year-brain-rhythm.html
-Comments URL: https://news.ycombinator.com/item?id=47026289
-Points: 7
-# Comments: 0</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://arxiv.org/abs/2602.10177" target="_blank" rel="noopener">Towards Autonomous Mathematics Research</a></h2>
         
         <time>2026-02-15 18:35</time>
         <p>Article URL: https://arxiv.org/abs/2602.10177
 Comments URL: https://news.ycombinator.com/item?id=47026134
-Points: 20
-# Comments: 2</p>
+Points: 36
+# Comments: 7</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://arstechnica.com/staff/2026/02/editors-note-retraction-of-article-containing-fabricated-quotations/" target="_blank" rel="noopener">(Ars) Editor&#x27;s Note: Retraction of article containing fabricated quotations</a></h2>
+        <h2><a href="https://arstechnica.com/staff/2026/02/editors-note-retraction-of-article-containing-fabricated-quotations/" target="_blank" rel="noopener">Editor&#x27;s Note: Retraction of article containing fabricated quotations</a></h2>
         
         <time>2026-02-15 18:29</time>
         <p>Article URL: https://arstechnica.com/staff/2026/02/editors-note-retraction-of-article-containing-fabricated-quotations/
 Comments URL: https://news.ycombinator.com/item?id=47026071
-Points: 32
+Points: 69
 # Comment...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://modern-css.com" target="_blank" rel="noopener">Modern CSS Code Snippets: Stop writing CSS like it&#x27;s 2015</a></h2>
+        
+        <time>2026-02-15 18:04</time>
+        <p>Article URL: https://modern-css.com
+Comments URL: https://news.ycombinator.com/item?id=47025851
+Points: 6
+# Comments: 0</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -166,8 +205,8 @@ Points: 32
         <time>2026-02-15 17:37</time>
         <p>Article URL: https://theintercept.com/2026/02/15/palantir-contract-new-york-city-health-hospitals/
 Comments URL: https://news.ycombinator.com/item?id=47025624
-Points: 108
-# Comments: 30</p>
+Points: 163
+# Comments: 53</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -199,8 +238,8 @@ Points: 108
         <time>2026-02-15 17:12</time>
         <p>Article URL: https://github.com/TechPaula/LT6502
 Comments URL: https://news.ycombinator.com/item?id=47025399
-Points: 136
-# Comments: 30</p>
+Points: 172
+# Comments: 47</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -212,8 +251,21 @@ Points: 136
         <time>2026-02-15 17:10</time>
         <p>Article URL: https://environment.ec.europa.eu/news/new-eu-rules-stop-destruction-unsold-clothes-and-shoes-2026-02-09_en
 Comments URL: https://news.ycombinator.com/item?id=47025378
-Points: 318
+Points: 428
 # Commen...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://knock-knock.net" target="_blank" rel="noopener">Show HN: Knock-Knock.net – Visualizing the bots knocking on my server&#x27;s door</a></h2>
+        
+        <time>2026-02-15 17:06</time>
+        <p>Article URL: https://knock-knock.net
+Comments URL: https://news.ycombinator.com/item?id=47025338
+Points: 17
+# Comments: 7</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -245,8 +297,8 @@ Points: 318
         <time>2026-02-15 16:51</time>
         <p>Article URL: https://www.heise.de/en/news/Palantir-vs-the-Republik-US-analytics-firm-takes-magazine-to-court-11176508.html
 Comments URL: https://news.ycombinator.com/item?id=47025188
-Points: 93
-# Comm...</p>
+Points: 134
+# Com...</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -263,26 +315,13 @@ Points: 93
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://martin-jones.com/2017/02/19/soviet-tektronix-7000-series-oscilloscope-copies/" target="_blank" rel="noopener">Soviet Tektronix 7000-series oscilloscope copies</a></h2>
-        
-        <time>2026-02-15 16:30</time>
-        <p>Article URL: https://martin-jones.com/2017/02/19/soviet-tektronix-7000-series-oscilloscope-copies/
-Comments URL: https://news.ycombinator.com/item?id=47024989
-Points: 3
-# Comments: 0</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://www.videogameschronicle.com/news/hideki-sato-designer-of-segas-consoles-dies-age-75/" target="_blank" rel="noopener">Hideki Sato, designer of all Sega&#x27;s consoles, has died</a></h2>
         
         <time>2026-02-15 16:19</time>
         <p>Article URL: https://www.videogameschronicle.com/news/hideki-sato-designer-of-segas-consoles-dies-age-75/
 Comments URL: https://news.ycombinator.com/item?id=47024907
-Points: 177
-# Comments: 10</p>
+Points: 218
+# Comments: 18</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -304,8 +343,8 @@ Points: 177
         <time>2026-02-15 15:53</time>
         <p>Article URL: https://lithub.com/how-an-enslaved-gardener-transformed-the-pecan-into-a-cash-crop/
 Comments URL: https://news.ycombinator.com/item?id=47024676
-Points: 51
-# Comments: 34</p>
+Points: 59
+# Comments: 37</p>
       </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
@@ -337,8 +376,8 @@ Points: 51
         <time>2026-02-15 15:37</time>
         <p>Article URL: https://gwern.net/gwtar
 Comments URL: https://news.ycombinator.com/item?id=47024506
-Points: 85
-# Comments: 19</p>
+Points: 108
+# Comments: 27</p>
       </article>
       <article class="entry" data-source="Publickey" data-labels="tech dev japan">
         <div class="meta">
@@ -410,8 +449,26 @@ Points: 85
         <time>2026-02-15 14:55</time>
         <p>Article URL: https://github.com/cavedave/Manannan
 Comments URL: https://news.ycombinator.com/item?id=47024184
-Points: 26
-# Comments: 11</p>
+Points: 39
+# Comments: 18</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/har1101/items/216997b0debe22fdd1e4?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Strands Agents SDK×OpenAI互換APIでオープンウェイトモデルを使おう！</a></h2>
+        
+        <time>2026-02-15 14:48</time>
+        <p>こんにちは、ふくちです。
+日本時間2026/02/11未明、東京リージョンで以下6つのオープンウェイトモデルが利用可能になりました。
+
+DeepSeek V3.2
+MiniMax M2.1
+GLM 4.7
+GLM 4.7 Flash
+Kimi K2.5
+Qwen3 Code...</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -523,8 +580,8 @@ Points: 26
         <time>2026-02-15 12:42</time>
         <p>Article URL: https://greenwald.substack.com/p/amazons-ring-and-googles-nest-unwittingly
 Comments URL: https://news.ycombinator.com/item?id=47023238
-Points: 496
-# Comments: 341</p>
+Points: 550
+# Comments: 392</p>
       </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
@@ -596,8 +653,8 @@ Points: 496
         <time>2026-02-15 11:37</time>
         <p>Article URL: https://github.com/s-macke/starflight-reverse
 Comments URL: https://news.ycombinator.com/item?id=47022943
-Points: 77
-# Comments: 39</p>
+Points: 82
+# Comments: 40</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -629,8 +686,8 @@ Points: 77
         <time>2026-02-15 11:25</time>
         <p>Article URL: https://marler8997.github.io/blog/fixed-windows/
 Comments URL: https://news.ycombinator.com/item?id=47022891
-Points: 475
-# Comments: 243</p>
+Points: 520
+# Comments: 263</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -702,8 +759,8 @@ Points: 475
         <time>2026-02-15 09:27</time>
         <p>Article URL: https://www.seangoedecke.com/fast-llm-inference/
 Comments URL: https://news.ycombinator.com/item?id=47022329
-Points: 138
-# Comments: 63</p>
+Points: 143
+# Comments: 64</p>
       </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
@@ -714,19 +771,6 @@ Points: 138
         
         <time>2026-02-15 09:23</time>
         <p>Nothing初のエントリークラス機種「Phone (3a) Lite」が2026年1月15日に登場しました。Nothingならではのオシャレな外装やUIを維持しつつLiteなモデルに仕上がっているとのこと。そんなPhone (3a) LiteがGIGAZINE編集部に届いたので、まずは外観を詳しくチェックしてみました。続きを読む...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/" target="_blank" rel="noopener">DjVu and its connection to Deep Learning (2023)</a></h2>
-        
-        <time>2026-02-15 09:05</time>
-        <p>Article URL: https://scottlocklin.wordpress.com/2023/05/31/djvu-and-its-connection-to-deep-learning/
-Comments URL: https://news.ycombinator.com/item?id=47022213
-Points: 62
-# Comments: 11</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -758,6 +802,35 @@ Points: 62
         <time>2026-02-15 08:35</time>
         <p>宇宙空間における人間の体の変化はどんなものがあるのでしょう。筋力が低下するというのは誰もが知る話ですね。近い将来、普通の人の宇宙旅行が一般的になれば、それこそ宇宙空間での性活動なんかも気になるわけですが、今回は脳みその話。</p>
       </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/mda_ihw/items/5e2e02e1fbf962db377e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">AWSセキュリティを体系的に整理する方法の一案</a></h2>
+        
+        <time>2026-02-15 08:28</time>
+        <p>はじめに
+これまでクラウドサービスにまったく触れたことはありませんでしたが、ひょんなことからAmazon Web Services（AWS）が提供するユーザセキュリティについて調べる機会がありました。
+ここでいうユーザセキュリティとは、
+AWSクラウド上に保管されているユ...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/kexi/items/b8926d59254b95aec8fd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">家のSwitchBotデバイスをLambdaとAmazon Bedrockで定期的に監視し自律的に操作させた</a></h2>
+        
+        <time>2026-02-15 08:25</time>
+        <p>はじめに
+Amazon Bedrockの素振りをした時の記録です。
+
+Amazon Bedrockについて
+使う前は、LLMのAPIの代理人のイメージしかなかったです。API直叩きでいいじゃんって思ってました。
+使ってわかったことはそれだけでなかったです。
+特にガードレイ...</p>
+      </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
@@ -768,8 +841,32 @@ Points: 62
         <time>2026-02-15 08:17</time>
         <p>Article URL: https://oat.ink/
 Comments URL: https://news.ycombinator.com/item?id=47021980
-Points: 346
-# Comments: 93</p>
+Points: 378
+# Comments: 108</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/emi_ndk/items/bf3b5f0f3eef99a4d124?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">【緊急】AIエージェントの12%がマルウェアだった。OpenClaw史上最悪のサプライチェーン攻撃の全貌</a></h2>
+        
+        <time>2026-02-15 08:02</time>
+        <p>あなたが今使っているAIエージェント、本当に安全ですか？
+2026年2月、AIエージェント業界に激震が走りました。人気のパーソナルAIエージェント「OpenClaw」のスキルマーケットプレイス「ClawHub」で、341個の悪意あるスキルが発見されたのです。
+これは全スキル...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/Bigfeet/items/82a316496a968ddd1b61?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">文字「i」を赤くするスクリプトを作りました</a></h2>
+        
+        <time>2026-02-15 07:48</time>
+        <p>スクリプトはじめました
+AtCoderのコンテスト上で、文字「i」を赤くするスクリプトを作りました。
+JavaScriptの知識は皆無で、読めばなんとなく分かるけど自力で書くのはちょっと…というどうしようもないレベルなので、作ったといってもクラス名の情報を拾ってChatG...</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -821,19 +918,6 @@ Points: 346
         <time>2026-02-15 05:55</time>
         <p>六角、トルクスまで対応する精密電動ドライバーセット。ビットやクリーニングツールなど100以上が1箱に収まっていて、ガジェット周りの作業がラクになりました。</p>
       </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://flashpointarchive.org" target="_blank" rel="noopener">Flashpoint Archive – Over 200k web games and animations preserved</a></h2>
-        
-        <time>2026-02-15 05:43</time>
-        <p>Article URL: https://flashpointarchive.org
-Comments URL: https://news.ycombinator.com/item?id=47021354
-Points: 283
-# Comments: 71</p>
-      </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
           <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
@@ -843,6 +927,27 @@ Points: 283
         <a href="https://www.gizmodo.jp/2026/02/yamazaki_towel_bar.html" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/gizmodo/dist/images/2026/02/07/top_yamazaki_towel.jpg" alt="" loading="lazy"></a>
         <time>2026-02-15 05:35</time>
         <p>Photo:KanroROOMIE2025年11月21日掲載の記事より転載お風呂上がりに使うバスタオル。たたんで置く場所はあっても、かけておくところって案外少ないですよね。そこで備え付けのタオルハンガーを最大限に活用できるアイテムを使ってみることに。備え付けのタオルハンガーを拡張山崎実業「横から掛けられるバスタオルハンガータワースリム」ユニットバスはもちろん、脱衣所＋バスルームのスタイルでも、洗面</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/k2-gc/items/7b8a5e65873a35ea72dd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">結局 Python は遅いのか</a></h2>
+        
+        <time>2026-02-15 05:23</time>
+        <p>結局 Python は遅いのか
+
+この記事では
+
+Python を用いて幾つかの方法で定積分の近似
+C++ で近似
+比較
+
+を行います．
+
+はじめに
+「Python は遅い」，「Python で for 使うな！」 と言われることは多いですが，実際にどれくらい遅いの...</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -912,26 +1017,6 @@ Claude CodeなどのAIエージェントを使い込んでいると、ある壁�
         <time>2026-02-15 03:00</time>
         <p>錯視とは視覚系で発生する錯覚の一種であり、実際には存在しないものが見えたり実際とは異なるものが見えたりする現象のことを指します。錯視の発生するパターンについて多種多様なものが知られていますが、CSSを利用して様々な錯視を実体験できるサイトが「CSS Optical Illusions」です。続きを読む...</p>
       </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/masa_tech_0326/items/ea218ecf187206939dc6?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">【Rails】undefined method stringify_keys for String が出た原因と解決方法</a></h2>
-        
-        <time>2026-02-15 02:45</time>
-        <p>はじめに
-Railsで設定画面を作っていたとき、こんなエラーに遭遇しました。
-
-え？
-stringify_keys？
-そんなメソッド呼んだ覚えないんだけど…？
-結論から言うと、link_toの書き方ミスでした。
-今回は、
-
-同じエラーでハマる人を減らすために
-エラーの備忘...</p>
-      </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
           <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
@@ -962,19 +1047,6 @@ stringify_keys？
         <time>2026-02-15 01:55</time>
         <p>「QUICK PACK tote11」は11インチのiPadに対応した通勤用ミニトートバッグです。7つのポケットと最大14カ所の収納設計によりバッグ内の探し物ストレスを減らします。重さは約600gと軽量で撥水性に優れた高耐久PUレザーを採用しました。動く収納ギミックで荷物量に合わせたカスタマイズが可能です。機能性と身軽さを両立したミニマルな通勤スタイルをサポートします。</p>
       </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/" target="_blank" rel="noopener">I love the work of the ArchWiki maintainers</a></h2>
-        
-        <time>2026-02-15 01:20</time>
-        <p>Article URL: https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/
-Comments URL: https://news.ycombinator.com/item?id=47020191
-Points: 807
-# Comments: 143</p>
-      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -995,6 +1067,48 @@ Points: 807
         <time>2026-02-15 00:55</time>
         <p>AIマウス「Virtusx Jethro V1」は翻訳や音声入力や要約をボタン一つで完結させる次世代デバイスです。ChatGPT搭載でスライド作成や画像生成も話すだけで自動化します。面倒なアカウント登録やサブスク契約は不要で一度の購入でずっと使える買い切り型です。最大1.2m離れた声を認識する高性能マイクや技適取得済みで国内利用も安心。日々の雑務を効率化しクリエイティブな仕事に没頭したい方へ最適な</p>
       </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/RYA234/items/37fb349c5a02301cab7a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">読書感想文『ソフトウェアテスト技法ドリル テスト設計の考え方と実際』</a></h2>
+        
+        <time>2026-02-15 00:46</time>
+        <p>書籍情報
+書籍名: ソフトウェアテスト技法ドリル テスト設計の考え方と実際
+著者: 秋山浩一
+出版社: 日科技連出版社
+ISBN: 978-4817193605（初版）/ 978-4817197665（第2版）
+
+著者について
+秋山浩一（あきやま こういち）
+博士（工学）...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/spin_atop/items/d65f9721bb63adc69c52?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">X-Frame-Optionsが非推奨だよって言われたから調べたらそんなことなかった</a></h2>
+        
+        <time>2026-02-15 00:43</time>
+        <p>調べた経緯
+先日、とあるウェブサイトの脆弱性診断の結果を読んだ際に「X-Frame-Optionsは非推奨になっています。CSP frame-ancestoresの利用を検討していください。」と言われました。対応しないと思っていた中で一応MDNのページを調べてみたところ、...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/nAotO01_03/items/99cf932786dad3b3ec05?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">エンジニアの勉強って結局どうやれば良いの？を再度考え直してみました</a></h2>
+        
+        <time>2026-02-14 23:58</time>
+        <p>はじめに
+最近は生成AIの成長が目まぐるしく、どんどん新しい技術が台頭してきています。
+私自身、この技術の荒波に食らいつくため継続的に自己研鑽を続けていますが、なかなか身についている実感が得られていません。
+そんな中、この前本屋で手に取った『アウトプット大全』という本を読...</p>
+      </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
           <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
@@ -1005,6 +1119,19 @@ Points: 807
         <time>2026-02-14 23:55</time>
         <p>「ケーブルミニマリスト」を貫く方に、Amazonでは2025年末から発売しているこの1本をおすすめします。
 ELECOM（エレコム）のUSB-C 2Wayケーブル「MPA-CCCA12」は、二股を生かした頼もしいスペックが詰まっているんです。</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/PinebaseLab/items/5379ce78125971d1f4d8?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Android 個人開発 テスター募集 アプリ開発</a></h2>
+        
+        <time>2026-02-14 23:37</time>
+        <p>【Androidアプリのテスター募集📱】
+こんにちは、Pinebase Labの松下です！
+現在、語彙力アップをサポートするAndroidアプリ「単語カード」を開発中です。
+Google Playでの製品版公開に向けて、クローズドテストにご協力いただける方を募集しています！...</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -1096,7 +1223,7 @@ ELECOM（エレコム）のUSB-C 2Wayケーブル「MPA-CCCA12」は、二股を
         <time>2026-02-14 19:48</time>
         <p>はじめに
 テストコードのレビュー基準において、
-カバレッジのパーセンテージを評価の指針にする手法、よく採用さてているんじゃないでしょうか？
+カバレッジのパーセンテージを評価の指針にする手法、よく採用されているんじゃないでしょうか？
 カバレッジとは、プログラムコードのどの部分がどれだけ実行されたかを示す網羅率を指します。
 「数値を追えば追うほど工数はかかりますが、...</p>
       </article>
@@ -1267,19 +1394,6 @@ Lython の MLIR Dialect 設計
           <span class="source" data-filter-source="Qiita">Qiita</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
         </div>
-        <h2><a href="https://qiita.com/maskot1977/items/65b4674d80e27cf6969a?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">善意が経済を歪めるとき ― 財源幻想とおもてなし圧力の克服 : Pythonで学ぶ マクロ経済学入門 (38)</a></h2>
-        
-        <time>2026-02-14 15:09</time>
-        <p>user:
-「Pythonで学ぶマクロ経済学入門」の続きをやりましょう。まず
-「財源ではなく需要管理 ― 通貨発行と税の本当の役割 : Pythonで学ぶ マクロ経済学入門 (37)」
-https://qiita.com/maskot1977/items/0cceb50c...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
         <h2><a href="https://qiita.com/jmjive/items/5f699f347e3c0348aabc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">新卒未経験エンジニアが詰まったところ</a></h2>
         
         <time>2026-02-14 15:06</time>
@@ -1330,20 +1444,6 @@ https://qiita.com/maskot1977/items/0cceb50c...</p>
         <a href="https://www.engadget.com/big-tech/homeland-security-has-reportedly-sent-out-hundreds-of-subpoenas-to-identify-ice-critics-online-135245457.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-02%2Fee54c21f-b8d9-4753-9db4-e895a85ab140&amp;resize=1400%2C931&amp;client=19f2b5e49a271b2bde77&amp;signature=902e54deee3c3e7dd0cfbdb9d07f7c6a68beeabd" alt="" loading="lazy"></a>
         <time>2026-02-14 13:52</time>
         <p>The Department of Homeland Security (DHS) has reportedly been asking tech companies for information on accounts posting anti-ICE sentiments. According to The New York Times, DHS has sent hundreds of a...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/be834194/items/15039b67f4f2d32e18b1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">AWSでインフラを構築し、個人学習で作成したアプリを公開するまで</a></h2>
-        
-        <time>2026-02-14 13:16</time>
-        <p>今回やりたいこと
-　タイトルに書いてある通りなのですが、AWSでインフラを構築し、個人学習で作成したアプリを公開するまでの流れを整理いたしました。本記事で扱うことを下記に示します。
-
-CloudFront + S3 + Route 53 でWebページを公開する
-プライベ...</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -1711,21 +1811,6 @@ https://zenn.dev/m_hatayama/articles/91...</p>
           <span class="source" data-filter-source="Qiita">Qiita</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
         </div>
-        <h2><a href="https://qiita.com/handson-lab/items/a089149adb4293da4534?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">監視・保守の延長だと思ってない？セキュリティ経験を「一生モノの武器」に変える逆転発想</a></h2>
-        
-        <time>2026-02-14 04:30</time>
-        <p>監視・保守の延長だと思ってない？セキュリティ経験を「一生モノの武器」に変える逆転発想
-
-はじめに
-「セキュリティ保守って、ログを見てアラート対応するだけ。地味だし、あまり市場価値が高くないのでは？」
-そんなふうに思っていませんか？
-はじめまして、ハンズオンラボ運営メンバー...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
         <h2><a href="https://qiita.com/handson-lab/items/5f389c5d7c786e6b8877?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">保守的な現場でも負けない！「こっそり自動化」で自習時間を捻出するエンジニアの処世術</a></h2>
         
         <time>2026-02-14 04:26</time>
@@ -1790,6 +1875,20 @@ Claude Code Skills と yfinance を使って、株式スクリーニングから
 最近は、Claude Code を使ってモバイルアプリを作ったり、Slack から @Claude でコード修正を飛ばしたり、歩きながら音声入力で日記を書いたりしている。気づけば「実装する」という行為そのもののスピードが、半年前、1年前とはまるで違う。
 その変化...</p>
       </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/masa-555/items/bd17daef0ee6b29a23cc?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">1台のProxmoxを「仮想的に8〜16個に分割する」方法。</a></h2>
+        
+        <time>2026-02-14 02:21</time>
+        <p>1台のProxmoxを「仮想的に8〜16個に分割する」方法があったら良いなと感じることはありませんか？
+こんなとき、そう思うはずです。
+
+画面左側に仮想マシンが20個ぐらい並んでいるとき。→　これグループ分けして管理できないかな？
+この一部のVM群だけVPN経由でチームと共...</p>
+      </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
           <span class="source" data-filter-source="Zenn">Zenn</span>
@@ -1828,17 +1927,6 @@ PRを出してレビューで複数の修正のコメントをもらった際、
         
         <time>2026-02-14 01:38</time>
         <p>Googleの自動運転車開発部門としてスタートしたWaymoが、自社の自動運転車のドアを閉めるフードデリバリー配達員に報酬を支払っていることが明らかになりました。続きを読む...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/yokamak/items/4abdc01ca0eaccef54a3?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">7年前のchromebookと現行比較</a></h2>
-        
-        <time>2026-02-14 01:00</time>
-        <p>タイトル8年前ではなくて、７年前、2019年秋に購入したchromebookのお話です。
-買取査定で100円だったchromebookに新しくLinuxコンテナを28GB割り当て、podmanやobsidian使えてます。pythonはvenvを使ってpyxelやpymun...</p>
       </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
@@ -2043,19 +2131,6 @@ Today we&#x27;re releasing the first beta of&amp;nbsp;Android 17, continuing our
         <time>2026-02-13 18:05</time>
         <p>Apple&#x27;s USB-C Magic Mouse is back on sale for about $11 off its usual retail price of $79. At $68, that&#x27;s a savings of 14 percent for one of Apple&#x27;s best accessories from a company that does not often...</p>
       </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/tantp/items/04872cafdd16cbd62f51?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">【初心者向け】LINE公式アカウントのリッチメニューからWebアプリを開くまで</a></h2>
-        
-        <time>2026-02-13 17:46</time>
-        <p>はじめに
-この記事はプログラミング初心者が書いた記事になります。個人開発アプリにLINEログインを実装しました。
-LINE公式アカウントを作成し、LINEのトーク画面下にあるリッチメニューからアプリを開けるようにするまでの工程をまとめました。
-↓リッチメニューの公式ドキュ...</p>
-      </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
           <span class="source" data-filter-source="Engadget">Engadget</span>
@@ -2147,17 +2222,6 @@ Claude Codeを使い始めて半年、自分は「AIを使いこなしている�
         <a href="https://www.engadget.com/entertainment/tv-movies/good-luck-have-fun-dont-die-rails-against-ai-in-style-154437854.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fg_100nit_r709_2.21.1.jpg&amp;resize=1400%2C719&amp;client=19f2b5e49a271b2bde77&amp;signature=a356d0718c78fc0b12077f6b95f1db1083d0d49a" alt="" loading="lazy"></a>
         <time>2026-02-13 15:44</time>
         <p>You&#x27;ve seen this movie before: A disheveled man (Sam Rockwell) busts into a restaurant, threatening to blow up the joint unless a crew of people joins him. Like Groundhog Day, he&#x27;s been through this c...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/tobaru-hideyasu/items/f9ed60b136d95960b1d0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">週末アプリ開発者のための、Claude Code × iOSアプリ開発 一気通貫ガイド</a></h2>
-        
-        <time>2026-02-13 15:09</time>
-        <p>この記事は何？
-Agentic AI が賑わっている中、「週末にちょろっとモバイルアプリを作ろうかな」と考えている方がいるかと思います。本記事では、Claude Code を使って Flutter 製 iOS アプリを開発し、git push するだけで実機に届く仕組み...</p>
       </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
@@ -2744,6 +2808,19 @@ Google Reports State-...</p>
           <span class="source" data-filter-source="Qiita">Qiita</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
         </div>
+        <h2><a href="https://qiita.com/chaochire/items/25e18f62a1ddd5650109?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">.bashrc / .zshrc を使って開発コマンドを短縮する方法</a></h2>
+        
+        <time>2026-02-13 03:00</time>
+        <p>こんにちは。
+ソーイ株式会社、入社１年目の村上です。
+Laravel開発中、docker関係のコマンドやバッチコマンドの入力が煩わしく感じました。
+READMEやドキュメント、該当のバッチファイルを確認し、書いてあるものをコピペすれば済む話ですが、それらを毎回入力することさ...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
         <h2><a href="https://qiita.com/suzukielecs/items/bcd619d613ca35a327bd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">CSSだけで作れる“ちょっと楽しい”アコーディオンメニューの実装と応用【初心者向けまとめ】</a></h2>
         
         <time>2026-02-13 00:48</time>
@@ -2949,17 +3026,6 @@ The post Welcome to the ...</p>
         <time>2026-02-12 19:00</time>
         <p>In an interview with WIRED, Greg Brockman says his political donations support OpenAI&#x27;s mission—even if some employees at the company disagree.</p>
       </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/jw-automation/items/5af853dc315be0daa7b0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">OpenDeepResearchに学ぶDeepResearchの設計思想と実務適用のポイント</a></h2>
-        
-        <time>2026-02-12 18:45</time>
-        <p>1. はじめに
-OpenAIが2025年2月にDeepResearchの機能を発表し、その後、Claude, Gemini, PerplexityやGenSparkなど、各社相次いでDeepResearchの機能を公開しました。今となってはDeepResearch機能は標...</p>
-      </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
@@ -3009,17 +3075,6 @@ OpenAIが2025年2月にDeepResearchの機能を発表し、その後、Claude, G
         
         <time>2026-02-12 15:54</time>
         <p>TypeScriptの言語設計を行い、現在も開発をリードしているアンダース・ヘルスバーグ（Anders Hejlsberg）氏は、1983年に発売され大きな人気を得たプログラミング言語であるTurbo Pascalの作者であり、その後もDe...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/ko1nksm/items/a56a6050c21787463432?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">TRONはマイクロソフトのOSよりも開発が遅かった</a></h2>
-        
-        <time>2026-02-12 15:03</time>
-        <p>はじめに
-「日本がマイクロソフトより先にトロンを開発しようとした」というデマを見つけたので訂正します。言うまでもなくこれは間違いです。TRON の OS と マイクロソフトの OS、先に開発・完成・販売されていたのはマイクロソフトの OS です。当時を知っている人なら常識...</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
@@ -3112,19 +3167,6 @@ The post AI in Multiple GPUs: Understanding the Host and Device Paradigm appeare
         <a href="https://www.wired.com/story/crypto-funded-human-trafficking-is-exploding/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/698bb44e3a2ff3469363c6f1/master/pass/sec-scam-1383525425.jpg" alt="" loading="lazy"></a>
         <time>2026-02-12 13:00</time>
         <p>The use of cryptocurrency in sales of human beings for prostitution and scam compounds nearly doubled in 2025, according to a conservative estimate. Many of the deals are happening in plain sight.</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/robitan/items/f890e1153060cbb4ab0f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">ClaudeCodeのAgent Teams試したら性能が違いすぎてもう笑いもでなかった話</a></h2>
-        
-        <time>2026-02-12 12:40</time>
-        <p>VibeCodingしてますかー！　イエー！
-我らがClaudeCodeに先日またも新しい機能が追加されましたね。
-その名もAgent Teams。
-しかしこっちはね。正直ね。もう疲れてるんですよ。サブエージェントだのスキだのタスクだのツールだの。正直ね。「そろそろめんどい...</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -3243,31 +3285,6 @@ AIを使ってアウトプットを出していると、こう聞かれること
 しかし、答えはいつも相手を困惑させます。
 「プロンプト？ 作ってないよ。壁打ちして、結果が出たら、それをAIに再現させるためのプロンプトを逆生成させてるだけ」
 多くの人は、この「順序」が逆です。最初から完璧な指示書（プロンプト）...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/kentaro_kawamura/items/fa79b87afcd165428e39?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Googleの公式ドキュメントを検索できるMCP「Developer Knowledge API」をGemini CLIで使ってみた</a></h2>
-        
-        <time>2026-02-12 08:53</time>
-        <p>こんにちは。
-Google から、公式ドキュメントを AI が直接参照できるようにする Developer Knowledge API と、それを AI エージェントで利用するための MCP サーバー が公開されました。
-本記事では、Cloud Shell 上の Gemin...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/YushiYamamoto/items/c937af562c4d40c24e42?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">n8nで記事自動生成パイプラインを作ったら、1週間で40本→0本になった話</a></h2>
-        
-        <time>2026-02-12 08:43</time>
-        <p>「自動化の時代」が来た
-2026年の冬、私はn8nに魅了された。
-「人手を介さず、記事が自動生成される」 その夢に、私は狂ったように没頭した。スプレッドシートにキーワードを入れるだけで、AIが記事を書き、画像を生成し、CMSに投稿する。それも10言語同時に。
-ワークフロ...</p>
       </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
@@ -3552,6 +3569,17 @@ The post The Machine Learning Lessons I’ve Learned Last Month appeared first o
         
         <time>2026-02-09 15:40</time>
         <p>任天堂Switch 2を入手しました。ゲームマシンを買うのはPlayStation 2以来、数十年ぶりと言ってよいでしょう。特別に欲しい理由があったわけではないのですが、メモリ価格の上昇でコンシューマー向けゲーム機も値上げするんだろうなと思...</p>
+      </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://blog.fabric.microsoft.com/en-us/blog/32624" target="_blank" rel="noopener">Five Reasons to attend SQLCon</a></h2>
+        
+        <time>2026-02-09 15:12</time>
+        <p>The SQL community is gathering in Atlanta this March for the first‑ever SQLCon, co‑located with FabCon, the Microsoft Fabric Community Conference, March 16-20.
+The post Five Reasons to attend SQLCon a...</p>
       </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
