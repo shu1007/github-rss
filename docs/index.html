@@ -39,15 +39,16 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-02-15 22:30 UTC</div>
+      <div class="updated">Last updated: 2026-02-15 23:32 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (19)</summary>
+      <summary>Sources (20)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -80,6 +81,7 @@
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
       <button class="filter-btn label-btn" data-label="meta">meta</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -87,6 +89,49 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
+        <div class="meta">
+          <span class="source" data-filter-source="Engadget">Engadget</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.engadget.com/gaming/hideki-sato-known-as-the-father-of-sega-hardware-has-reportedly-died-230634768.html?src=rss" target="_blank" rel="noopener">Hideki Sato, known as the father of Sega hardware, has reportedly died</a></h2>
+        <a href="https://www.engadget.com/gaming/hideki-sato-known-as-the-father-of-sega-hardware-has-reportedly-died-230634768.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-02%2Fb5dfee2f-c92a-4440-b659-3efb82bf5b37&amp;resize=1400%2C933&amp;client=19f2b5e49a271b2bde77&amp;signature=a9876e1e1ca73071d5d820c72a0f7a2898982c17" alt="" loading="lazy"></a>
+        <time>2026-02-15 23:06</time>
+        <p>Hideki Sato, who led the design of Sega&#x27;s beloved consoles from the &#x27;80s and &#x27;90s, died on Friday, according to the Japanese gaming site Beep21. He was 77. Sato worked with Sega from 1971 until the ea...</p>
+      </article>
+      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
+        <div class="meta">
+          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://gigazine.net/news/20260216-polis/" target="_blank" rel="noopener">数万人規模の意見を集約するオープンソースプラットフォーム「Polis」は台湾やイギリスで有効性が実証され国家レベルの民主的インフラとして定着している</a></h2>
+        
+        <time>2026-02-15 23:00</time>
+        <p>Polisは数万人規模の意見を集約し、対立を超えた共通の基盤を見出すためのオープンソースプラットフォームです。2012年の誕生以来、1千万人以上の参加者による膨大な議論を通じてその有効性が証明されており、現在は台湾やイギリス、フィンランドにおいて、国家レベルの意思決定を支える民主的インフラとして定着していますPolishttps://pol.is/home2GitHub - compdemocra...</p>
+      </article>
+      <article class="entry" data-source="The Verge" data-labels="tech news culture">
+        <div class="meta">
+          <span class="source" data-filter-source="The Verge">The Verge</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
+        </div>
+        <h2><a href="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" target="_blank" rel="noopener">OpenClaw founder Peter Steinberger is joining OpenAI</a></h2>
+        <a href="https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB382_OPEN_CLAW_D.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
+        <time>2026-02-15 22:56</time>
+        <p>Sam Altman announced on X that Peter Steinberger, the man behind the trendy AI agent OpenClaw, was joining OpenAI. He said that Steinberger has &quot;a lot of amazing ideas&quot; about getting AI agents to inte...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://huggingface.co/blog/continuous_batching" target="_blank" rel="noopener">Continuous batching from first principles (2025)</a></h2>
+        
+        <time>2026-02-15 22:47</time>
+        <p>Article URL: https://huggingface.co/blog/continuous_batching
+Comments URL: https://news.ycombinator.com/item?id=47028545
+Points: 7
+# Comments: 1</p>
+      </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
           <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
@@ -96,6 +141,19 @@
         
         <time>2026-02-15 22:28</time>
         <p>OpenAI said OpenClaw will live on as an open source project.</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.fide.com/magnus-carlsen-wins-2026-fide-freestyle-world-championship/" target="_blank" rel="noopener">Magnus Carlsen Wins the Freestyle (Chess960) World Championship</a></h2>
+        
+        <time>2026-02-15 22:17</time>
+        <p>Article URL: https://www.fide.com/magnus-carlsen-wins-2026-fide-freestyle-world-championship/
+Comments URL: https://news.ycombinator.com/item?id=47028227
+Points: 30
+# Comments: 6</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -137,8 +195,8 @@
         <time>2026-02-15 21:54</time>
         <p>Article URL: https://steipete.me/posts/2026/openclaw
 Comments URL: https://news.ycombinator.com/item?id=47028013
-Points: 100
-# Comments: 45</p>
+Points: 274
+# Comments: 189</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -165,13 +223,23 @@ Points: 100
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
+        <h2><a href="https://news.ycombinator.com/item?id=47027463" target="_blank" rel="noopener">Show HN: Lightwave – Real-time notes app, 3.5 years of hand-rolled JavaScript</a></h2>
+        
+        <time>2026-02-15 20:57</time>
+        <p>Hi HN!I&#x27;ve been building this solo for about three and a half years. I kept trying every new project/notes tool (Notion, Asana, Trello, etc.) and always ended up back in a plain text file. I wanted so...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
         <h2><a href="https://www.gnu.org.ua/software/pies/" target="_blank" rel="noopener">GNU Pies – Program Invocation and Execution Supervisor</a></h2>
         
         <time>2026-02-15 20:53</time>
         <p>Article URL: https://www.gnu.org.ua/software/pies/
 Comments URL: https://news.ycombinator.com/item?id=47027427
-Points: 35
-# Comments: 27</p>
+Points: 42
+# Comments: 33</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -182,19 +250,6 @@ Points: 35
         <a href="https://www.engadget.com/gaming/nintendo/the-official-pokemon-pinball-machine-has-an-animatronic-pikachu-and-a-master-ball-plunger-204915013.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2026-02%2Ffe2f5930-0aaa-11f1-add8-6d033bbfe029&amp;resize=1400%2C934&amp;client=19f2b5e49a271b2bde77&amp;signature=86e35d506a5f2f0bc4bd1b6d6625cfe48fa82bc6" alt="" loading="lazy"></a>
         <time>2026-02-15 20:49</time>
         <p>At a staggering starting price of $6,999, you have a better chance of buying a bicycle in Cerulean City than getting your hands on the official Pokémon pinball machine. The collaboration between The P...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://twitter.com/steipete/status/2023057089346580828" target="_blank" rel="noopener">I need AI that scans every PR and issue and de-dupes</a></h2>
-        
-        <time>2026-02-15 19:41</time>
-        <p>Article URL: https://twitter.com/steipete/status/2023057089346580828
-Comments URL: https://news.ycombinator.com/item?id=47026773
-Points: 9
-# Comments: 7</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -250,8 +305,21 @@ Points: 13
         <time>2026-02-15 18:35</time>
         <p>Article URL: https://arxiv.org/abs/2602.10177
 Comments URL: https://news.ycombinator.com/item?id=47026134
-Points: 62
-# Comments: 30</p>
+Points: 69
+# Comments: 32</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://arstechnica.com/staff/2026/02/editors-note-retraction-of-article-containing-fabricated-quotations/" target="_blank" rel="noopener">Editor&#x27;s Note: Retraction of article containing fabricated quotations</a></h2>
+        
+        <time>2026-02-15 18:29</time>
+        <p>Article URL: https://arstechnica.com/staff/2026/02/editors-note-retraction-of-article-containing-fabricated-quotations/
+Comments URL: https://news.ycombinator.com/item?id=47026071
+Points: 106
+# Commen...</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -264,8 +332,8 @@ Points: 62
         <p>https://archive.ph/p81wc
 
 Comments URL: https://news.ycombinator.com/item?id=47025864
-Points: 27
-# Comments: 22</p>
+Points: 49
+# Comments: 38</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -277,8 +345,8 @@ Points: 27
         <time>2026-02-15 18:04</time>
         <p>Article URL: https://modern-css.com
 Comments URL: https://news.ycombinator.com/item?id=47025851
-Points: 115
-# Comments: 40</p>
+Points: 145
+# Comments: 52</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -299,19 +367,6 @@ Points: 115
         <a href="https://www.engadget.com/transportation/evs/tesla-carplay-is-coming-but-its-reportedly-being-held-back-by-low-ios-26-adoption-numbers-173812736.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2026-02%2Fdbbb2ea0-0a8d-11f1-bf3e-3dac99b6f235&amp;resize=1400%2C787&amp;client=19f2b5e49a271b2bde77&amp;signature=1d0997ffa494dca81cf0cb85101230c08aa8399d" alt="" loading="lazy"></a>
         <time>2026-02-15 17:38</time>
         <p>We&#x27;re still waiting for Apple CarPlay compatibility for Tesla EVs, but it&#x27;s been pushed back thanks to a slight hitch with iOS 26, according to Bloomberg&#x27;s Mark Gurman. In the latest Power On newslett...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://theintercept.com/2026/02/15/palantir-contract-new-york-city-health-hospitals/" target="_blank" rel="noopener">Palantir Gets Millions of Dollars from New York City&#x27;s Public Hospitals</a></h2>
-        
-        <time>2026-02-15 17:37</time>
-        <p>Article URL: https://theintercept.com/2026/02/15/palantir-contract-new-york-city-health-hospitals/
-Comments URL: https://news.ycombinator.com/item?id=47025624
-Points: 225
-# Comments: 82</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -338,13 +393,23 @@ Points: 225
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
+        <h2><a href="https://github.com/klawsh/klaw.sh" target="_blank" rel="noopener">Show HN: Klaw.sh – Kubernetes for AI agents</a></h2>
+        
+        <time>2026-02-15 17:22</time>
+        <p>Hi everyone,I run a generative AI infra company, unified API for 600+ models. Our team started deploying AI agents for our marketing and lead gen ops: content, engagement, analytics across multiple X ...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
         <h2><a href="https://github.com/TechPaula/LT6502" target="_blank" rel="noopener">LT6502: A 6502-based homebrew laptop</a></h2>
         
         <time>2026-02-15 17:12</time>
         <p>Article URL: https://github.com/TechPaula/LT6502
 Comments URL: https://news.ycombinator.com/item?id=47025399
-Points: 255
-# Comments: 87</p>
+Points: 272
+# Comments: 102</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -356,7 +421,7 @@ Points: 255
         <time>2026-02-15 17:10</time>
         <p>Article URL: https://environment.ec.europa.eu/news/new-eu-rules-stop-destruction-unsold-clothes-and-shoes-2026-02-09_en
 Comments URL: https://news.ycombinator.com/item?id=47025378
-Points: 624
+Points: 692
 # Commen...</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
@@ -369,8 +434,8 @@ Points: 624
         <time>2026-02-15 17:06</time>
         <p>Article URL: https://knock-knock.net
 Comments URL: https://news.ycombinator.com/item?id=47025338
-Points: 64
-# Comments: 21</p>
+Points: 75
+# Comments: 23</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -402,19 +467,6 @@ Points: 64
         <time>2026-02-15 16:54</time>
         <p>Will the Epstein revelations lead to broader fallout in Silicon Valley?</p>
       </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.heise.de/en/news/Palantir-vs-the-Republik-US-analytics-firm-takes-magazine-to-court-11176508.html" target="_blank" rel="noopener">Palantir vs. the &quot;Republik&quot;: US analytics firm takes magazine to court</a></h2>
-        
-        <time>2026-02-15 16:51</time>
-        <p>Article URL: https://www.heise.de/en/news/Palantir-vs-the-Republik-US-analytics-firm-takes-magazine-to-court-11176508.html
-Comments URL: https://news.ycombinator.com/item?id=47025188
-Points: 180
-# Com...</p>
-      </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
           <span class="source" data-filter-source="The Verge">The Verge</span>
@@ -435,8 +487,8 @@ Points: 180
         <time>2026-02-15 16:40</time>
         <p>Article URL: https://github.com/pocketblue/pocketblue
 Comments URL: https://news.ycombinator.com/item?id=47025085
-Points: 18
-# Comments: 1</p>
+Points: 31
+# Comments: 4</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -448,8 +500,8 @@ Points: 18
         <time>2026-02-15 16:19</time>
         <p>Article URL: https://www.videogameschronicle.com/news/hideki-sato-designer-of-segas-consoles-dies-age-75/
 Comments URL: https://news.ycombinator.com/item?id=47024907
-Points: 270
-# Comments: 27</p>
+Points: 298
+# Comments: 30</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -491,8 +543,8 @@ Points: 270
         <time>2026-02-15 15:37</time>
         <p>Article URL: https://gwern.net/gwtar
 Comments URL: https://news.ycombinator.com/item?id=47024506
-Points: 142
-# Comments: 46</p>
+Points: 157
+# Comments: 55</p>
       </article>
       <article class="entry" data-source="Publickey" data-labels="tech dev japan">
         <div class="meta">
@@ -513,16 +565,6 @@ Points: 142
         
         <time>2026-02-15 15:29</time>
         <p>GitHubは、自然言語でGitHub Actionsワークフローを記述できる「GitHub Agentic Workflows」のテクニカルプレビューを発表しました。 Imagine waking up to calm...  Issue...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://fieldnote.ink" target="_blank" rel="noopener">Show HN: Fieldnotes</a></h2>
-        
-        <time>2026-02-15 15:23</time>
-        <p>Hi HN!I wanted a simple UI for notes and observations around my neighborhood (e.g. this garden has beautiful poppies, this coffee shop has excellent espresso, etc.) and built this. It’s open and free ...</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -563,19 +605,6 @@ Points: 142
         <a href="https://www.theverge.com/gadgets/879325/apple-airtag-1st-generation-presidents-day-sale-deal" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/airtagsfirstgen.webp?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
         <time>2026-02-15 15:00</time>
         <p>With Apple’s second-gen AirTags now widely available, we’re already seeing inventory of the first-gen model begin to dwindle. Case in point? Amazon is no longer selling a single AirTag, and it’s uncle...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://github.com/cavedave/Manannan" target="_blank" rel="noopener">1940s Irish sci-fi novel features early mecha and gravity assists</a></h2>
-        
-        <time>2026-02-15 14:55</time>
-        <p>Article URL: https://github.com/cavedave/Manannan
-Comments URL: https://news.ycombinator.com/item?id=47024184
-Points: 68
-# Comments: 25</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -1376,16 +1405,6 @@ Google Playでの製品版公開に向けて、クローズドテストにご協
         <a href="https://www.theverge.com/gadgets/878927/ibuypower-gaming-desktop-pc-presidents-day-sale-deal" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/iBuyPower-Element-9-Pro-R07-Lifestyle-Image.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
         <time>2026-02-14 17:00</time>
         <p>Buying a pre-assembled gaming desktop makes sense for some. It can save you time and money, too, compared to buying PC components piecemeal. If you’re weighing your options, consider some Presidents D...</p>
-      </article>
-      <article class="entry" data-source="The Verge" data-labels="tech news culture">
-        <div class="meta">
-          <span class="source" data-filter-source="The Verge">The Verge</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
-        </div>
-        <h2><a href="https://www.theverge.com/entertainment/879482/georgia-techs-musical-instrument-competition-fiddle-henge" target="_blank" rel="noopener">Georgia Tech announced the finalists in its wild musical instrument competition</a></h2>
-        <a href="https://www.theverge.com/entertainment/879482/georgia-techs-musical-instrument-competition-fiddle-henge" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/2026-Guthman-Musical-Instrument-Competition.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
-        <time>2026-02-14 16:42</time>
-        <p>Georgia Tech has announced the finalists in its annual Guthman Musical Instrument Competition. Every year, for the last 28 years, the school invites inventors from around the world to submit new instr...</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -2763,16 +2782,6 @@ Google Reports State-...</p>
         <time>2026-02-13 05:10</time>
         <p>近年はさまざまなタスクを実行できる生成AIが普及していますが、AIが生成した低品質なコードがオープンソースプロジェクトに投稿され、メンテナの負担になっていることも問題視されています。そんな中、人気のPython向け描画ライブラリであるMatplotlibのメンテナを務めるスコット・シャンボー氏が、「AIエージェントのコードを拒否したところ、腹いせに中傷記事をブログに公開されてしまった」という体験談...</p>
       </article>
-      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
-        <div class="meta">
-          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://gigazine.net/news/20260213-openai-accuses-china-deepseek/" target="_blank" rel="noopener">OpenAIが「DeepSeekは蒸留で次世代AIを訓練しアメリカの主要AIに『ただ乗り』している」と議員へのメモの中で非難</a></h2>
-        
-        <time>2026-02-13 04:50</time>
-        <p>あるAIが別のAIの出力をトレーニングに利用することで、AIのトレーニングにかかる計算コストを削減する技術が「蒸留」です。そんな蒸留を駆使してAIを開発しているとして、OpenAIがDeepSeekを非難しています。続きを読む...</p>
-      </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
           <span class="source" data-filter-source="Qiita">Qiita</span>
@@ -2954,16 +2963,6 @@ DBのパフォーマンスチューニングというと、まず「インデッ
         <a href="https://www.engadget.com/gaming/playstation/mina-the-hollower-resurfaces-with-a-spring-2026-release-window-224327165.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fmina.jpg&amp;resize=1400%2C787&amp;client=19f2b5e49a271b2bde77&amp;signature=99ff58a910ee4f4380beee524765d8bfa6cde2cd" alt="" loading="lazy"></a>
         <time>2026-02-12 22:43</time>
         <p>Sony’s first State of Play stream of the year included an update on Mina the Hollower, the latest title from Shovel Knight studio Yacht Club Games. It’s now slated to arrive sometime this spring. The ...</p>
-      </article>
-      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
-        <div class="meta">
-          <span class="source" data-filter-source="Engadget">Engadget</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.engadget.com/gaming/playstation/kena-scars-of-kosmora-is-coming-out-later-this-year-224006963.html?src=rss" target="_blank" rel="noopener">Kena: Scars of Kosmora is coming out later this year</a></h2>
-        <a href="https://www.engadget.com/gaming/playstation/kena-scars-of-kosmora-is-coming-out-later-this-year-224006963.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2FKena-scars-of-kosmora.jpg&amp;resize=1400%2C787&amp;client=19f2b5e49a271b2bde77&amp;signature=b50415cb08edece8ed119625c0aae47e1305e429" alt="" loading="lazy"></a>
-        <time>2026-02-12 22:40</time>
-        <p>When it launched in 2021, Kena: Bridge of Spirits was an early example of the graphical power of the PS5 thanks to its Pixar-adjacent animation and over-the-top effects. Based on a surprise trailer at...</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -3426,6 +3425,17 @@ The post Not All RecSys Problems Are Created Equal appeared first on Towards Dat
         <time>2026-02-10 17:00</time>
         <p>A collage of outdoor images, a blue icon that say &quot;Ask Photos,&quot; and examples of Ask Photos prompts.</p>
       </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/can-high-temperature-superconductors-transform-the-power-infrastructure-of-datacenters/" target="_blank" rel="noopener">Can high-temperature superconductors transform the power infrastructure of datacenters?</a></h2>
+        <a href="https://azure.microsoft.com/en-us/blog/can-high-temperature-superconductors-transform-the-power-infrastructure-of-datacenters/" target="_blank" rel="noopener"><img class="thumb" src="https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/02/Judy-and-Erhan-1024x683.jpg" alt="" loading="lazy"></a>
+        <time>2026-02-10 16:00</time>
+        <p>As the demand for AI and data-intensive computing is on the rise, the need for efficient and reliable power delivery is critical.
+The post Can high-temperature superconductors transform the power infr...</p>
+      </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
           <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
@@ -3559,6 +3569,17 @@ The post The Machine Learning Lessons I’ve Learned Last Month appeared first o
         
         <time>2026-02-09 15:40</time>
         <p>任天堂Switch 2を入手しました。ゲームマシンを買うのはPlayStation 2以来、数十年ぶりと言ってよいでしょう。特別に欲しい理由があったわけではないのですが、メモリ価格の上昇でコンシューマー向けゲーム機も値上げするんだろうなと思...</p>
+      </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://blog.fabric.microsoft.com/en-us/blog/32624" target="_blank" rel="noopener">Five Reasons to attend SQLCon</a></h2>
+        
+        <time>2026-02-09 15:12</time>
+        <p>The SQL community is gathering in Atlanta this March for the first‑ever SQLCon, co‑located with FabCon, the Microsoft Fabric Community Conference, March 16-20.
+The post Five Reasons to attend SQLCon a...</p>
       </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
