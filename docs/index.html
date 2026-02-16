@@ -39,16 +39,17 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-02-16 21:33 UTC</div>
+      <div class="updated">Last updated: 2026-02-16 22:34 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (20)</summary>
+      <summary>Sources (21)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
         <button class="filter-btn source-btn" data-source="Apple Developer News">Apple Developer News</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -82,6 +83,7 @@
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
       <button class="filter-btn label-btn" data-label="meta">meta</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -89,6 +91,36 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
+        <div class="meta">
+          <span class="source" data-filter-source="Engadget">Engadget</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.engadget.com/gaming/call-of-duty-warzone-mobile-will-go-offline-on-april-17-222240967.html?src=rss" target="_blank" rel="noopener">Call of Duty: Warzone Mobile will go offline on April 17</a></h2>
+        <a href="https://www.engadget.com/gaming/call-of-duty-warzone-mobile-will-go-offline-on-april-17-222240967.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fcod_warzone_mobile.jpeg&amp;resize=1400%2C787&amp;client=19f2b5e49a271b2bde77&amp;signature=e5d0a1315f97c9ae51101b62b20683835dd648fd" alt="" loading="lazy"></a>
+        <time>2026-02-16 22:22</time>
+        <p>Call of Duty: Warzone Mobile will be no more this spring. According to Activision, servers will be taken offline for this mobile battle royale game on April 17, 2026. The shooter will remain available...</p>
+      </article>
+      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
+        <div class="meta">
+          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
+        </div>
+        <h2><a href="https://www.gizmodo.jp/2026/02/origin-of-life-elements.html" target="_blank" rel="noopener">地球外生命が「存在する」ための条件は、水＋酸素だけじゃなかった</a></h2>
+        <a href="https://www.gizmodo.jp/2026/02/origin-of-life-elements.html" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/gizmodo/dist/images/2026/02/16/shutterstock_390633025.png" alt="" loading="lazy"></a>
+        <time>2026-02-16 22:00</time>
+        <p>Image:Shutterstock長年にわたって、地球外生命探査は「水を追え」というシンプルな基準に基づいて進められてきました。水と酸素があれば、生命が誕生する可能性があると考えられてきたからです。でも、ETHチューリッヒの研究チームによる最新研究によると、水と酸素だけでは不十分かもしれないんですって。TheTimesofIndiaが伝えました。生命を決めるのは「地下の化学バランス」研究が注目す</p>
+      </article>
+      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
+        <div class="meta">
+          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://gigazine.net/news/20260217-final-days-louis-xiv/" target="_blank" rel="noopener">「太陽王」ルイ14世の絶頂期と晩年の衰えとは？</a></h2>
+        
+        <time>2026-02-16 22:00</time>
+        <p>わずか4歳で即位し、約70年にわたってフランス国王として君臨し続けたルイ14世は17世紀のフランス・ブルボン王朝の最盛期を築き、「太陽王」とも呼ばれています。そんなルイ14世の生活と晩年を、YouTubeチャンネルの「Nightshift – Kurzgesagt After Dark」がアニメーションで解説しています。続きを読む...</p>
+      </article>
       <article class="entry" data-source="AWS Blog" data-labels="tech cloud aws">
         <div class="meta">
           <span class="source" data-filter-source="AWS Blog">AWS Blog</span>
@@ -104,20 +136,43 @@
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://github.com/zachlatta/freeflow" target="_blank" rel="noopener">Show HN: Free Alternative to Wispr Flow, Superwhisper, and Monologue</a></h2>
+        <h2><a href="https://arxiv.org/abs/2602.12670" target="_blank" rel="noopener">Study: Self-generated Agent Skills are useless</a></h2>
         
-        <time>2026-02-16 21:10</time>
-        <p>Article URL: https://github.com/zachlatta/freeflow
-Comments URL: https://news.ycombinator.com/item?id=47040375
-Points: 14
-# Comments: 1</p>
+        <time>2026-02-16 21:15</time>
+        <p>Article URL: https://arxiv.org/abs/2602.12670
+Comments URL: https://news.ycombinator.com/item?id=47040430
+Points: 72
+# Comments: 36</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://news.ycombinator.com/item?id=47040268" target="_blank" rel="noopener">Turing Labs (YC W20) Is Hiring – GTM Sales Hacker</a></h2>
+        <h2><a href="https://apps.apple.com/us/app/wildex-identify-plants-animals/id6748092158" target="_blank" rel="noopener">Show HN: Wildex – we built Pokémon Go for real wildlife</a></h2>
+        
+        <time>2026-02-16 21:12</time>
+        <p>Dear HN,My wife and I both love nature and have always wanted a Pokémon go style app, to collect and learn about different species we find.All the usual species identifying apps were didn’t feel fun e...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://github.com/zachlatta/freeflow" target="_blank" rel="noopener">Show HN: Free Alternative to Wispr Flow, Superwhisper, and Monologue</a></h2>
+        
+        <time>2026-02-16 21:10</time>
+        <p>Article URL: https://github.com/zachlatta/freeflow
+Comments URL: https://news.ycombinator.com/item?id=47040375
+Points: 26
+# Comments: 9</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://news.ycombinator.com/item?id=47040268" target="_blank" rel="noopener">Turing Labs (YC W20) Is Hiring – Founding GTM Sales Hacker</a></h2>
         
         <time>2026-02-16 21:00</time>
         <p>Comments URL: https://news.ycombinator.com/item?id=47040268
@@ -144,8 +199,8 @@ Points: 0
         <time>2026-02-16 20:34</time>
         <p>Article URL: https://qntm.org/suicide
 Comments URL: https://news.ycombinator.com/item?id=47039966
-Points: 26
-# Comments: 19</p>
+Points: 51
+# Comments: 32</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -157,8 +212,8 @@ Points: 26
         <time>2026-02-16 20:23</time>
         <p>Article URL: https://www.lirbank.com/harnessing-postgres-race-conditions
 Comments URL: https://news.ycombinator.com/item?id=47039834
-Points: 23
-# Comments: 3</p>
+Points: 33
+# Comments: 15</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -190,8 +245,8 @@ Points: 23
         <time>2026-02-16 19:55</time>
         <p>Article URL: https://blog.sturdystatistics.com/posts/show_hn/
 Comments URL: https://news.ycombinator.com/item?id=47039478
-Points: 18
-# Comments: 2</p>
+Points: 32
+# Comments: 4</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -233,8 +288,8 @@ Points: 18
         <time>2026-02-16 18:54</time>
         <p>Article URL: https://essays.debugyourpain.com/p/you-are-not-just-your-brain
 Comments URL: https://news.ycombinator.com/item?id=47038731
-Points: 13
-# Comments: 4</p>
+Points: 24
+# Comments: 8</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -256,8 +311,8 @@ Points: 13
         <time>2026-02-16 18:44</time>
         <p>Article URL: https://notnotp.com/notes/use-protocols-not-services/
 Comments URL: https://news.ycombinator.com/item?id=47038588
-Points: 217
-# Comments: 59</p>
+Points: 238
+# Comments: 75</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -270,6 +325,19 @@ Points: 217
         <p>Article URL: https://www.smithsonianmag.com/innovation/this-14-year-old-is-using-origami-to-design-emergency-shelters-that-are-sturdy-cost-efficient-and-easy-to-deploy-180988179/
 Comments URL: https:/...</p>
       </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="http://papers.voltropy.com/LCM" target="_blank" rel="noopener">LCM: Lossless Context Management [pdf]</a></h2>
+        
+        <time>2026-02-16 18:31</time>
+        <p>Article URL: http://papers.voltropy.com/LCM
+Comments URL: https://news.ycombinator.com/item?id=47038411
+Points: 3
+# Comments: 0</p>
+      </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
           <span class="source" data-filter-source="Engadget">Engadget</span>
@@ -279,19 +347,6 @@ Comments URL: https:/...</p>
         <a href="https://www.engadget.com/apps/apples-podcasts-app-now-supports-http-live-streaming-video-technology-182605460.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2026-02%2F1d5ec450-0b5d-11f1-8ef7-2921d32e2856&amp;resize=1400%2C709&amp;client=19f2b5e49a271b2bde77&amp;signature=247ee7917437779d2ef76552654e511ffce71985" alt="" loading="lazy"></a>
         <time>2026-02-16 18:26</time>
         <p>Apple is planning a major update for its Podcasts app. The app now supports the company&#x27;s HTTP Live Streaming (HLS) video technology. Previously, it only streamed video in various formats like MOV, MP...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://jkap.io/token-anxiety-or-a-slot-machine-by-any-other-name/" target="_blank" rel="noopener">&quot;Token anxiety&quot;, a slot machine by any other name</a></h2>
-        
-        <time>2026-02-16 18:23</time>
-        <p>Article URL: https://jkap.io/token-anxiety-or-a-slot-machine-by-any-other-name/
-Comments URL: https://news.ycombinator.com/item?id=47038318
-Points: 66
-# Comments: 44</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -313,21 +368,8 @@ Points: 66
         <time>2026-02-16 18:19</time>
         <p>Article URL: https://blog.chrislewis.au/the-long-tail-of-llm-assisted-decompilation/
 Comments URL: https://news.ycombinator.com/item?id=47038270
-Points: 10
-# Comments: 0</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://joshcollinsworth.com/blog/sloptimism" target="_blank" rel="noopener">AI optimism is a class privilege</a></h2>
-        
-        <time>2026-02-16 18:05</time>
-        <p>Article URL: https://joshcollinsworth.com/blog/sloptimism
-Comments URL: https://news.ycombinator.com/item?id=47038134
-Points: 36
-# Comments: 8</p>
+Points: 22
+# Comments: 4</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -339,8 +381,8 @@ Points: 36
         <time>2026-02-16 18:05</time>
         <p>Article URL: https://tadaima.bearblog.dev/privilege-is-bad-grammar/
 Comments URL: https://news.ycombinator.com/item?id=47038125
-Points: 116
-# Comments: 101</p>
+Points: 137
+# Comments: 131</p>
       </article>
       <article class="entry" data-source="AWS Blog" data-labels="tech cloud aws">
         <div class="meta">
@@ -362,8 +404,8 @@ Points: 116
         <time>2026-02-16 17:08</time>
         <p>Article URL: https://webmachinelearning.github.io/webmcp/
 Comments URL: https://news.ycombinator.com/item?id=47037501
-Points: 104
-# Comments: 52</p>
+Points: 115
+# Comments: 61</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -385,7 +427,7 @@ Points: 104
         <time>2026-02-16 16:55</time>
         <p>Article URL: https://www.youtube.com/watch?v=97f0nfU5Px0
 Comments URL: https://news.ycombinator.com/item?id=47037313
-Points: 68
+Points: 80
 # Comments: 3</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
@@ -408,7 +450,7 @@ Points: 68
         <time>2026-02-16 16:22</time>
         <p>Article URL: https://telephoneworld.org/long-distance-companies/att-long-distance-network/history-of-att-long-lines/
 Comments URL: https://news.ycombinator.com/item?id=47036921
-Points: 47
+Points: 53
 # Comments: ...</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
@@ -521,18 +563,6 @@ Points: 47
         <time>2026-02-16 14:51</time>
         <p>Presidents’ Day is a great time to buy appliances, mattresses and furniture as they are often on sale for the holiday. Tech also gets discounted around this time, but you have to do a bit more digging...</p>
       </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.rockpapershotgun.com/good-news-uk-discord-users-were-part-of-a-peter-thiel-linked-data-collection-experiment" target="_blank" rel="noopener">UK Discord users were part of a Peter Thiel-linked data collection experiment</a></h2>
-        
-        <time>2026-02-16 14:48</time>
-        <p>Article URL: https://www.rockpapershotgun.com/good-news-uk-discord-users-were-part-of-a-peter-thiel-linked-data-collection-experiment
-Comments URL: https://news.ycombinator.com/item?id=47035679
-Points...</p>
-      </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
           <span class="source" data-filter-source="Engadget">Engadget</span>
@@ -553,8 +583,8 @@ Points...</p>
         <time>2026-02-16 14:39</time>
         <p>Article URL: https://blog.dmcc.io/journal/2026-bluetooth-privacy-bluehood/
 Comments URL: https://news.ycombinator.com/item?id=47035560
-Points: 223
-# Comments: 81</p>
+Points: 247
+# Comments: 87</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -1357,16 +1387,6 @@ OCI 生成AIサービス（Generative AI Service）に、AI Guardrails for On-De
         <time>2026-02-16 02:18</time>
         <p>大規模言語モデル(LLM)をエージェントとして常駐させるためのオープンフレームワーク「OpenClaw」の開発者として知られるピーター・スタインバーガー氏がOpenAIに参加することを発表しました。OpenClawはオープンで独立した組織による運営に移行し、オープンソースプロジェクトとして存続します。続きを読む...</p>
       </article>
-      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
-        <div class="meta">
-          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
-        </div>
-        <h2><a href="https://www.gizmodo.jp/2026/02/yps-s800.html" target="_blank" rel="noopener">仕事に趣味に、休憩に。ワークチェア「YPS-S800」は2月27日販売スタート</a></h2>
-        <a href="https://www.gizmodo.jp/2026/02/yps-s800.html" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/gizmodo/dist/images/2026/02/03/samune_yps.jpg" alt="" loading="lazy"></a>
-        <time>2026-02-16 02:00</time>
-        <p>Photo:カイル自宅で仕事をすることが増えてきた昨今、自宅の環境の見直しを考えている方も多いのではないでしょうか。PCやキーボード、マウスといったツールのアップデートも大切ですが、一番重要なものを忘れていませんか？そう、長時間座っていても疲れない、ワークチェアです。ワークチェアは、座り心地がよくて多機能なものが理想的。しかし、憧れのワークチェアは高価で、なかなか手が出ないという人も多いことでしょ</p>
-      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -1959,16 +1979,6 @@ Gemini...</p>
         
         <time>2026-02-15 09:32</time>
         <p>海賊版サイトのAnna’s ArchiveがSpotifyから抜き出した2億5600万曲の楽曲情報を公開したのに続き、楽曲そのもののデータの公開もひっそりと開始していたことが明らかになりました。続きを読む...</p>
-      </article>
-      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
-        <div class="meta">
-          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://gigazine.net/news/20260215-nothing-phone-3a-lite-appearance/" target="_blank" rel="noopener">Nothing初のエントリー向けスマホ「Phone (3a) Lite」の外観はこんな感じ</a></h2>
-        
-        <time>2026-02-15 09:23</time>
-        <p>Nothing初のエントリークラス機種「Phone (3a) Lite」が2026年1月15日に登場しました。Nothingならではのオシャレな外装やUIを維持しつつLiteなモデルに仕上がっているとのこと。そんなPhone (3a) LiteがGIGAZINE編集部に届いたので、まずは外観を詳しくチェックしてみました。続きを読む...</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -3109,16 +3119,6 @@ https://github.com/otomachiiii/DevSonar
         <time>2026-02-13 11:00</time>
         <p>Going one or two generations back in Samsung&#x27;s Q990 soundbar series is the smartest way to get insane home theater sound.</p>
       </article>
-      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
-        <div class="meta">
-          <span class="source" data-filter-source="Engadget">Engadget</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.engadget.com/gaming/theres-a-new-john-wick-game-on-the-way-103900064.html?src=rss" target="_blank" rel="noopener">There&#x27;s a new John Wick game on the way</a></h2>
-        <a href="https://www.engadget.com/gaming/theres-a-new-john-wick-game-on-the-way-103900064.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fjohn-wick_2531.jpg&amp;resize=1400%2C618&amp;client=19f2b5e49a271b2bde77&amp;signature=28ab5d841c55e0195ebc4104535f4d798cba4a4e" alt="" loading="lazy"></a>
-        <time>2026-02-13 10:39</time>
-        <p>There&#x27;s a new AAA John Wick game coming with Keanu Reaves portraying the main character both in voice and likeness, Lionsgate and Saber Interactive announced. Currently untitled, it&#x27;s in development f...</p>
-      </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
           <span class="source" data-filter-source="Wired">Wired</span>
@@ -3279,6 +3279,17 @@ The post Welcome to the ...</p>
         <time>2026-02-12 16:13</time>
         <p>Gemini 3 Deep Think logo</p>
       </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/" target="_blank" rel="noopener">The data behind the design: How Pantone built agentic AI with an AI-ready database</a></h2>
+        <a href="https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/" target="_blank" rel="noopener"><img class="thumb" src="https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/02/Pantone-blog-image-3-1024x543.webp" alt="" loading="lazy"></a>
+        <time>2026-02-12 16:00</time>
+        <p>Learn about an AI-powered experience launched as a minimum viable product to gather real user feedback and iterate rapidly.
+The post The data behind the design: How Pantone built agentic AI with an AI...</p>
+      </article>
       <article class="entry" data-source="Publickey" data-labels="tech dev japan">
         <div class="meta">
           <span class="source" data-filter-source="Publickey">Publickey</span>
@@ -3396,6 +3407,16 @@ The post AI in Multiple GPUs: Understanding the Host and Device Paradigm appeare
         <p>In January, we experienced two incidents that resulted in degraded performance across GitHub services.
 The post GitHub availability report: January 2026 appeared first on The GitHub Blog.</p>
       </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/agentic-cloud-operations-a-new-way-to-run-the-cloud/" target="_blank" rel="noopener">Agentic cloud operations: A new way to run the cloud</a></h2>
+        <a href="https://azure.microsoft.com/en-us/blog/agentic-cloud-operations-a-new-way-to-run-the-cloud/" target="_blank" rel="noopener"><img class="thumb" src="https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/02/Screenshot-2026-02-10-172957.webp" alt="" loading="lazy"></a>
+        <time>2026-02-11 22:00</time>
+        <p>While today’s cloud delivers extraordinary flexibility, the rapid growth of modern applications and AI workloads has introduced levels of scale and complexity that traditional operations were not desi...</p>
+      </article>
       <article class="entry" data-source="Google Blog - Technology" data-labels="tech google">
         <div class="meta">
           <span class="source" data-filter-source="Google Blog - Technology">Google Blog - Technology</span>
@@ -3487,6 +3508,17 @@ The post Not All RecSys Problems Are Created Equal appeared first on Towards Dat
         <a href="https://blog.google/products-and-platforms/products/photos/ask-button-ask-photos-tips/" target="_blank" rel="noopener"><img class="thumb" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/2025-Travel-Trends_hero.max-600x600.format-webp.webp" alt="" loading="lazy"></a>
         <time>2026-02-10 17:00</time>
         <p>A collage of outdoor images, a blue icon that say &quot;Ask Photos,&quot; and examples of Ask Photos prompts.</p>
+      </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/can-high-temperature-superconductors-transform-the-power-infrastructure-of-datacenters/" target="_blank" rel="noopener">Can high-temperature superconductors transform the power infrastructure of datacenters?</a></h2>
+        <a href="https://azure.microsoft.com/en-us/blog/can-high-temperature-superconductors-transform-the-power-infrastructure-of-datacenters/" target="_blank" rel="noopener"><img class="thumb" src="https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/02/Judy-and-Erhan-1024x683.jpg" alt="" loading="lazy"></a>
+        <time>2026-02-10 16:00</time>
+        <p>As the demand for AI and data-intensive computing is on the rise, the need for efficient and reliable power delivery is critical.
+The post Can high-temperature superconductors transform the power infr...</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
