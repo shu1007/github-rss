@@ -39,17 +39,18 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-02-20 21:30 UTC</div>
+      <div class="updated">Last updated: 2026-02-20 22:31 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (20)</summary>
+      <summary>Sources (21)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Amazon Science">Amazon Science</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
         <button class="filter-btn source-btn" data-source="Apple Developer News">Apple Developer News</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -81,6 +82,7 @@
       <button class="filter-btn label-btn" data-label="gadget">gadget</button>
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -88,6 +90,48 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="The Verge" data-labels="tech news culture">
+        <div class="meta">
+          <span class="source" data-filter-source="The Verge">The Verge</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
+        </div>
+        <h2><a href="https://www.theverge.com/23769068/best-ebook-readers" target="_blank" rel="noopener">The best e-reader to buy right now</a></h2>
+        <a href="https://www.theverge.com/23769068/best-ebook-readers" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25832350/257503_e_book_reader_CVirginia_.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
+        <time>2026-02-20 22:19</time>
+        <p>Any ebook reader will let you cram a Beauty and the Beast-sized library’s worth of books in your pocket, but so will your phone. An ebook reader offers a more book-like reading experience, with fewer ...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://arstechnica.com/tech-policy/2026/02/fcc-asks-stations-for-pro-america-programming-like-daily-pledge-of-allegiance/" target="_blank" rel="noopener">FCC asks stations for &quot;pro-America&quot; programming, like daily Pledge of Allegiance</a></h2>
+        
+        <time>2026-02-20 22:02</time>
+        <p>Article URL: https://arstechnica.com/tech-policy/2026/02/fcc-asks-stations-for-pro-america-programming-like-daily-pledge-of-allegiance/
+Comments URL: https://news.ycombinator.com/item?id=47094635
+Poin...</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/government-docs-reveal-new-details-about-tesla-and-waymo-robotaxi-programs/" target="_blank" rel="noopener">Government Docs Reveal New Details About Tesla and Waymo Robotaxis’ Human Babysitters</a></h2>
+        <a href="https://www.wired.com/story/government-docs-reveal-new-details-about-tesla-and-waymo-robotaxi-programs/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/699786699a5911605dfcc86d/master/pass/gear-robotaxi-2220531277.jpg" alt="" loading="lazy"></a>
+        <time>2026-02-20 21:53</time>
+        <p>Self-driving-vehicle companies are revealing new details about their safety-critical “remote assistance” programs—but questions remain.</p>
+      </article>
+      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
+        <div class="meta">
+          <span class="source" data-filter-source="Engadget">Engadget</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.engadget.com/gaming/xbox/xbox-head-phil-spencer-is-leaving-microsoft-212838419.html?src=rss" target="_blank" rel="noopener">Xbox head Phil Spencer is leaving Microsoft</a></h2>
+        <a href="https://www.engadget.com/gaming/xbox/xbox-head-phil-spencer-is-leaving-microsoft-212838419.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-02%2F482f2787-a7ab-4d29-a848-d67cd7627360&amp;resize=1400%2C933&amp;client=19f2b5e49a271b2bde77&amp;signature=b4b1c97cf3d24bc3f6a2ec12509570deabfd245e" alt="" loading="lazy"></a>
+        <time>2026-02-20 21:52</time>
+        <p>Phil Spencer, CEO of Microsoft Gaming, is retiring, Satya Nadella has announced. Asha Sharma, the President of Microsoft&#x27;s CoreAI division is taking over Spencer&#x27;s role, while Sarah Bond, the current ...</p>
+      </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
           <span class="source" data-filter-source="The Verge">The Verge</span>
@@ -103,20 +147,23 @@
           <span class="source" data-filter-source="Engadget">Engadget</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.engadget.com/gaming/xbox/xbox-head-phil-spencer-is-leaving-microsoft-212838419.html?src=rss" target="_blank" rel="noopener">Xbox head Phil Spencer is leaving Microsoft</a></h2>
-        <a href="https://www.engadget.com/gaming/xbox/xbox-head-phil-spencer-is-leaving-microsoft-212838419.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-02%2F482f2787-a7ab-4d29-a848-d67cd7627360&amp;resize=1400%2C933&amp;client=19f2b5e49a271b2bde77&amp;signature=b4b1c97cf3d24bc3f6a2ec12509570deabfd245e" alt="" loading="lazy"></a>
-        <time>2026-02-20 21:28</time>
-        <p>Phil Spencer, CEO of Microsoft Gaming, is retiring, Satya Nadella has announced. Asha Sharma, the President of Microsoft&#x27;s CoreAI division is taking over Spencer&#x27;s role, while Sarah Bond, the current ...</p>
-      </article>
-      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
-        <div class="meta">
-          <span class="source" data-filter-source="Engadget">Engadget</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://www.engadget.com/mobile/smartphones/samsung-galaxy-unpacked-2026-the-galaxy-s26-and-other-devices-that-might-launch-on-february-25-130000063.html?src=rss" target="_blank" rel="noopener">Samsung Galaxy Unpacked 2026: The Galaxy S26 and other devices that might launch on February 25</a></h2>
         <a href="https://www.engadget.com/mobile/smartphones/samsung-galaxy-unpacked-2026-the-galaxy-s26-and-other-devices-that-might-launch-on-february-25-130000063.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2025-01%2F59c95a60-d8d0-11ef-8ffd-c42040670137&amp;resize=1400%2C840&amp;client=19f2b5e49a271b2bde77&amp;signature=c65d6b9fceb8f98b3eebced2040809953008ad2a" alt="" loading="lazy"></a>
         <time>2026-02-20 21:27</time>
         <p>Samsung’s 2025 was filled with new foldables, an ultra-thin new form factor and the launch of Google&#x27;s XR platform. After making some announcements at CES 2026, the company has announced its first Gal...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://words.filippo.io/dependabot/" target="_blank" rel="noopener">Turn Dependabot Off</a></h2>
+        
+        <time>2026-02-20 21:25</time>
+        <p>Article URL: https://words.filippo.io/dependabot/
+Comments URL: https://news.ycombinator.com/item?id=47094192
+Points: 88
+# Comments: 18</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -135,7 +182,7 @@ Comments UR...</p>
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/they-bet-against-trumps-tariffs-now-they-stand-to-make-millions/" target="_blank" rel="noopener">They Bet Against Trump&#x27;s Tariffs. Now They Stand to Make Millions</a></h2>
+        <h2><a href="https://www.wired.com/story/they-bet-against-trumps-tariffs-now-they-stand-to-make-millions/" target="_blank" rel="noopener">They Bet Against Trump’s Tariffs. Now They Stand to Make Millions</a></h2>
         <a href="https://www.wired.com/story/they-bet-against-trumps-tariffs-now-they-stand-to-make-millions/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/6998b7fc90ce1a01f1ba1ed5/master/pass/They-Bet-Against-Trumps-Tariffs-Now-They-Stand-to-Make-Millions-Business-2207587877.jpg" alt="" loading="lazy"></a>
         <time>2026-02-20 21:05</time>
         <p>After the US Supreme Court struck down President Donald Trump’s tariff regime, investment firms are in line for a whopping return on a niche trade.</p>
@@ -180,8 +227,8 @@ Comments UR...</p>
         <time>2026-02-20 20:47</time>
         <p>Article URL: https://openscan.eu/pages/scan-gallery
 Comments URL: https://news.ycombinator.com/item?id=47093724
-Points: 8
-# Comments: 0</p>
+Points: 39
+# Comments: 1</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -213,7 +260,7 @@ Points: 8
         <time>2026-02-20 20:39</time>
         <p>Article URL: https://blog.trailofbits.com/2023/02/21/vscode-extension-escape-vulnerability/
 Comments URL: https://news.ycombinator.com/item?id=47093604
-Points: 4
+Points: 5
 # Comments: 0</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
@@ -286,16 +333,6 @@ Points: 4
         <time>2026-02-20 20:03</time>
         <p>Homeland Security aims to combine its face and fingerprint systems into one big biometric platform—after dismantling centralized privacy reviews and key limits on face recognition.</p>
       </article>
-      <article class="entry" data-source="The Verge" data-labels="tech news culture">
-        <div class="meta">
-          <span class="source" data-filter-source="The Verge">The Verge</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
-        </div>
-        <h2><a href="https://www.theverge.com/gadgets/815676/sony-playstation-dualsense-edge-controller-refurbished-deal-sale" target="_blank" rel="noopener">You can save $30 on Sony’s DualSense Edge controller by buying refurbished</a></h2>
-        <a href="https://www.theverge.com/gadgets/815676/sony-playstation-dualsense-edge-controller-refurbished-deal-sale" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24374437/236487_Sony_DualSense_Edge_AKrales_0209.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
-        <time>2026-02-20 19:55</time>
-        <p>If the PlayStation 5 is your console of choice —&amp;#160;and you’re not satisfied with the DualSense gamepad it comes with — the DualSense Edge may be what you’re looking for. Luckily, if its high asking...</p>
-      </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
           <span class="source" data-filter-source="Wired">Wired</span>
@@ -336,21 +373,21 @@ Points: 4
         <time>2026-02-20 19:19</time>
         <p>Article URL: https://dixken.de/blog/i-found-a-vulnerability-they-found-a-lawyer
 Comments URL: https://news.ycombinator.com/item?id=47092578
-Points: 107
-# Comments: 66</p>
+Points: 168
+# Comments: 84</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://testflows.com/blog/testing-super-mario-using-a-behavior-model-autonomously-part1/" target="_blank" rel="noopener">Testing Super Mario Using a Behavior Model Autonomously</a></h2>
+        <h2><a href="https://juno-labs.com/blogs/every-company-building-your-ai-assistant-is-an-ad-company" target="_blank" rel="noopener">Every company building your AI assistant is now an ad company</a></h2>
         
-        <time>2026-02-20 19:04</time>
-        <p>Article URL: https://testflows.com/blog/testing-super-mario-using-a-behavior-model-autonomously-part1/
-Comments URL: https://news.ycombinator.com/item?id=47092348
-Points: 22
-# Comments: 5</p>
+        <time>2026-02-20 18:55</time>
+        <p>Article URL: https://juno-labs.com/blogs/every-company-building-your-ai-assistant-is-an-ad-company
+Comments URL: https://news.ycombinator.com/item?id=47092203
+Points: 28
+# Comments: 9</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -412,8 +449,8 @@ Points: 22
         <time>2026-02-20 18:25</time>
         <p>Article URL: https://pilk.website/3/facebook-is-absolutely-cooked
 Comments URL: https://news.ycombinator.com/item?id=47091748
-Points: 375
-# Comments: 258</p>
+Points: 459
+# Comments: 303</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
@@ -446,8 +483,8 @@ The post Donkeys, Not Unicorns appeared first on Towards Data Science.</p>
         <time>2026-02-20 18:14</time>
         <p>Article URL: https://www.neuroai.science/p/blue-light-filters-dont-work
 Comments URL: https://news.ycombinator.com/item?id=47091606
-Points: 50
-# Comments: 80</p>
+Points: 71
+# Comments: 110</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -459,8 +496,8 @@ Points: 50
         <time>2026-02-20 18:11</time>
         <p>Article URL: https://twitter.com/peterjliu/status/2024901585806225723
 Comments URL: https://news.ycombinator.com/item?id=47091557
-Points: 8
-# Comments: 0</p>
+Points: 21
+# Comments: 13</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -472,8 +509,8 @@ Points: 8
         <time>2026-02-20 18:03</time>
         <p>Article URL: https://www.anthropic.com/news/claude-code-security
 Comments URL: https://news.ycombinator.com/item?id=47091469
-Points: 69
-# Comments: 26</p>
+Points: 82
+# Comments: 29</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -485,8 +522,8 @@ Points: 69
         <time>2026-02-20 17:58</time>
         <p>Article URL: https://f-droid.org/2026/02/20/twif.html
 Comments URL: https://news.ycombinator.com/item?id=47091419
-Points: 666
-# Comments: 261</p>
+Points: 774
+# Comments: 319</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -518,8 +555,8 @@ Points: 666
         <time>2026-02-20 17:34</time>
         <p>Article URL: https://taylor.town/scrapscript-000
 Comments URL: https://news.ycombinator.com/item?id=47091071
-Points: 70
-# Comments: 6</p>
+Points: 75
+# Comments: 8</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -684,8 +721,8 @@ Points: 0
         <time>2026-02-20 15:27</time>
         <p>Article URL: https://www.bbc.com/news/live/c0l9r67drg7t
 Comments URL: https://news.ycombinator.com/item?id=47089213
-Points: 1017
-# Comments: 819</p>
+Points: 1084
+# Comments: 890</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -737,8 +774,8 @@ Points: 1017
         <time>2026-02-20 14:48</time>
         <p>Article URL: https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/
 Comments URL: https://news.ycombinator.com/item?id=47088685
-Points: 279
-# Comments: 175</p>
+Points: 297
+# Comments: 193</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -760,7 +797,7 @@ Points: 279
         <time>2026-02-20 14:03</time>
         <p>Article URL: https://spencer.wtf/2026/02/20/cleaning-up-merged-git-branches-a-one-liner-from-the-cias-leaked-dev-docs.html
 Comments URL: https://news.ycombinator.com/item?id=47088181
-Points: 537
+Points: 560
 # Com...</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
@@ -813,8 +850,8 @@ Points: 537
         <time>2026-02-20 13:51</time>
         <p>Article URL: https://github.com/ggml-org/llama.cpp/discussions/19759
 Comments URL: https://news.ycombinator.com/item?id=47088037
-Points: 574
-# Comments: 137</p>
+Points: 604
+# Comments: 142</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -852,19 +889,6 @@ Qwen3 SwallowのQwen3-Swallow-30B-A3B-RL-v0.2を、Bedrockのカスタムモデ�
         <time>2026-02-20 13:30</time>
         <p>The guide to automated improvement of scientific and industrial repositories using open-source AI agents
 The post An End-to-End Guide to Beautifying Your Open-Source Repo with Agentic AI appeared firs...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.bleepingcomputer.com/news/security/paypal-discloses-data-breach-exposing-users-personal-information/" target="_blank" rel="noopener">PayPal discloses data breach that exposed user info for 6 months</a></h2>
-        
-        <time>2026-02-20 13:22</time>
-        <p>Article URL: https://www.bleepingcomputer.com/news/security/paypal-discloses-data-breach-exposing-users-personal-information/
-Comments URL: https://news.ycombinator.com/item?id=47087719
-Points: 226
-# ...</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -996,19 +1020,6 @@ It seems likely th...</p>
         
         <time>2026-02-20 12:15</time>
         <p>There was a backlash when No 10 invited online content creators inside its doors. But in a fast-changing media landscape, this solves two problems at onceLast year, No 10 took an unprecedented step: i...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.ycombinator.com/companies/hyperbound/jobs/UCvdGiu-a-full-stack-engineer-with-something-to-prove" target="_blank" rel="noopener">Hyperbound (YC S23, Series A) needs a Engineer with something to prove</a></h2>
-        
-        <time>2026-02-20 12:01</time>
-        <p>Article URL: https://www.ycombinator.com/companies/hyperbound/jobs/UCvdGiu-a-full-stack-engineer-with-something-to-prove
-Comments URL: https://news.ycombinator.com/item?id=47086946
-Points: 0
-# Comment...</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
@@ -3033,16 +3044,6 @@ Auth.js を使えばサインアップもログインも関数1つで終わる�
         <time>2026-02-18 15:36</time>
         <p>企業向けチャットサービスのSlackは、リアルタイムサーチAPIと、生成AIがSlackを操作できる「Slack MCP Server」の提供を発表しました。 For every type of problem and task, ther...</p>
       </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/best-google-pixel-phone/" target="_blank" rel="noopener">The Best Google Pixel Phones of 2026, Tested and Reviewed</a></h2>
-        <a href="https://www.wired.com/story/best-google-pixel-phone/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/68a7a913ababd253d6b1768f/master/pass/Google%20Pixel%2010%20Series%20SOURCE%20Julian%20Chokkattu.jpg" alt="" loading="lazy"></a>
-        <time>2026-02-18 15:30</time>
-        <p>Here’s a guide to all the models—plus Pixel case recommendations and smart software tricks to try.</p>
-      </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
@@ -3390,6 +3391,17 @@ TBS「ラヴィット!」のミステリー企画で、AI版「ビビる大木�
         <p>Everything you need to know to get started
 The post Building a LangGraph Agent from Scratch appeared first on Towards Data Science.</p>
       </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-sonnet-4-6-in-microsoft-foundry-frontier-performance-for-scale/4494873" target="_blank" rel="noopener">Claude Sonnet 4.6 in Microsoft Foundry-Frontier Performance for Scale</a></h2>
+        
+        <time>2026-02-17 20:11</time>
+        <p>Claude Sonnet 4.6 is available today in Microsoft Foundry, and it is designed for teams who want frontier performance across coding, agents, and professional work at scale.
+The post Claude Sonnet 4.6 ...</p>
+      </article>
       <article class="entry" data-source="Android Developers" data-labels="tech dev android">
         <div class="meta">
           <span class="source" data-filter-source="Android Developers">Android Developers</span>
@@ -3441,6 +3453,16 @@ The post Iron Triangles: Powerful Tools for Analyzing Trade-Offs in AI Product D
         <time>2026-02-17 19:00</time>
         <p>Learn how The GitHub Secure Open Source Fund helped 67 critical AI‑stack projects accelerate fixes, strengthen ecosystems, and advance open source resilience.
 The post Securing the AI software supply ...</p>
+      </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/azure-reliability-resiliency-and-recoverability-build-continuity-by-design/" target="_blank" rel="noopener">Azure reliability, resiliency, and recoverability: Build continuity by design</a></h2>
+        
+        <time>2026-02-17 16:00</time>
+        <p>Modern cloud systems are expected to deliver more than uptime. Customers expect consistent performance, the ability to withstand disruption, and confidence that recovery is predictable and intentional...</p>
       </article>
       <article class="entry" data-source="Android Developers" data-labels="tech dev android">
         <div class="meta">
