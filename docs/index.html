@@ -39,17 +39,18 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-03-01 09:34 UTC</div>
+      <div class="updated">Last updated: 2026-03-01 10:30 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (21)</summary>
+      <summary>Sources (22)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Amazon Science">Amazon Science</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
         <button class="filter-btn source-btn" data-source="Apple Developer News">Apple Developer News</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -83,6 +84,7 @@
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
       <button class="filter-btn label-btn" data-label="meta">meta</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -90,6 +92,61 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/the-piracy-problem-streaming-platforms-cant-solve/" target="_blank" rel="noopener">The Piracy Problem Streaming Platforms Can’t Solve</a></h2>
+        <a href="https://www.wired.com/story/the-piracy-problem-streaming-platforms-cant-solve/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/69a22d897c6ac831ef25ac5a/master/pass/Streaming_WiredME_Web-Lead2.jpg" alt="" loading="lazy"></a>
+        <time>2026-03-01 10:00</time>
+        <p>In parts of the Middle East and North Africa, a patchwork of sanctions, payment failures, and licensing gaps pushes people into piracy networks.</p>
+      </article>
+      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
+        <div class="meta">
+          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
+        </div>
+        <h2><a href="https://www.gizmodo.jp/2026/03/why-this-part-of-antarctica-bleeds-blood-red.html" target="_blank" rel="noopener">南極にある「血の滝」の謎が解明される</a></h2>
+        <a href="https://www.gizmodo.jp/2026/03/why-this-part-of-antarctica-bleeds-blood-red.html" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/gizmodo/dist/images/2026/02/26/blood-falls-peter-rejcek-1600x10.jpg" alt="" loading="lazy"></a>
+        <time>2026-03-01 10:00</time>
+        <p>Credit:NationalScienceFoundation/PeterRejcekviaWikimediaCommons100年以上解けなかった謎。1911年、オーストラリアの地質学者トーマス・グリフィス・テイラーは、南極の東南極の先端に血のようなものが流れているのを発見しました。これは「血の滝」と呼ばれていますが、本物の血液が流れているわけではありません。研究で、この赤色は酸化鉄によるもの</p>
+      </article>
+      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
+        <div class="meta">
+          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://gigazine.net/news/20260301-ai-opposing-pollution/" target="_blank" rel="noopener">AIがガス機器による大気汚染を削減する規制案に大量の反対意見を送信していたことが判明</a></h2>
+        
+        <time>2026-03-01 10:00</time>
+        <p>カリフォルニア州の規制当局はスモッグを形成する主な汚染物質を制限するため、一部のガス暖炉やガス給湯器の販売を段階的に廃止する規制案を2025年6月に発表しました。結果として数万通もの反対意見が殺到したこともあり規制案は阻止されましたが、反対意見のうち2万件以上が同じ企業によって送られたAIを活用したキャンペーンであったことが判明しました。続きを読む...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://kuber.studio/" target="_blank" rel="noopener">Show HN: Terminal-Style Portfolio on the Internet</a></h2>
+        
+        <time>2026-03-01 09:26</time>
+        <p>Posted about this last year, since then learned a lot, changed a lot and can still say it&#x27;s the best Terminal-Style Portfolio Website on The Internet
+
+Comments URL: https://news.ycombinator.com/item?i...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://adlrocha.substack.com/p/adlrocha-intelligence-is-a-commodity" target="_blank" rel="noopener">Intelligence is a commodity. Context is the real AI Moat</a></h2>
+        
+        <time>2026-03-01 09:04</time>
+        <p>Article URL: https://adlrocha.substack.com/p/adlrocha-intelligence-is-a-commodity
+Comments URL: https://news.ycombinator.com/item?id=47205009
+Points: 7
+# Comments: 0</p>
+      </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
           <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
@@ -99,6 +156,19 @@
         <a href="https://www.gizmodo.jp/2026/03/keyboard_physical.html" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/gizmodo/dist/images/2026/02/26/Clicks.jpg" alt="" loading="lazy"></a>
         <time>2026-03-01 09:00</time>
         <p>Image:Clicks人間てホントにわがまま。その当時は世間が騒いでいたスマホの画面タッチですが、いまや当たり前になったことで目新しさがなくなり飽きてしまったのか、物理キーボードに注目が集まっています。わからなくもないです。だって、ケースとしての役割を果たしながらタイピングの感触が味わえるんですから。スマホでも物理キーボードを使いたいImage:Clicks長い文章をスクリーンのタッチ操作で入力</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://mlu-explain.github.io/decision-tree/" target="_blank" rel="noopener">Decision trees – the unreasonable power of nested decision rules</a></h2>
+        
+        <time>2026-03-01 08:55</time>
+        <p>Article URL: https://mlu-explain.github.io/decision-tree/
+Comments URL: https://news.ycombinator.com/item?id=47204964
+Points: 32
+# Comments: 1</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -130,8 +200,8 @@
         <time>2026-03-01 07:36</time>
         <p>Article URL: https://claude.com/import-memory
 Comments URL: https://news.ycombinator.com/item?id=47204571
-Points: 100
-# Comments: 56</p>
+Points: 125
+# Comments: 75</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -143,8 +213,8 @@ Points: 100
         <time>2026-03-01 07:35</time>
         <p>Article URL: https://modernaicourse.org
 Comments URL: https://news.ycombinator.com/item?id=47204559
-Points: 31
-# Comments: 6</p>
+Points: 45
+# Comments: 9</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -316,8 +386,8 @@ Robots：AIエージェントを...</p>
         <time>2026-03-01 02:09</time>
         <p>Article URL: https://dl.acm.org/doi/10.1145/3624725
 Comments URL: https://news.ycombinator.com/item?id=47202864
-Points: 29
-# Comments: 10</p>
+Points: 32
+# Comments: 13</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -339,19 +409,6 @@ Points: 29
         <time>2026-03-01 02:00</time>
         <p>イングランドのプロサッカーリーグは1部相当の「プレミアリーグ」が有名ですが、2部から4部に相当する「EFL」も存在しており、EFLは1888年に開幕した世界最古のリーグ戦としても知られています。そんなEFLがポケモン30周年を祝い、所属クラブのエンブレムをポケモンモチーフのものに変更し、Instagram上に投稿しました。続きを読む...</p>
       </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://9to5google.com/2026/02/27/samsung-galaxy-update-android-recovery-menu-removed/" target="_blank" rel="noopener">Samsung Galaxy update removes Android recovery menu tools, including sideloading</a></h2>
-        
-        <time>2026-03-01 01:59</time>
-        <p>Article URL: https://9to5google.com/2026/02/27/samsung-galaxy-update-android-recovery-menu-removed/
-Comments URL: https://news.ycombinator.com/item?id=47202808
-Points: 118
-# Comments: 28</p>
-      </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
           <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
@@ -372,8 +429,8 @@ Points: 118
         <time>2026-03-01 01:39</time>
         <p>Article URL: http://karpathy.github.io/2026/02/12/microgpt/
 Comments URL: https://news.ycombinator.com/item?id=47202708
-Points: 769
-# Comments: 125</p>
+Points: 833
+# Comments: 143</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -494,8 +551,8 @@ Points: 769
         <time>2026-02-28 22:19</time>
         <p>Article URL: https://dl.acm.org/doi/fullHtml/10.1145/238386.238611
 Comments URL: https://news.ycombinator.com/item?id=47200904
-Points: 262
-# Comments: 161</p>
+Points: 267
+# Comments: 171</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -507,8 +564,8 @@ Points: 262
         <time>2026-02-28 22:16</time>
         <p>Article URL: https://www.npr.org/2026/02/28/1123499337/iran-israel-ayatollah-ali-khamenei-killed
 Comments URL: https://news.ycombinator.com/item?id=47200879
-Points: 238
-# Comments: 310</p>
+Points: 261
+# Comments: 350</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -520,7 +577,7 @@ Points: 238
         <time>2026-02-28 22:10</time>
         <p>Article URL: https://alexlitzenberger.com/blog/post.html?post=/building_a_minimal_transformer_for_10_digit_addition
 Comments URL: https://news.ycombinator.com/item?id=47200828
-Points: 56
+Points: 57
 # Comments: 9</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
@@ -573,8 +630,8 @@ Points: 56
         <time>2026-02-28 21:24</time>
         <p>Article URL: https://twitter.com/OpenAI/status/2027846016423321831
 Comments URL: https://news.ycombinator.com/item?id=47200420
-Points: 532
-# Comments: 251</p>
+Points: 548
+# Comments: 262</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -616,8 +673,8 @@ Points: 532
         <time>2026-02-28 20:35</time>
         <p>Article URL: https://openai.com/index/our-agreement-with-the-department-of-war
 Comments URL: https://news.ycombinator.com/item?id=47199948
-Points: 300
-# Comments: 217</p>
+Points: 307
+# Comments: 218</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -639,7 +696,7 @@ Points: 300
         <time>2026-02-28 20:20</time>
         <p>Article URL: https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance
 Comments URL: https://news.ycombinator.com/item?id=47199781
-Points: 354
+Points: 368
 # Co...</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
@@ -682,8 +739,8 @@ Points: 354
         <time>2026-02-28 19:04</time>
         <p>Article URL: https://robservatory.com/block-the-upgrade-to-tahoe-alerts-and-system-settings-indicator/
 Comments URL: https://news.ycombinator.com/item?id=47198977
-Points: 229
-# Comments: 107</p>
+Points: 236
+# Comments: 108</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -715,7 +772,7 @@ Points: 229
         <time>2026-02-28 16:58</time>
         <p>Article URL: https://gist.github.com/dollspace-gay/d8d3bc3ecf4188df049d7a4726bb2a00
 Comments URL: https://news.ycombinator.com/item?id=47197595
-Points: 185
+Points: 186
 # Comments: 98</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
@@ -728,8 +785,8 @@ Points: 185
         <time>2026-02-28 16:51</time>
         <p>Article URL: https://garymarcus.substack.com/p/the-whole-thing-was-scam
 Comments URL: https://news.ycombinator.com/item?id=47197505
-Points: 802
-# Comments: 251</p>
+Points: 816
+# Comments: 253</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -741,8 +798,8 @@ Points: 802
         <time>2026-02-28 16:31</time>
         <p>Article URL: https://help.obsidian.md/sync/headless
 Comments URL: https://news.ycombinator.com/item?id=47197267
-Points: 476
-# Comments: 162</p>
+Points: 479
+# Comments: 165</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -958,8 +1015,8 @@ The post Claude Skills and Subagents: Escaping the Prompt Engineering Hamster Wh
         <time>2026-02-28 13:50</time>
         <p>Article URL: https://github.com/google-gemini/gemini-cli/discussions/20632
 Comments URL: https://news.ycombinator.com/item?id=47195371
-Points: 235
-# Comments: 192</p>
+Points: 237
+# Comments: 195</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -1033,16 +1090,6 @@ The post Scaling ML Inference on Databricks: Liquid or Partitioned? Salted or No
         <a href="https://www.wired.com/gallery/best-toiletry-bags/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/682e3843c1db3fd9eacdf22f/master/pass/The-Best-Toiletry-Bags.jpg" alt="" loading="lazy"></a>
         <time>2026-02-28 12:30</time>
         <p>Our team evaluated a ton of toiletry bags to find the best storage, organization, and design options for all your essentials.</p>
-      </article>
-      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
-        <div class="meta">
-          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
-        </div>
-        <h2><a href="https://www.gizmodo.jp/2026/02/high-five_shoelaces_review.html" target="_blank" rel="noopener">家の靴、全部これに変えたい。「ネジ留め式靴ひも」で結び直しから解放された</a></h2>
-        <a href="https://www.gizmodo.jp/2026/02/high-five_shoelaces_review.html" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/gizmodo/dist/images/2026/02/20/1-2.jpg" alt="" loading="lazy"></a>
-        <time>2026-02-28 12:30</time>
-        <p>Photo:ますえい筆者の趣味は散歩です。歩くことが大好きなんですが、靴ひもがよくほどけてしまうのが悩み。素材の相性が悪いのか、いくら強く結んでも数分後にはほどけてしまうんです。その度に歩道の端に寄り、しゃがんで靴ひもを結び直すのがめんどう……。そんな悩みを解決してくれたのが「靴ひもを結ばない」がコンセプトのHIGHFIVEの靴ひもです。結ばなければほどけもしないことに気づいた筆者は、早速使ってみ</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -1159,7 +1206,7 @@ playwr...</p>
         <time>2026-02-28 10:01</time>
         <p>Article URL: https://mksg.lu/blog/context-mode
 Comments URL: https://news.ycombinator.com/item?id=47193064
-Points: 382
+Points: 394
 # Comments: 82</p>
       </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
@@ -1631,19 +1678,6 @@ Active Directory証明書サーバで証明書を...</p>
         <time>2026-02-27 19:01</time>
         <p>Paramount Skydance’s sprawling media empire will get a major boost if the deal is approved.</p>
       </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.ycombinator.com/companies/kyber/jobs/59yPaCs-enterprise-account-executive-ae" target="_blank" rel="noopener">Kyber (YC W23) Is Hiring an Enterprise Account Executive</a></h2>
-        
-        <time>2026-02-27 18:37</time>
-        <p>Article URL: https://www.ycombinator.com/companies/kyber/jobs/59yPaCs-enterprise-account-executive-ae
-Comments URL: https://news.ycombinator.com/item?id=47183907
-Points: 0
-# Comments: 0</p>
-      </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
           <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
@@ -1836,19 +1870,6 @@ The post From idea to pull request: A practical guid...</p>
         <a href="https://www.engadget.com/gaming/nintendo/pokemon-winds-and-waves-are-coming-to-switch-2-in-2027-152248895.html?src=rss" target="_blank" rel="noopener"><img class="thumb" src="https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fpokemon_winds_waves.jpeg&amp;resize=1400%2C787&amp;client=19f2b5e49a271b2bde77&amp;signature=6741ea5a39f20c4520a22e132c20e3477937ff00" alt="" loading="lazy"></a>
         <time>2026-02-27 15:22</time>
         <p>The Pokémon leakers were right: the Gen 10 games are called Pokémon Wind and Pokémon Waves. The Pokémon Company confirmed the titles during a 30th anniversary stream on Pokémon Day. The games are set ...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://hannahilea.com/blog/houseplant-programming/" target="_blank" rel="noopener">An ode to houseplant programming (2025)</a></h2>
-        
-        <time>2026-02-27 15:19</time>
-        <p>Article URL: https://hannahilea.com/blog/houseplant-programming/
-Comments URL: https://news.ycombinator.com/item?id=47181542
-Points: 16
-# Comments: 4</p>
       </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
@@ -2449,16 +2470,6 @@ stg環境やprod環境のdumpファイルを取得して、ローカルに適用
         
         <time>2026-02-27 02:38</time>
         <p>調査会社のIDCが、2026のスマートフォン出荷台数の予測を発表しました。それによると、2026年の世界のスマートフォン出荷台数は、深刻化するメモリ不足危機の影響により、前年比で12.9％減少の11億2000万台にまで落ち込むと予測されるとのことです。続きを読む...</p>
-      </article>
-      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
-        <div class="meta">
-          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://gigazine.net/news/20260227-apple-seeks-dismissal-fraud-lawsuit-siri-epic/" target="_blank" rel="noopener">AppleがAI強化版Siriのリリース遅れをめぐる訴訟とアプリ販売手数料の修正に関する虚偽の説明を行ったとする訴訟の却下を求める</a></h2>
-        
-        <time>2026-02-27 02:29</time>
-        <p>Appleが2つの集団訴訟を却下するよう裁判所に求めていることが、ロイターの報道により明らかになりました。続きを読む...</p>
       </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
@@ -3271,16 +3282,6 @@ AIに完全丸投げした記事には「人間の体験（魂）」がなく、
         <p>Utilizing feature stores like Feast and distributed compute frameworks like Ray in production machine learning systems
 The post Scaling Feature Engineering Pipelines with Feast and Ray appeared first ...</p>
       </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/openai-hires-riley-walz/" target="_blank" rel="noopener">Riley Walz, the Jester of Silicon Valley, Is Joining OpenAI</a></h2>
-        <a href="https://www.wired.com/story/openai-hires-riley-walz/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/699e0e94458686361c3c0d25/master/pass/OpenAI-Hires-Riley-Walz-Business-2236469090.jpg" alt="" loading="lazy"></a>
-        <time>2026-02-25 19:59</time>
-        <p>The software engineer is famous for his online stunts. Now he’s joining the company behind ChatGPT to work on new ways for humans to use AI systems.</p>
-      </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
           <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
@@ -3635,6 +3636,16 @@ The post AI Bots Formed a Cartel. No One Told Them To. appeared first on Toward
         
         <time>2026-02-24 10:44</time>
         <p>Add percussive therapy to your post-workout routine with our expert picks, including mini and deep-tissue models. Plus, a brand new frontrunner now in top spot• The best running shoes, testedMassage g...</p>
+      </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="http://aka.ms/MicrosoftSovereignCloudDisconnectedBlog" target="_blank" rel="noopener">Microsoft Sovereign Cloud adds governance, productivity, and support for large AI models securely running even when completely disconnected</a></h2>
+        
+        <time>2026-02-24 10:20</time>
+        <p>Microsoft Sovereign Cloud&#x27;s expansion of capabilities includes Azure Local disconnected operations, Microsoft 365 Local disconnected, and Microsoft Foundry addition of large model and modern infrastru...</p>
       </article>
       <article class="entry" data-source="Stack Overflow Blog" data-labels="tech dev programming">
         <div class="meta">
