@@ -39,17 +39,18 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-04-01 21:48 UTC</div>
+      <div class="updated">Last updated: 2026-04-01 22:42 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (21)</summary>
+      <summary>Sources (22)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Amazon Science">Amazon Science</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
         <button class="filter-btn source-btn" data-source="Apple Developer News">Apple Developer News</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -83,6 +84,7 @@
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
       <button class="filter-btn label-btn" data-label="meta">meta</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -90,6 +92,62 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
+        <div class="meta">
+          <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="startup">startup</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/" target="_blank" rel="noopener">Anthropic took down thousands of GitHub repos trying to yank its leaked source code — a move the company says was an accident</a></h2>
+        
+        <time>2026-04-01 22:12</time>
+        <p>Anthropic executives said it was an accident and retracted the bulk of the takedown notices.</p>
+      </article>
+      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
+        <div class="meta">
+          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
+        </div>
+        <h2><a href="https://www.gizmodo.jp/2026/04/iran-includes-american-tech-giants-on-list-of-new-targets.html" target="_blank" rel="noopener">イラン、米テック大手の拠点を「標的」にすると警告</a></h2>
+        <a href="https://www.gizmodo.jp/2026/04/iran-includes-american-tech-giants-on-list-of-new-targets.html" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/gizmodo/dist/images/2026/04/01/shutterstock_2666856579.jpg" alt="" loading="lazy"></a>
+        <time>2026-04-01 22:00</time>
+        <p>Image:ErmanGunes/Shutterstock.comアメリカとイスラエルがイランに攻撃を開始してから、5週間が経ちました。停戦協議がなかなか進まない中、イラン革命防衛隊（IRGC）傘下のタスニム通信は、イスラエルと関係するアメリカのIT企業のリストを公開。これらの企業を、イランの新たな標的と表現しました。アルジャジーラによると、名指しされた企業のリストには、Microsoft（マイク</p>
+      </article>
+      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
+        <div class="meta">
+          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://gigazine.net/news/20260402-kalshi-polymarket/" target="_blank" rel="noopener">予測市場KalshiとPolymarketがサークルや学生インフルエンサーを通じて大学生を積極的にターゲットとしている、噂や内部情報を利用して学生らが利益を得ようと試みる</a></h2>
+        
+        <time>2026-04-01 22:00</time>
+        <p>ニュースやスポーツなどを題材にユーザー同士で賭け事を行うプラットフォーム「Kalshi」および「Polymarket」が大学生に及ぼす危険性を、ウォール・ストリート・ジャーナルが指摘しています。続きを読む...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://discuss.grapheneos.org/d/33727-swappacom-for-grapheneos-compatible-devices-stay-away" target="_blank" rel="noopener">Swappa.com for GrapheneOS compatible devices – Stay Away</a></h2>
+        
+        <time>2026-04-01 21:59</time>
+        <p>Article URL: https://discuss.grapheneos.org/d/33727-swappacom-for-grapheneos-compatible-devices-stay-away
+Comments URL: https://news.ycombinator.com/item?id=47607067
+Points: 28
+# Comments: 13</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/" target="_blank" rel="noopener">DRAM pricing is killing the hobbyist SBC market</a></h2>
+        
+        <time>2026-04-01 21:36</time>
+        <p>Article URL: https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/
+Comments URL: https://news.ycombinator.com/item?id=47606840
+Points: 96
+# Comments: 41</p>
+      </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
           <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
@@ -109,6 +167,16 @@
         
         <time>2026-04-01 21:12</time>
         <p>Passengers in Baidu&#x27;s robotaxis were trapped for up to two hours.</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://getdull.app" target="_blank" rel="noopener">Show HN: Dull – Instagram Without Reels, YouTube Without Shorts (iOS)</a></h2>
+        
+        <time>2026-04-01 21:04</time>
+        <p>I kept deleting and redownloading Instagram because I couldn&#x27;t stop watching Reels but needed the app for DMs. Tried screen time limits, just overrode them. So I built this.Dull loads Instagram, YouTu...</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -208,8 +276,8 @@ Poin...</p>
         <time>2026-04-01 19:52</time>
         <p>Article URL: https://blog.foks.pub/posts/domain-separation-in-idl/
 Comments URL: https://news.ycombinator.com/item?id=47605677
-Points: 44
-# Comments: 26</p>
+Points: 57
+# Comments: 33</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -221,8 +289,8 @@ Points: 44
         <time>2026-04-01 19:36</time>
         <p>Article URL: https://benoit.paris/posts/jax-ray-marcher/
 Comments URL: https://news.ycombinator.com/item?id=47605494
-Points: 16
-# Comments: 1</p>
+Points: 32
+# Comments: 4</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -234,8 +302,8 @@ Points: 16
         <time>2026-04-01 19:26</time>
         <p>Article URL: https://www.sciencedaily.com/releases/2026/03/260313002633.htm
 Comments URL: https://news.ycombinator.com/item?id=47605374
-Points: 20
-# Comments: 2</p>
+Points: 30
+# Comments: 7</p>
       </article>
       <article class="entry" data-source="GitHub Blog" data-labels="tech dev">
         <div class="meta">
@@ -247,19 +315,6 @@ Points: 20
         <time>2026-04-01 19:20</time>
         <p>Recent attacks on open source focus on exfiltrating secrets; here are the prevention steps you can take today, plus a look at the security capabilities GitHub is working on.
 The post Securing the open...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.theguardian.com/technology/2026/apr/01/spacex-public-offering-stock-market" target="_blank" rel="noopener">SpaceX confidentially files to go public at $1.75T, reports say</a></h2>
-        
-        <time>2026-04-01 19:19</time>
-        <p>Article URL: https://www.theguardian.com/technology/2026/apr/01/spacex-public-offering-stock-market
-Comments URL: https://news.ycombinator.com/item?id=47605270
-Points: 48
-# Comments: 7</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -290,19 +345,6 @@ Points: 48
         <a href="https://www.wired.com/story/fda-approves-eli-lillys-glp-1-pill/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/69cd5dbf969ce77a468721f6/master/pass/FDA-Approves-Eli-Lillys-GLP-1-Pill-Science-2237031585.jpg" alt="" loading="lazy"></a>
         <time>2026-04-01 18:56</time>
         <p>Eli Lilly’s once-daily Foundayo is the second obesity pill to receive FDA approval. It will compete with Novo Nordisk’s pill version of Wegovy.</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.apple.com/" target="_blank" rel="noopener">Apple at 50</a></h2>
-        
-        <time>2026-04-01 18:48</time>
-        <p>Article URL: https://www.apple.com/
-Comments URL: https://news.ycombinator.com/item?id=47604897
-Points: 75
-# Comments: 40</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -399,26 +441,13 @@ Points: 75
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.adorableandharmless.com/p/unsubscribe-from-the-church-of-graphs" target="_blank" rel="noopener">Unsubscribe from the Church of Graphs</a></h2>
-        
-        <time>2026-04-01 17:58</time>
-        <p>Article URL: https://www.adorableandharmless.com/p/unsubscribe-from-the-church-of-graphs
-Comments URL: https://news.ycombinator.com/item?id=47604253
-Points: 20
-# Comments: 11</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://bastian.rieck.me/blog/2026/bs/" target="_blank" rel="noopener">The AI Marketing BS Index</a></h2>
         
         <time>2026-04-01 17:55</time>
         <p>Article URL: https://bastian.rieck.me/blog/2026/bs/
 Comments URL: https://news.ycombinator.com/item?id=47604218
-Points: 71
-# Comments: 12</p>
+Points: 80
+# Comments: 15</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -429,6 +458,19 @@ Points: 71
         <a href="https://www.theverge.com/transportation/905363/kia-ev3-north-america-launch" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/kia-ev3-us-hero.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
         <time>2026-04-01 17:50</time>
         <p>At the New York International Auto Show on Wednesday, Kia announced that its compact electric SUV, the EV3, will be available in the US &quot;in late 2026.&quot; The EV3 has been available overseas since 2024, ...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.nytimes.com/2026/04/01/technology/spacex-ipo-elon-musk.html" target="_blank" rel="noopener">SpaceX files to go public</a></h2>
+        
+        <time>2026-04-01 17:49</time>
+        <p>Article URL: https://www.nytimes.com/2026/04/01/technology/spacex-ipo-elon-musk.html
+Comments URL: https://news.ycombinator.com/item?id=47604155
+Points: 115
+# Comments: 139</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -482,7 +524,7 @@ Comments URL: https://news.ycombinator.com/ite...</p>
         <time>2026-04-01 17:17</time>
         <p>Article URL: https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/
 Comments URL: https://news.ycombinator.com/item?id=47603737
-Points: 110
+Points: 117
 # Comme...</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
@@ -505,8 +547,8 @@ Points: 110
         <time>2026-04-01 17:11</time>
         <p>Article URL: https://plus.nasa.gov/scheduled-video/nasas-artemis-ii-crew-launches-to-the-moon-official-broadcast/
 Comments URL: https://news.ycombinator.com/item?id=47603657
-Points: 290
-# Comments: 20...</p>
+Points: 359
+# Comments: 25...</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -563,23 +605,13 @@ Points: 290
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://github.com/simple10/agents-observe" target="_blank" rel="noopener">Show HN: Real-time dashboard for Claude Code agent teams</a></h2>
-        
-        <time>2026-04-01 16:24</time>
-        <p>This project (Agents Observe) started as an exploration into building automation harnesses around claude code. I needed a way to see exactly what teams of agents were doing in realtime and to filter a...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://app.uniclaw.ai/arena?tab=costEffectiveness&amp;via=hn" target="_blank" rel="noopener">StepFun 3.5 Flash is #1 cost-effective model for OpenClaw tasks (300 battles)</a></h2>
         
         <time>2026-04-01 16:17</time>
         <p>Article URL: https://app.uniclaw.ai/arena?tab=costEffectiveness&amp;amp;via=hn
 Comments URL: https://news.ycombinator.com/item?id=47602879
-Points: 107
-# Comments: 48</p>
+Points: 122
+# Comments: 55</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -591,8 +623,8 @@ Points: 107
         <time>2026-04-01 16:14</time>
         <p>Article URL: https://blog.cloudflare.com/emdash-wordpress/
 Comments URL: https://news.ycombinator.com/item?id=47602832
-Points: 388
-# Comments: 278</p>
+Points: 411
+# Comments: 301</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -634,7 +666,7 @@ Points: 388
         <time>2026-04-01 15:55</time>
         <p>Article URL: https://www.forbes.com/sites/phoebeliu/2026/03/31/openai-graveyard-deals-and-products-havent-happened-openai/
 Comments URL: https://news.ycombinator.com/item?id=47602565
-Points: 188
+Points: 203
 # Com...</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
@@ -907,8 +939,8 @@ The post Run multiple agents at ...</p>
         <time>2026-04-01 13:10</time>
         <p>Article URL: https://isbgpsafeyet.com/
 Comments URL: https://news.ycombinator.com/item?id=47600382
-Points: 218
-# Comments: 75</p>
+Points: 229
+# Comments: 78</p>
       </article>
       <article class="entry" data-source="Google Blog - Technology" data-labels="tech google">
         <div class="meta">
@@ -1115,8 +1147,8 @@ Points: 0
         <p>https://www.wired.com/story/a-mysterious-numbers-station-is-...
 
 Comments URL: https://news.ycombinator.com/item?id=47599510
-Points: 94
-# Comments: 96</p>
+Points: 98
+# Comments: 101</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -1709,16 +1741,6 @@ PRUMについて気になった方は、
         <time>2026-04-01 04:00</time>
         <p>Content creators love the built-in camera; sceptics call them ‘pervert glasses’. Do we really need any more hi-tech wearables, even with a voice assistant that sounds like Judi Dench?Lately, I’ve been...</p>
       </article>
-      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
-        <div class="meta">
-          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
-        </div>
-        <h2><a href="https://www.gizmodo.jp/2026/04/jbl_soundgear-sense_review.html" target="_blank" rel="noopener">初めてのオープンイヤーが、JBLで良かった。毎日の散歩がもっと特別な時間に</a></h2>
-        <a href="https://www.gizmodo.jp/2026/04/jbl_soundgear-sense_review.html" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/gizmodo/dist/images/2026/03/19/1(1).jpg" alt="" loading="lazy"></a>
-        <time>2026-04-01 04:00</time>
-        <p>かれこれ5年間、ほぼ毎日散歩をしている筆者。さすがに近所のだいたいのコースは制覇してしまいました。変わり映えしない景色に飽きてきたので、いままで散歩のときは頑なにイヤホンをしてこなかった筆者でしたが、ついに音楽を聴きながら散歩しようということに。でも、スマホのスピーカーから流すのは周りに迷惑だし、イヤホンは周りの音が聞こえにくくて危険を察知しづらい。外部音取り込みイヤホンだとしても、音の聞こえ方が</p>
-      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -2006,16 +2028,6 @@ SecurityAgentによるGitHubのプルリクエスト(PR)のセキュリティレ
         <time>2026-03-31 21:25</time>
         <p>Tech giants like Apple, Google, and Microsoft are among those on a target list released by Iran’s Islamic Revolutionary Guard Corps.</p>
       </article>
-      <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
-        <div class="meta">
-          <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="startup">startup</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b-from-retail-investors-in-monster-122b-fund-raise/" target="_blank" rel="noopener">OpenAI, not yet public, raises $3B from retail investors in monster $122B fund raise</a></h2>
-        
-        <time>2026-03-31 21:25</time>
-        <p>OpenAI&#x27;s latest funding round, led by Amazon, Nvidia, and SoftBank, values the AI lab at $852 billion as it nears an IPO.</p>
-      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -2280,6 +2292,17 @@ DB接続...</p>
         <time>2026-03-31 16:00</time>
         <p>I used coding agents to build agents that automated part of my job. Here&#x27;s what I learned about working better with coding agents.
 The post Agent-driven development in Copilot Applied Science appeared...</p>
+      </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-azure-local-on-galleon-modular-datacenters/" target="_blank" rel="noopener">Building sovereign AI at the edge: Microsoft and Armada collaborate to deliver Azure Local on Galleon modular datacenters</a></h2>
+        <a href="https://azure.microsoft.com/en-us/blog/building-sovereign-ai-at-the-edge-microsoft-and-armada-collaborate-to-deliver-azure-local-on-galleon-modular-datacenters/" target="_blank" rel="noopener"><img class="thumb" src="https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/03/Armada-Body-Final-1920-x-1080-1024x576.webp" alt="" loading="lazy"></a>
+        <time>2026-03-31 16:00</time>
+        <p>Explore how Microsoft and Armada bring sovereign AI to the edge with Azure Local, enabling secure, resilient workloads in disconnected and regulated environments.
+The post Building sovereign AI at the...</p>
       </article>
       <article class="entry" data-source="Google Blog - Technology" data-labels="tech google">
         <div class="meta">
@@ -2742,16 +2765,6 @@ axiosは週間ダウンロード数が1億...</p>
         <time>2026-03-31 07:00</time>
         <p>The poster child of the AI boom, valued at $850bn, needs to show strategic discipline after ‘casting its net too wide’ If OpenAI is going to float this year, it has to get serious about its business m...</p>
       </article>
-      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
-        <div class="meta">
-          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://gigazine.net/news/20260331-microsoft-copilot-github-pr/" target="_blank" rel="noopener">MicrosoftのAI「Copilot」が勝手にプルリクエストに広告を挿入</a></h2>
-        
-        <time>2026-03-31 07:00</time>
-        <p>GitHubのプルリクエストでCopilotを呼び出したところ、勝手に広告を挿入されてしまったと開発者が報告しました。続きを読む...</p>
-      </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
           <span class="source" data-filter-source="Zenn">Zenn</span>
@@ -3017,6 +3030,17 @@ Google I/O 2024での衝撃的なデビューから、進化を続けてきた N
         <time>2026-03-30 21:49</time>
         <p>Oracle AI Database@Azure で Exadata を 2 系統用意できたら、次にやりたくなるのはやはり Active Data Guard です。  ただ、実際に運用を考えると、Standby を作るだけでは足りません。Switchover / Fai...</p>
       </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/03/25/navigating-digital-sovereignty-at-the-frontier-of-transformation/" target="_blank" rel="noopener">Navigating digital sovereignty at the frontier of transformation</a></h2>
+        
+        <time>2026-03-30 21:27</time>
+        <p>Digital sovereignty has become a practical leadership discipline grounded in risk management, continuity planning, and long-term accountability.
+The post Navigating digital sovereignty at the frontier...</p>
+      </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
           <span class="source" data-filter-source="Engadget">Engadget</span>
@@ -3139,6 +3163,17 @@ Android is for everyone. It’s built on a commitment to an open and safe platfo
         <time>2026-03-30 16:00</time>
         <p>Learn how to secure your projects and keep them safe with GitHub Advanced Security.
 The post GitHub for Beginners: Getting started with GitHub security appeared first on The GitHub Blog.</p>
+      </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform-as-a-service/" target="_blank" rel="noopener">Microsoft named a Leader in 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service</a></h2>
+        <a href="https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-2026-gartner-magic-quadrant-for-integration-platform-as-a-service/" target="_blank" rel="noopener"><img class="thumb" src="https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/03/Figure1.jpg" alt="" loading="lazy"></a>
+        <time>2026-03-30 16:00</time>
+        <p>Read why Microsoft was named a Leader for integration services in the 2026 Gartner® Magic Quadrant™ for Integration Platform as a Service.
+The post Microsoft named a Leader in 2026 Gartner® Magic Quad...</p>
       </article>
       <article class="entry" data-source="MIT Technology Review" data-labels="tech research news">
         <div class="meta">
