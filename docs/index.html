@@ -39,17 +39,18 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-08-07 21:41 UTC</div>
+      <div class="updated">Last updated: 2026-08-07 22:39 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (22)</summary>
+      <summary>Sources (23)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Amazon Science">Amazon Science</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
         <button class="filter-btn source-btn" data-source="Apple Developer News">Apple Developer News</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -85,6 +86,7 @@
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
       <button class="filter-btn label-btn" data-label="meta">meta</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -92,6 +94,16 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="The Verge" data-labels="tech news culture">
+        <div class="meta">
+          <span class="source" data-filter-source="The Verge">The Verge</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
+        </div>
+        <h2><a href="https://www.theverge.com/games/977056/restart-gaming-site-walmart-moonrock-layoffs" target="_blank" rel="noopener">The gaming site sponsored by Walmart lays off its editorial staff</a></h2>
+        <a href="https://www.theverge.com/games/977056/restart-gaming-site-walmart-moonrock-layoffs" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK465_VIDEO_GAMES_EMULATOR__CVirginia_A.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
+        <time>2026-08-07 22:05</time>
+        <p>Restart, a games media website launched in late 2024 that was sponsored by Walmart, has laid off its &quot;entire editorial team,&quot; according to a Friday post from Brandy Berthelson, the site&#x27;s former edito...</p>
+      </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
           <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
@@ -101,19 +113,6 @@
         
         <time>2026-08-07 21:30</time>
         <p>After its own AI usage wake-up call, Rippling this week unveiled AI Spend Console, a product that tracks individual and team employee AI spending.</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://bsky.app/profile/jleclanche.bsky.social/post/3msji47npvk2y" target="_blank" rel="noopener">Opus5/low can do CryptoNote base58 decoding toolless, in working memory alone</a></h2>
-        
-        <time>2026-08-07 21:22</time>
-        <p>Article URL: https://bsky.app/profile/jleclanche.bsky.social/post/3msji47npvk2y
-Comments URL: https://news.ycombinator.com/item?id=49216389
-Points: 6
-# Comments: 0</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -176,8 +175,8 @@ Comments URL: https://news.ycom...</p>
         <time>2026-08-07 18:59</time>
         <p>Article URL: https://daringfireball.net/2026/08/app_store_rejection_of_the_week_dark_hours
 Comments URL: https://news.ycombinator.com/item?id=49214863
-Points: 174
-# Comments: 68</p>
+Points: 204
+# Comments: 98</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -199,7 +198,7 @@ Points: 174
         <time>2026-08-07 18:51</time>
         <p>Article URL: https://github.com/xoreaxeaxeax/repsych
 Comments URL: https://news.ycombinator.com/item?id=49214775
-Points: 26
+Points: 33
 # Comments: 2</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
@@ -212,8 +211,8 @@ Points: 26
         <time>2026-08-07 18:51</time>
         <p>Article URL: https://ancientlibrary.net/
 Comments URL: https://news.ycombinator.com/item?id=49214770
-Points: 76
-# Comments: 24</p>
+Points: 95
+# Comments: 30</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -255,8 +254,8 @@ Points: 76
         <time>2026-08-07 18:25</time>
         <p>Article URL: https://www.databricks.com/blog/managing-ai-coding-costs-scale
 Comments URL: https://news.ycombinator.com/item?id=49214468
-Points: 129
-# Comments: 102</p>
+Points: 135
+# Comments: 125</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -318,8 +317,8 @@ Points: 129
         <time>2026-08-07 18:01</time>
         <p>Article URL: https://github.com/xoreaxeaxeax/asm-hall-of-shame
 Comments URL: https://news.ycombinator.com/item?id=49214098
-Points: 153
-# Comments: 32</p>
+Points: 181
+# Comments: 41</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -331,8 +330,8 @@ Points: 153
         <time>2026-08-07 17:56</time>
         <p>Article URL: https://arcprize.org/results/deepseek-v4-flash-0731
 Comments URL: https://news.ycombinator.com/item?id=49214008
-Points: 300
-# Comments: 184</p>
+Points: 339
+# Comments: 208</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -415,8 +414,8 @@ Comments URL: https://news.ycombinator.com/item?id=4...</p>
         <time>2026-08-07 16:39</time>
         <p>Article URL: https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/
 Comments URL: https://news.ycombinator.com/item?id=49213029
-Points: 124
-# Comments: 136</p>
+Points: 131
+# Comments: 146</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
@@ -469,16 +468,6 @@ The post Matplotlib vs Plotly: Which Python Chart Tool Should You Choose? appea
         <time>2026-08-07 16:09</time>
         <p>Framework told &quot;all&quot; of its customers that hackers accessed their names, email addresses, phone numbers, and physical addresses in a data breach.</p>
       </article>
-      <article class="entry" data-source="The Verge" data-labels="tech news culture">
-        <div class="meta">
-          <span class="source" data-filter-source="The Verge">The Verge</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
-        </div>
-        <h2><a href="https://www.theverge.com/gadgets/976422/birdfy-feeder-rookie-nothing-headphones-deal-sale" target="_blank" rel="noopener">Birdfy’s smart bird feeder is on sale for just $60</a></h2>
-        <a href="https://www.theverge.com/gadgets/976422/birdfy-feeder-rookie-nothing-headphones-deal-sale" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/birdfyfeeder.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
-        <time>2026-08-07 16:04</time>
-        <p>The Birdfy Feeder Rookie is a good option if you’re new to birdwatching or simply don’t want to spend a lot on a smart feeder, and several configurations are on sale. The standard model is down to $59...</p>
-      </article>
       <article class="entry" data-source="Netflix Tech Blog" data-labels="tech dev engineering">
         <div class="meta">
           <span class="source" data-filter-source="Netflix Tech Blog">Netflix Tech Blog</span>
@@ -519,8 +508,8 @@ The post Matplotlib vs Plotly: Which Python Chart Tool Should You Choose? appea
         <time>2026-08-07 15:24</time>
         <p>Article URL: https://www.sdss.org/black-hole-mapper-release-20/
 Comments URL: https://news.ycombinator.com/item?id=49211921
-Points: 113
-# Comments: 30</p>
+Points: 120
+# Comments: 32</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -542,7 +531,7 @@ Points: 113
         <time>2026-08-07 15:10</time>
         <p>Article URL: https://quuxplusone.github.io/blog/2026/08/04/mobius-crossword/
 Comments URL: https://news.ycombinator.com/item?id=49211660
-Points: 45
+Points: 46
 # Comments: 4</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
@@ -596,8 +585,8 @@ The post Loop Engineering for Listing Questions: W...</p>
         <time>2026-08-07 14:51</time>
         <p>Article URL: https://patronview.com/news/99-percent-of-my-website-traffic-is-bots/
 Comments URL: https://news.ycombinator.com/item?id=49211386
-Points: 335
-# Comments: 319</p>
+Points: 346
+# Comments: 325</p>
       </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
@@ -795,8 +784,8 @@ The post The Problem with pandas Isn’t Performance. It’s Cognitive Overhead.
         <time>2026-08-07 12:45</time>
         <p>Article URL: https://www.sciencealert.com/radical-study-suggests-life-on-earth-arose-from-non-living-matter-twice
 Comments URL: https://news.ycombinator.com/item?id=49209572
-Points: 63
-# Comments: 70</p>
+Points: 70
+# Comments: 72</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -818,8 +807,8 @@ Points: 63
         <time>2026-08-07 12:42</time>
         <p>Article URL: https://www.noemamag.com/why-is-everyone-in-tech-so-sad/
 Comments URL: https://news.ycombinator.com/item?id=49209539
-Points: 232
-# Comments: 372</p>
+Points: 272
+# Comments: 410</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -962,8 +951,8 @@ The post My Fall-Detection Model Scored 94%, and It Was ...</p>
         <time>2026-08-07 11:00</time>
         <p>Article URL: https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/
 Comments URL: https://news.ycombinator.com/item?id=49208535
-Points: 211
-# Comments: 93</p>
+Points: 217
+# Comments: 96</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -1016,7 +1005,7 @@ Points: 211
         <time>2026-08-07 10:52</time>
         <p>Article URL: https://textlog.cc/about
 Comments URL: https://news.ycombinator.com/item?id=49208458
-Points: 114
+Points: 120
 # Comments: 51</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
@@ -1049,8 +1038,8 @@ Points: 114
         <time>2026-08-07 10:42</time>
         <p>Article URL: https://blog.cloudflare.com/kitesurf/
 Comments URL: https://news.ycombinator.com/item?id=49208393
-Points: 127
-# Comments: 31</p>
+Points: 139
+# Comments: 40</p>
       </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
@@ -1302,7 +1291,7 @@ Claude Codeを使っていて「コマンド何だっけ?」となることが�
         <time>2026-08-07 07:58</time>
         <p>Article URL: https://www.ign.com/articles/ramageddon-continues-another-year-as-2027-memory-capacity-is-reportedly-sold-out
 Comments URL: https://news.ycombinator.com/item?id=49207236
-Points: 158
+Points: 172
 # Com...</p>
       </article>
       <article class="entry" data-source="Stack Overflow Blog" data-labels="tech dev programming">
@@ -1465,6 +1454,36 @@ Points: 158
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
+        <h2><a href="https://www.wired.com/story/ray-ban-promo-code/" target="_blank" rel="noopener">Ray-Ban Promo Codes: Save 50% in August 2026</a></h2>
+        <a href="https://www.wired.com/story/ray-ban-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9a4816461befb48207/master/pass/WIRED-Coupons-R2_12.png" alt="" loading="lazy"></a>
+        <time>2026-08-07 05:00</time>
+        <p>Upgrade your frames with major savings on classic shapes, custom designs, and prescription lenses using these verified Ray-Ban discounts.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener">B&amp;H Photo Promo Codes and Deals This August 2026</a></h2>
+        <a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea0772ca863bb4c1028b66/master/pass/WIRED-Coupons-4.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-07 05:00</time>
+        <p>Enjoy top deals on cameras, computers, and tech essentials at B&amp;amp;H Photo.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/surfshark-coupon/" target="_blank" rel="noopener">Surfshark Promo Codes: 87% Off | August 2026</a></h2>
+        <a href="https://www.wired.com/story/surfshark-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076e56fd4954a7f91e0c/master/pass/WIRED-Coupons-17.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-07 05:00</time>
+        <p>Save up to 87% with a Surfshark coupon code, 3 months of VPN free today, and more from WIRED.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
         <h2><a href="https://www.wired.com/story/google-workspace-promo-code/" target="_blank" rel="noopener">Google Workspace Promo Codes: 14% Off for August 2026</a></h2>
         <a href="https://www.wired.com/story/google-workspace-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b967f8fc45af4896200/master/pass/WIRED-Coupons-R2_7.png" alt="" loading="lazy"></a>
         <time>2026-08-07 05:00</time>
@@ -1525,36 +1544,6 @@ Points: 158
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/surfshark-coupon/" target="_blank" rel="noopener">Surfshark Promo Codes: 87% Off | August 2026</a></h2>
-        <a href="https://www.wired.com/story/surfshark-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076e56fd4954a7f91e0c/master/pass/WIRED-Coupons-17.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-07 05:00</time>
-        <p>Save up to 87% with a Surfshark coupon code, 3 months of VPN free today, and more from WIRED.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/ray-ban-promo-code/" target="_blank" rel="noopener">Ray-Ban Promo Codes: Save 50% in August 2026</a></h2>
-        <a href="https://www.wired.com/story/ray-ban-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9a4816461befb48207/master/pass/WIRED-Coupons-R2_12.png" alt="" loading="lazy"></a>
-        <time>2026-08-07 05:00</time>
-        <p>Upgrade your frames with major savings on classic shapes, custom designs, and prescription lenses using these verified Ray-Ban discounts.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener">B&amp;H Photo Promo Codes and Deals This August 2026</a></h2>
-        <a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea0772ca863bb4c1028b66/master/pass/WIRED-Coupons-4.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-07 05:00</time>
-        <p>Enjoy top deals on cameras, computers, and tech essentials at B&amp;amp;H Photo.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://www.wired.com/story/ulta-coupon/" target="_blank" rel="noopener">Ulta Promo Codes: Up to 20% Off in August 2026</a></h2>
         <a href="https://www.wired.com/story/ulta-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9283a9f95e0ab9b215/master/pass/WIRED-Coupons-R2_3.png" alt="" loading="lazy"></a>
         <time>2026-08-07 05:00</time>
@@ -1575,20 +1564,20 @@ Points: 158
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/" target="_blank" rel="noopener">Dyson Promo Codes: 25% Off in August 2026</a></h2>
-        <a href="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b919468ebbf8f0cbc7a/master/pass/WIRED-Coupons-R2_9.png" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/newegg-promo-code/" target="_blank" rel="noopener">Newegg Promo Codes and Coupons for August 2026</a></h2>
+        <a href="https://www.wired.com/story/newegg-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea077039cb65abef27cd6f/master/pass/WIRED-Coupons-9.jpg" alt="" loading="lazy"></a>
         <time>2026-08-07 05:00</time>
-        <p>Get 25% off with a Dyson coupon code, plus save up to $600 with discounts on vacuums, $150 off Airwraps, and more.</p>
+        <p>Enjoy up to 10% off your entire order with today’s Newegg promo code and discount codes. Save with the latest deals for gaming PCs, laptops, and computer parts.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/newegg-promo-code/" target="_blank" rel="noopener">Newegg Promo Codes and Coupons for August 2026</a></h2>
-        <a href="https://www.wired.com/story/newegg-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea077039cb65abef27cd6f/master/pass/WIRED-Coupons-9.jpg" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/" target="_blank" rel="noopener">Dyson Promo Codes: 25% Off in August 2026</a></h2>
+        <a href="https://www.wired.com/story/dyson-cordless-vacuum-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b919468ebbf8f0cbc7a/master/pass/WIRED-Coupons-R2_9.png" alt="" loading="lazy"></a>
         <time>2026-08-07 05:00</time>
-        <p>Enjoy up to 10% off your entire order with today’s Newegg promo code and discount codes. Save with the latest deals for gaming PCs, laptops, and computer parts.</p>
+        <p>Get 25% off with a Dyson coupon code, plus save up to $600 with discounts on vacuums, $150 off Airwraps, and more.</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -1828,6 +1817,16 @@ Web API設計を調べると、検索上位に出てくる記事が2015〜2019�
 やりたいこと
 全体アーキテクチャ
 実装の全体...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta" target="_blank" rel="noopener">New Mexico court orders Meta to pay $567m over harms to children’s mental health</a></h2>
+        
+        <time>2026-08-07 00:06</time>
+        <p>https://www.reuters.com/world/new-mexico-court-orders-meta-p...https://www.theguardian.com/technology/2026/aug/06/new-mexic...https://www.kob.com/new-mexico/nm-court-orders-meta-to-pay-5...https://www...</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -2166,6 +2165,17 @@ Claude Code:  
         <time>2026-08-06 15:26</time>
         <p>HashiCorpの共同創業者であり、同社を退社後は個人開発者としてターミナルソフト「Ghostty」の開発を進めていたミッチェル・ハシモト氏が、新会社［Superlogical」の設立を発表しました。 I&#x27;ve started a...</p>
       </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-code-modernization-tools/" target="_blank" rel="noopener">Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools</a></h2>
+        <a href="https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-code-modernization-tools/" target="_blank" rel="noopener"><img class="thumb" src="https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/08/MQ-AppMod-Blog-Thumbnail-1-1-1024x576.webp" alt="" loading="lazy"></a>
+        <time>2026-08-06 15:00</time>
+        <p>GitHub Copilot and Azure are helping organizations modernize legacy applications, reduce technical debt, and prepare for AI innovation.
+The post Microsoft named a Leader in the 2026 Gartner® Magic Qua...</p>
+      </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
           <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
@@ -2467,26 +2477,6 @@ We...</p>
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/brooks-promo-code/" target="_blank" rel="noopener">20% Off Brooks Promo Code | August 2026</a></h2>
-        <a href="https://www.wired.com/story/brooks-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076ee8502211cd1d9a42/master/pass/WIRED-Coupons-13.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-06 05:00</time>
-        <p>Enjoy 20% off your first order with a Brooks coupon code, plus top discounts and deals on our favorite Brooks running shoes.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/total-wireless-promo-code/" target="_blank" rel="noopener">Total Wireless Promo Codes &amp; Deals: 50% Off Select Plans</a></h2>
-        <a href="https://www.wired.com/story/total-wireless-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea0772ca863bb4c1028b66/master/pass/WIRED-Coupons-4.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-06 05:00</time>
-        <p>Find great deals for Total Wireless, like 50% off select plans, and enjoy big savings.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://www.wired.com/story/hungryroot-promo-code/" target="_blank" rel="noopener">Hungryroot Coupon Codes: 30% Off This August</a></h2>
         <a href="https://www.wired.com/story/hungryroot-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b972c751893c256c1e6/master/pass/WIRED-Coupons-R2_16.png" alt="" loading="lazy"></a>
         <time>2026-08-06 05:00</time>
@@ -2507,10 +2497,30 @@ We...</p>
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
+        <h2><a href="https://www.wired.com/story/brooks-promo-code/" target="_blank" rel="noopener">20% Off Brooks Promo Code | August 2026</a></h2>
+        <a href="https://www.wired.com/story/brooks-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076ee8502211cd1d9a42/master/pass/WIRED-Coupons-13.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-06 05:00</time>
+        <p>Enjoy 20% off your first order with a Brooks coupon code, plus top discounts and deals on our favorite Brooks running shoes.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
         <h2><a href="https://www.wired.com/story/govee-discount-code/" target="_blank" rel="noopener">Govee Discount Codes and Deals: 30% Off</a></h2>
         <a href="https://www.wired.com/story/govee-discount-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076ee8502211cd1d9a42/master/pass/WIRED-Coupons-13.jpg" alt="" loading="lazy"></a>
         <time>2026-08-06 05:00</time>
         <p>New to Govee? Get a $5 coupon on your first purchase just for signing up.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/total-wireless-promo-code/" target="_blank" rel="noopener">Total Wireless Promo Codes &amp; Deals: 50% Off Select Plans</a></h2>
+        <a href="https://www.wired.com/story/total-wireless-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea0772ca863bb4c1028b66/master/pass/WIRED-Coupons-4.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-06 05:00</time>
+        <p>Find great deals for Total Wireless, like 50% off select plans, and enjoy big savings.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -2537,20 +2547,20 @@ We...</p>
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/sealy-promo-code/" target="_blank" rel="noopener">Sealy Promo Codes: $100 Off</a></h2>
-        <a href="https://www.wired.com/story/sealy-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b98fb14553f0ebd9ffd/master/pass/WIRED-Coupons-R2_15.png" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/coleman-promo-code/" target="_blank" rel="noopener">Coleman Promo Codes and Deals: Up to 75% Off in August 2026</a></h2>
+        <a href="https://www.wired.com/story/coleman-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b985a505b018b67ed90/master/pass/WIRED-Coupons-R2_17.png" alt="" loading="lazy"></a>
         <time>2026-08-06 05:00</time>
-        <p>Whether you’re switching from springs to memory foam or just want to sleep cooler this summer, these Sealy mattress deals will have you waking up refreshed—and with cash left in your wallet.</p>
+        <p>Gear up for your next adventure with these Coleman coupons and discount codes to save on camping essentials and outdoor gear.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/groupon-promo-code/" target="_blank" rel="noopener">Groupon Promo Codes: 60% Off in August 2026</a></h2>
-        <a href="https://www.wired.com/story/groupon-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea07715f7a3326e9fe7ca3/master/pass/WIRED-Coupons-5.jpg" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/tempur-pedic-promo-code/" target="_blank" rel="noopener">30% Off Tempur-Pedic Promo Codes | August 2026</a></h2>
+        <a href="https://www.wired.com/story/tempur-pedic-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b917d355db73b38e0c0/master/pass/WIRED-Coupons-R2_1.png" alt="" loading="lazy"></a>
         <time>2026-08-06 05:00</time>
-        <p>Unlock up to 60% off, 40% off packages, and 20% off with top Groupon coupon codes. Explore coupons to save extra on travel getaways, holiday gifts, spa days, and event tickets.</p>
+        <p>Whether you’re looking to upgrade your mattress or swap out your bedding, browse our Tempur-Pedic coupons for up to $300 off and the best sleep of your life.</p>
       </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
