@@ -39,17 +39,18 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-08-14 21:27 UTC</div>
+      <div class="updated">Last updated: 2026-08-14 22:26 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (21)</summary>
+      <summary>Sources (22)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Amazon Science">Amazon Science</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
         <button class="filter-btn source-btn" data-source="Apple Developer News">Apple Developer News</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -83,6 +84,7 @@
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
       <button class="filter-btn label-btn" data-label="meta">meta</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -90,6 +92,16 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/new-york-city-lawmakers-push-to-ban-the-scan-at-msg/" target="_blank" rel="noopener">New York City Lawmakers Push to ‘Ban the Scan’ at MSG</a></h2>
+        <a href="https://www.wired.com/story/new-york-city-lawmakers-push-to-ban-the-scan-at-msg/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/6a7e4a6728f891277df706a0/master/pass/MSG-Surveillance-Protests-2196667317.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-14 21:43</time>
+        <p>At a press conference outside Madison Square Garden, politicians, musicians, and privacy advocates argued for tighter restrictions on how public venues deploy biometric surveillance.</p>
+      </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
           <span class="source" data-filter-source="Wired">Wired</span>
@@ -115,13 +127,26 @@
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
+        <h2><a href="https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/" target="_blank" rel="noopener">Everything is about to &quot;go dark&quot;</a></h2>
+        
+        <time>2026-08-14 20:52</time>
+        <p>Article URL: https://blog.cryptographyengineering.com/2026/08/14/everything-is-about-to-go-dark/
+Comments URL: https://news.ycombinator.com/item?id=49304447
+Points: 72
+# Comments: 37</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
         <h2><a href="https://www.oulu.fi/en/news/study-links-coffee-consumption-metabolic-health-and-sex-hormones" target="_blank" rel="noopener">Study links coffee consumption to metabolic health and sex hormones</a></h2>
         
         <time>2026-08-14 20:46</time>
         <p>Article URL: https://www.oulu.fi/en/news/study-links-coffee-consumption-metabolic-health-and-sex-hormones
 Comments URL: https://news.ycombinator.com/item?id=49304368
-Points: 5
-# Comments: 0</p>
+Points: 43
+# Comments: 43</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -153,8 +178,8 @@ Points: 5
         <time>2026-08-14 20:10</time>
         <p>Article URL: https://iafisher.com/2026/07/pelham-123
 Comments URL: https://news.ycombinator.com/item?id=49303957
-Points: 8
-# Comments: 2</p>
+Points: 15
+# Comments: 3</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -166,21 +191,8 @@ Points: 8
         <time>2026-08-14 19:41</time>
         <p>Article URL: https://arxiv.org/abs/2608.11158
 Comments URL: https://news.ycombinator.com/item?id=49303652
-Points: 13
-# Comments: 2</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.cnn.com/2026/08/14/business/vishal-garg-better-ceo" target="_blank" rel="noopener">CEO who fired 900 people on Zoom just before Christmas wants his job back</a></h2>
-        
-        <time>2026-08-14 19:36</time>
-        <p>Article URL: https://www.cnn.com/2026/08/14/business/vishal-garg-better-ceo
-Comments URL: https://news.ycombinator.com/item?id=49303592
-Points: 55
-# Comments: 23</p>
+Points: 18
+# Comments: 5</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -197,38 +209,13 @@ Points: 55
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf" target="_blank" rel="noopener">Anthropic Risk August 2026 [pdf]</a></h2>
-        
-        <time>2026-08-14 19:32</time>
-        <p>Article URL: https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf
-Comments URL: https://news.ycombinator.com/item?id=49303540
-Points: ...</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.aletheionagi.com" target="_blank" rel="noopener">Show HN: AletheionAGI – Grounding enforcement for AI agents</a></h2>
-        
-        <time>2026-08-14 19:28</time>
-        <p>Article URL: https://www.aletheionagi.com
-Comments URL: https://news.ycombinator.com/item?id=49303499
-Points: 3
-# Comments: 0</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://eliasfarhan.ch/gamedev/cpp/2026/08/14/srnative-01-why-a-custom-engine.html" target="_blank" rel="noopener">What You Gain by Building Your Own Game Engine</a></h2>
         
         <time>2026-08-14 19:20</time>
         <p>Article URL: https://eliasfarhan.ch/gamedev/cpp/2026/08/14/srnative-01-why-a-custom-engine.html
 Comments URL: https://news.ycombinator.com/item?id=49303405
-Points: 12
-# Comments: 8</p>
+Points: 40
+# Comments: 33</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -250,8 +237,8 @@ Points: 12
         <time>2026-08-14 19:05</time>
         <p>Article URL: https://proxylity.com/articles/now-available-open-wireguard-endpoints-and-async-lambda.html
 Comments URL: https://news.ycombinator.com/item?id=49303237
-Points: 16
-# Comments: 1</p>
+Points: 18
+# Comments: 2</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -273,6 +260,18 @@ Points: 16
         <time>2026-08-14 19:04</time>
         <p>Over the last couple of weeks, hackers have targeted and broken into the systems of several water plants in the United States. Here’s what we know and don’t know about this wave of attacks allegedly c...</p>
       </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html" target="_blank" rel="noopener">Firefox is now the last major browser that still supports uBlock Origin</a></h2>
+        
+        <time>2026-08-14 19:03</time>
+        <p>Article URL: https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html
+Comments URL: https://news.ycombinator.com/item?id=49303202
+Points: 11...</p>
+      </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
           <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
@@ -293,6 +292,19 @@ Points: 16
         <time>2026-08-14 18:52</time>
         <p>Doing research with agents is fun until they blow way past budget, jumble the sources, and don&#x27;t even give you the best possible answer, just sound confident.And if you want to run some research task ...</p>
       </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.derekthompson.org/p/the-american-sports-plutocracy-is" target="_blank" rel="noopener">The American sports plutocracy</a></h2>
+        
+        <time>2026-08-14 18:43</time>
+        <p>Article URL: https://www.derekthompson.org/p/the-american-sports-plutocracy-is
+Comments URL: https://news.ycombinator.com/item?id=49302943
+Points: 29
+# Comments: 14</p>
+      </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
           <span class="source" data-filter-source="Engadget">Engadget</span>
@@ -312,6 +324,19 @@ Points: 16
         <a href="https://www.theverge.com/tech/979996/best-laptops-students-middle-high-school" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268387_Apple_MacBook_Neo_AKrales_0395.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
         <time>2026-08-14 18:32</time>
         <p>If you’re a student looking for an affordable laptop, I have bad news and I have good news. The bad news is that computer prices are out of whack due to the ongoing RAM and storage crunch, making some...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://op.tngl.io/every-fucking-website/" target="_blank" rel="noopener">Every fucking website: 2026 edition</a></h2>
+        
+        <time>2026-08-14 18:27</time>
+        <p>Article URL: https://op.tngl.io/every-fucking-website/
+Comments URL: https://news.ycombinator.com/item?id=49302737
+Points: 24
+# Comments: 10</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -373,7 +398,7 @@ Points: 16
         <time>2026-08-14 16:57</time>
         <p>Article URL: https://arxiv.org/abs/2608.12700
 Comments URL: https://news.ycombinator.com/item?id=49301417
-Points: 21
+Points: 28
 # Comments: 0</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
@@ -448,8 +473,8 @@ The post A Day in the Life of a Data Scientist in 2026 appeared first on Towards
         <time>2026-08-14 16:15</time>
         <p>Article URL: https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions
 Comments URL: https://news.ycombinator.com/item?id=49300800
-Points: 94
-# Comments: 64</p>
+Points: 103
+# Comments: 70</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -471,21 +496,8 @@ Points: 94
         <time>2026-08-14 16:12</time>
         <p>Article URL: https://rustdesk.com/blog/unattended-remote-access-wayland/
 Comments URL: https://news.ycombinator.com/item?id=49300759
-Points: 161
-# Comments: 75</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.reuters.com/world/frances-top-court-rules-social-media-ban-curtails-freedom-expression-2026-08-14/" target="_blank" rel="noopener">France&#x27;s top court blocks social media ban for under-15s</a></h2>
-        
-        <time>2026-08-14 16:06</time>
-        <p>Article URL: https://www.reuters.com/world/frances-top-court-rules-social-media-ban-curtails-freedom-expression-2026-08-14/
-Comments URL: https://news.ycombinator.com/item?id=49300671
-Points: 183
-# Co...</p>
+Points: 180
+# Comments: 85</p>
       </article>
       <article class="entry" data-source="GitHub Blog" data-labels="tech dev">
         <div class="meta">
@@ -508,8 +520,8 @@ The post How to bring your software delivery workflow into GitHub w...</p>
         <time>2026-08-14 15:58</time>
         <p>Article URL: https://www.byhand.ai/
 Comments URL: https://news.ycombinator.com/item?id=49300568
-Points: 117
-# Comments: 11</p>
+Points: 146
+# Comments: 13</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -553,8 +565,8 @@ Points: 117
         <time>2026-08-14 15:43</time>
         <p>Article URL: https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/
 Comments URL: https://news.ycombinator.com/item?id=49300314
-Points: 188
-# Comments: 123</p>
+Points: 215
+# Comments: 136</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -576,8 +588,8 @@ Points: 188
         <time>2026-08-14 15:07</time>
         <p>Article URL: https://www.mixedbread.com/blog/toast-1
 Comments URL: https://news.ycombinator.com/item?id=49299746
-Points: 146
-# Comments: 47</p>
+Points: 154
+# Comments: 55</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -589,8 +601,8 @@ Points: 146
         <time>2026-08-14 15:03</time>
         <p>Article URL: https://blog.plover.com/2026/08/02/
 Comments URL: https://news.ycombinator.com/item?id=49299675
-Points: 249
-# Comments: 107</p>
+Points: 277
+# Comments: 119</p>
       </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
@@ -612,8 +624,8 @@ Points: 249
         <time>2026-08-14 15:00</time>
         <p>Article URL: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 Comments URL: https://news.ycombinator.com/item?id=49299605
-Points: 683
-# Comments: 444</p>
+Points: 748
+# Comments: 486</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
@@ -686,8 +698,8 @@ The post RAG Workflow and Loop Engineering: The Dispatcher That Decide...</p>
         <time>2026-08-14 14:31</time>
         <p>Article URL: https://lxe.github.io/everywebsite/
 Comments URL: https://news.ycombinator.com/item?id=49299222
-Points: 662
-# Comments: 376</p>
+Points: 694
+# Comments: 389</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -2485,6 +2497,26 @@ https://zenn.dev/nabettu/articles/38f021c1901212
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
+        <h2><a href="https://www.wired.com/story/herman-miller-promo-code/" target="_blank" rel="noopener">Herman Miller Promo Codes: 40% Off August 2026</a></h2>
+        <a href="https://www.wired.com/story/herman-miller-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea03340e63ccab6b8add4b/master/pass/WIRED-Coupons-1.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-13 05:00</time>
+        <p>Whether you’re looking for a Herman Miller promo code or discounts in their sale, here is how to save on the world&#x27;s best ergonomic office furniture in August 2026.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/factor-promo-code/" target="_blank" rel="noopener">Factor Promo Code: 50% Off Off Meal Prep</a></h2>
+        <a href="https://www.wired.com/story/factor-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076e56fd4954a7f91e0c/master/pass/WIRED-Coupons-17.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-13 05:00</time>
+        <p>Make meal prep easier for any dietary need while enjoying great savings with our hand-picked Factor discount codes this August.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
         <h2><a href="https://www.wired.com/story/castlery-promo-code/" target="_blank" rel="noopener">Castlery Promo Codes: 15% Off for August 2026</a></h2>
         <a href="https://www.wired.com/story/castlery-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9a4816461befb48207/master/pass/WIRED-Coupons-R2_12.png" alt="" loading="lazy"></a>
         <time>2026-08-13 05:00</time>
@@ -2515,26 +2547,6 @@ https://zenn.dev/nabettu/articles/38f021c1901212
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/herman-miller-promo-code/" target="_blank" rel="noopener">Herman Miller Promo Codes: 40% Off August 2026</a></h2>
-        <a href="https://www.wired.com/story/herman-miller-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea03340e63ccab6b8add4b/master/pass/WIRED-Coupons-1.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-13 05:00</time>
-        <p>Whether you’re looking for a Herman Miller promo code or discounts in their sale, here is how to save on the world&#x27;s best ergonomic office furniture in August 2026.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/factor-promo-code/" target="_blank" rel="noopener">Factor Promo Code: 50% Off Off Meal Prep</a></h2>
-        <a href="https://www.wired.com/story/factor-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076e56fd4954a7f91e0c/master/pass/WIRED-Coupons-17.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-13 05:00</time>
-        <p>Make meal prep easier for any dietary need while enjoying great savings with our hand-picked Factor discount codes this August.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://www.wired.com/story/braun-promo-code/" target="_blank" rel="noopener">Braun Promo Codes: 15% Off August</a></h2>
         <a href="https://www.wired.com/story/braun-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b995a505b018b67ed92/master/pass/WIRED-Coupons-R2_10.png" alt="" loading="lazy"></a>
         <time>2026-08-13 05:00</time>
@@ -2555,20 +2567,20 @@ https://zenn.dev/nabettu/articles/38f021c1901212
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/jabra-promo-codes-coupons/" target="_blank" rel="noopener">Jabra Promo Codes: 30% Off  Headphones, Headsets &amp; More</a></h2>
-        <a href="https://www.wired.com/story/jabra-promo-codes-coupons/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b967f8fc45af4896200/master/pass/WIRED-Coupons-R2_7.png" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/shark-promo-code/" target="_blank" rel="noopener">Shark Promo Codes for August 2026</a></h2>
+        <a href="https://www.wired.com/story/shark-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b972c751893c256c1e6/master/pass/WIRED-Coupons-R2_16.png" alt="" loading="lazy"></a>
         <time>2026-08-13 05:00</time>
-        <p>Unlock significant savings on Jabra headphones, headsets, and speakers with our verified promo codes, exclusive coupons, and limited-time deals.</p>
+        <p>Shark makes some seriously powerful vacuums, from handheld vacs to steam mops. Don’t miss $100 off, 10% off, and more limited-time coupons from WIRED.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/shark-promo-code/" target="_blank" rel="noopener">Shark Promo Codes for August 2026</a></h2>
-        <a href="https://www.wired.com/story/shark-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b972c751893c256c1e6/master/pass/WIRED-Coupons-R2_16.png" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/jabra-promo-codes-coupons/" target="_blank" rel="noopener">Jabra Promo Codes: 30% Off  Headphones, Headsets &amp; More</a></h2>
+        <a href="https://www.wired.com/story/jabra-promo-codes-coupons/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b967f8fc45af4896200/master/pass/WIRED-Coupons-R2_7.png" alt="" loading="lazy"></a>
         <time>2026-08-13 05:00</time>
-        <p>Shark makes some seriously powerful vacuums, from handheld vacs to steam mops. Don’t miss $100 off, 10% off, and more limited-time coupons from WIRED.</p>
+        <p>Unlock significant savings on Jabra headphones, headsets, and speakers with our verified promo codes, exclusive coupons, and limited-time deals.</p>
       </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
@@ -2635,16 +2647,6 @@ The post GitHub availability report: July 2026 appeared first on The GitHub Blog
         <a href="https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/6a7bbf68f5d2df0bb3e19f91/master/pass/politics_white_house_ai_policy.jpg" alt="" loading="lazy"></a>
         <time>2026-08-12 21:00</time>
         <p>Open models may soon be added to an updated AI framework, sources tell WIRED, as the White House continues to grapple with how to regulate a technology it has tried not to regulate.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/lettuce-grow-20-percent-off-2026/" target="_blank" rel="noopener">The Best Way to Avoid Diarrhea Lettuce? This Indoor Garden</a></h2>
-        <a href="https://www.wired.com/story/lettuce-grow-20-percent-off-2026/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/6a7cb24ff364ac5424573890/master/pass/Tired-of-Diarrhea-Lettuce--Grow-Your-Own-Greens-for-20-Percent-Off.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-12 20:14</time>
-        <p>Lettuce Grow, one of my favorite indoor gardens, lets you cultivate your own salad greens safely, right in your living room. And it’s 20 percent off right now.</p>
       </article>
       <article class="entry" data-source="GitHub Blog" data-labels="tech dev">
         <div class="meta">
@@ -2722,6 +2724,17 @@ The post Your contributors are AI-fi...</p>
         
         <time>2026-08-12 16:30</time>
         <p>Enterprise Document Intelligence [Vol.1 #5nonies] - Nature, plan, execute, synthesize: closing brick 1 with a dispatcher that reads each PDF’s nature and picks the method that fits, fitz, Docling, Pad...</p>
+      </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-from-pilots-to-measurable-returns/" target="_blank" rel="noopener">The Economics of Agent Optimization: From pilots to measurable returns</a></h2>
+        
+        <time>2026-08-12 16:00</time>
+        <p>Learn how AI cost management helps organizations move from AI pilots to measurable ROI through greater visibility, governance, and optimization.
+The post The Economics of Agent Optimization: From pilo...</p>
       </article>
       <article class="entry" data-source="Android Developers" data-labels="tech dev android">
         <div class="meta">
