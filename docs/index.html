@@ -39,16 +39,17 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-08-20 07:43 UTC</div>
+      <div class="updated">Last updated: 2026-08-20 08:42 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (19)</summary>
+      <summary>Sources (20)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
         <button class="filter-btn source-btn" data-source="Apple Developer News">Apple Developer News</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -80,6 +81,7 @@
       <button class="filter-btn label-btn" data-label="gadget">gadget</button>
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -87,6 +89,46 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
+        <div class="meta">
+          <span class="source" data-filter-source="Engadget">Engadget</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.engadget.com/2240584/samsung-galaxy-event-august-27/" target="_blank" rel="noopener">Samsung is holding another Galaxy Event on August 27</a></h2>
+        <a href="https://www.engadget.com/2240584/samsung-galaxy-event-august-27/" target="_blank" rel="noopener"><img class="thumb" src="https://www.engadget.com/img/gallery/samsung-is-holding-another-galaxy-event-on-august-27/l-intro-1787214884.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-20 08:37</time>
+        <p>Samsung says it will be launching a new addition to its S26 lineup next week.</p>
+      </article>
+      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
+        <div class="meta">
+          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
+        </div>
+        <h2><a href="https://www.gizmodo.jp/article/hand_powered_chatbot_clank_gpt/" target="_blank" rel="noopener">災害時に便利？ 手回しチャットボット「CrankGPT」</a></h2>
+        <a href="https://www.gizmodo.jp/article/hand_powered_chatbot_clank_gpt/" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/loom/2026/06/22/2a75b48b-8341-478d-aab9-993e70665a5c/original.jpg?w=1200" alt="" loading="lazy"></a>
+        <time>2026-08-20 08:35</time>
+        <p>2026年6月25日の記事を編集して再掲載しています。電気いらず。手動で動くチャットボット！今晩の献立から調べ物まで、なんでもAIに聞く習慣がついている人も多いんではないでしょうか。でも、災害とかで電気やネットも止まってしまったら、どうした…</p>
+      </article>
+      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
+        <div class="meta">
+          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
+        </div>
+        <h2><a href="https://www.gizmodo.jp/article/amazon-ugreen-air/" target="_blank" rel="noopener">薄いのに安いのはズルくない？モバイル充電器の決定版は君に決めた！</a></h2>
+        <a href="https://www.gizmodo.jp/article/amazon-ugreen-air/" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/loom/2026/08/19/e60348b7-881f-4296-b581-334326a2bd13/original.jpg?w=1200" alt="" loading="lazy"></a>
+        <time>2026-08-20 08:00</time>
+        <p>薄いって最強じゃないか？スマホ時代のお出かけ必需品、充電器。いや、スマホだけじゃなくてイヤホンやらノートPCやら、みんなUSB-Cなので、まぁ、お出かけには充電器は必要ですよね！って時代です。お出かけ用によさそうな充電器はいくつも発売されて…</p>
+      </article>
+      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
+        <div class="meta">
+          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://gigazine.net/news/20260820-black-thunder-royal-milktea/" target="_blank" rel="noopener">アッサム＆ウバをブレンドした上品で香り高いロイヤルミルクティーの風味が楽しめる「ロイヤルミルクティーのサンダー」試食レビュー</a></h2>
+        
+        <time>2026-08-20 08:00</time>
+        <p>有楽製菓のブラックサンダーシリーズに、「ロイヤルミルクティーのサンダー」が2026年8月25日(火)から新登場します。華やかな紅茶の香りとミルクのコクを軽やかな食感とともに楽しめるという新フレーバーが編集部に届いたので、一足先にどんな味になっているのか確かめてみました。続きを読む...</p>
+      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -137,6 +179,49 @@
         <time>2026-08-20 07:00</time>
         <p>動画プラットフォームのYouTubeが、Netflixをはじめとする他の動画配信サービスよりも先にYouTubeに動画を投稿するクリエイターに数億円規模の報酬を提示していることが明らかになりました。一方、YouTubeとNetflixに同時に動画を投稿したクリエイターは、何らかの制裁を受けることになるとも報じられています。続きを読む...</p>
       </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/m__ikeda/items/edc03c11a477f5ecbfc2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">IT企業の面接、私服で本当に大丈夫？採用担当が考える「清潔感」のライン</a></h2>
+        
+        <time>2026-08-20 06:46</time>
+        <p>自己紹介
+こんにちは。株式会社PRUMで採用広報を担当している池田です。
+未経験からIT業界を目指している方と話していると、かなりよく聞く共通した悩みがあります。そういった内容を皆さんにシェアしていくので、役立てていただけたらと思います😊
+もしIT業界に興味があるけど、...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/sumomoo/items/195c278d026657c6618f?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">AIも人も、ただ褒めるだけでは変わらない。大事なのは&quot;時間を惜しまない一言&quot;</a></h2>
+        
+        <time>2026-08-20 06:40</time>
+        <p>はじめまして。株式会社PRUMでエンジニアをしている、すもも🍑です
+日々、プログラミング学習や実務の中で、つまずきやすいポイントや
+考え方を整理して発信しています。
+PRUMについて気になった方は、コーポレートサイトもぜひご覧ください。
+▶コーポレートサイト
+
+褒め言葉よ...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/prumnn/items/8f439ca399b08a925cba?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">基本情報｜科目B「アルゴリズム問題」、パズルが好きな人はたぶん好き</a></h2>
+        
+        <time>2026-08-20 06:40</time>
+        <p>はじめに
+
+基本情報の必須出題範囲「疑似言語（アルゴリズム問題）」という響きを聞いただけで身構えていたぷらむんですが、実は科目Bで覚えるべきルールは拍子抜けするくらいシンプルでした。
+
+こんにちわ、会社で自称マスコットキャラをやってるのに、社内で一番空気が読めない、ぷ...</p>
+      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -157,8 +242,8 @@
         <time>2026-08-20 06:16</time>
         <p>Article URL: https://devblogs.microsoft.com/oldnewthing/20030825-00/?p=42803
 Comments URL: https://news.ycombinator.com/item?id=49371006
-Points: 70
-# Comments: 13</p>
+Points: 111
+# Comments: 41</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -265,6 +350,16 @@ Points: 70
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
+        <h2><a href="https://www.wired.com/story/irobot-promo-code/" target="_blank" rel="noopener">iRobot Promo Code: 15% Off</a></h2>
+        <a href="https://www.wired.com/story/irobot-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b917d355db73b38e0c0/master/pass/WIRED-Coupons-R2_1.png" alt="" loading="lazy"></a>
+        <time>2026-08-20 05:00</time>
+        <p>Save on iRobot products, including robot vacuums and mops designed to handle pet hair, daily messes, and hands-free cleaning with smart home integration.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
         <h2><a href="https://www.wired.com/story/hr-block-coupon/" target="_blank" rel="noopener">H&amp;R Block Coupon: 25% Off DIY + Tax Pro Assist</a></h2>
         <a href="https://www.wired.com/story/hr-block-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea077015aa1d8092e99428/master/pass/WIRED-Coupons-6.jpg" alt="" loading="lazy"></a>
         <time>2026-08-20 05:00</time>
@@ -289,16 +384,6 @@ Points: 70
         <a href="https://www.wired.com/story/ebay-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea03340e63ccab6b8add4b/master/pass/WIRED-Coupons-1.jpg" alt="" loading="lazy"></a>
         <time>2026-08-20 05:00</time>
         <p>Save up to 60% on a selection of items at eBay, including electronics, home products, card games, car parts and more.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/irobot-promo-code/" target="_blank" rel="noopener">iRobot Promo Code: 15% Off</a></h2>
-        <a href="https://www.wired.com/story/irobot-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b917d355db73b38e0c0/master/pass/WIRED-Coupons-R2_1.png" alt="" loading="lazy"></a>
-        <time>2026-08-20 05:00</time>
-        <p>Save on iRobot products, including robot vacuums and mops designed to handle pet hair, daily messes, and hands-free cleaning with smart home integration.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -340,8 +425,8 @@ Points: 70
         <time>2026-08-20 04:42</time>
         <p>Article URL: https://devblogs.microsoft.com/oldnewthing/20260818-00/?p=112621
 Comments URL: https://news.ycombinator.com/item?id=49370440
-Points: 44
-# Comments: 21</p>
+Points: 49
+# Comments: 24</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -373,6 +458,16 @@ Points: 44
         <time>2026-08-20 04:16</time>
         <p>「SpaceXがAIコーディングのスタートアップ・Cognitionに買収打診を行った」という報道があり、Cognitionのスコット・ウーCEOが「そういった事実はなく、売却の予定はない」と否定しています。続きを読む...</p>
       </article>
+      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.theguardian.com/commentisfree/2026/aug/20/bodies-ai-minds-history-technology-humans" target="_blank" rel="noopener">It used to be our imperfect bodies that made us insecure. With AI, it’s our minds as well</a></h2>
+        
+        <time>2026-08-20 04:00</time>
+        <p>For most of modern history, technology sought to imitate humans. Humans increasingly seek to imitate technologyTwo faces that appeared on my Instagram feed in recent months gave me pause. One belonged...</p>
+      </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
           <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
@@ -402,6 +497,18 @@ Points: 44
         <a href="https://www.gizmodo.jp/article/the-viral-smart-glasses-sniffing-app-is-informative-but-anticlimactic/" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/loom/2026/08/18/46ac73f9-65df-4c53-9ed0-4584f1005ce6/original.jpg?w=1200" alt="" loading="lazy"></a>
         <time>2026-08-20 03:30</time>
         <p>Metaを筆頭に広がりをみせるスマートグラス。参入メーカーも、モデル数もどんどん増えています。カメラやディスプレイ非搭載でオーディオに特化したもの、カメラで周囲を認識するもの、ディスプレイでナビや字幕を表示するものと、ハードの仕様もさまざま…</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/keishin_nishiura/items/48c6cb3c54168ab1082c?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">GitHubのTrendingを、AI編集部が無料枠だけで下書きしてくれる仕組みを作った</a></h2>
+        
+        <time>2026-08-20 03:27</time>
+        <p>1. はじめに
+ソーイ株式会社の西浦です。
+つい最近、GitHubで話題になっているリポジトリをまとめて見られる「Trending」というコンテンツの存在を知りました。眺めてみると普段の業務では出会わないような面白いプロジェクトが並んでいて、これは毎週チェックしたいと思い...</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -523,8 +630,8 @@ Points: 44
         <time>2026-08-20 01:29</time>
         <p>Article URL: https://www.computerenhance.com/p/turns-are-better-than-radians
 Comments URL: https://news.ycombinator.com/item?id=49369408
-Points: 165
-# Comments: 70</p>
+Points: 186
+# Comments: 81</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -546,6 +653,22 @@ Points: 165
         <time>2026-08-20 00:35</time>
         <p>Zvezdelina Stankova says she used AI to ‘help edit’ an article about some of her students being ‘five to eight years’ behindA math professor at the University of California, Berkeley, criticizing a “s...</p>
       </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/jqit_suwa/items/d49739b934606d4abdbd?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Claude Code の設定でハマる箇所まとめ</a></h2>
+        
+        <time>2026-08-20 00:31</time>
+        <p>Claude Code を使っていて、こういう目に遭ったことはないでしょうか。
+
+公式に「既定でON」と書いてある機能が、なぜか使えない
+昨日まで出ていたタスクリストが、いつの間にか出なくなった
+設定を書いたのに、何も起きない。エラーも出ない
+
+原因の多くは、公式ドキュメン...</p>
+      </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
           <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
@@ -565,6 +688,29 @@ Points: 165
         
         <time>2026-08-20 00:00</time>
         <p>日常生活では「買いものリスト」や「仕事のタスク」などのメモとして記録しておきたい事柄が大量に発生しますが、スマートフォンアプリなどを使って手動で記録するのは手間がかかります。2026年8月19日に登場した「SwitchBot AIマインドクリップ」は音声を録音してAIで情報整理できるデバイスで、会話内容や音声メモを録音しておくだけでAIが自動的に内容をまとめてタスクリストや日次レポートを作成してく...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/jqit_suwa/items/c87c377fa192de27e2a1?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">AGENTS.md を共有したつもりが、Claude Code だけ古い指示を読んでいた</a></h2>
+        
+        <time>2026-08-19 23:44</time>
+        <p>AGENTS.md は、Codex や Cursor など複数のコーディングエージェントが読む共通の指示ファイルです。
+Claude Code はこれを読みません。 公式が案内している回避策は2つあります。
+ln -s AGENTS.md CLAUDE.md   # ① シ...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/y_abe_bc/items/d46dfb07c9599a487fbb?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Genkit Dartでゲーム用のAI会話システムを作る</a></h2>
+        
+        <time>2026-08-19 23:36</time>
+        <p>Genkit Dart を使うと、Dart言語で生成AIを利用するサーバアプリケーションが簡単に実装できるらしい、ということで試してみました。
+クライアントは Flutter + Flame のゲーム風サンプルにして、「街を歩いて村人に話しかけると、AI がその人物になりき...</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -696,6 +842,16 @@ Points: 165
         <time>2026-08-19 21:48</time>
         <p>After raising $1.7 billion for his new robotics company Atoms, Travis Kalanick is introspective about the role VCs have played in his career.</p>
       </article>
+      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.theguardian.com/technology/2026/aug/19/meta-safety-trial-whistleblower-testimony" target="_blank" rel="noopener">Zuckerberg lied about concern for child safety, Meta whistleblower testifies at landmark trial</a></h2>
+        
+        <time>2026-08-19 21:30</time>
+        <p>Arturo Béjar, former Meta safety engineer, tells jury tech company was aware of products’ potential harm to childrenMeta has taken a “don’t ask, don’t tell” strategy when it comes to the safety of chi...</p>
+      </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
@@ -706,8 +862,8 @@ Points: 165
         <time>2026-08-19 21:19</time>
         <p>Article URL: https://github.com/anthropics/claude-code/issues/6235
 Comments URL: https://news.ycombinator.com/item?id=49367350
-Points: 228
-# Comments: 130</p>
+Points: 242
+# Comments: 140</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -729,8 +885,8 @@ Points: 228
         <time>2026-08-19 21:11</time>
         <p>Article URL: https://os8088.com/spotlight/
 Comments URL: https://news.ycombinator.com/item?id=49367256
-Points: 83
-# Comments: 38</p>
+Points: 85
+# Comments: 40</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -822,8 +978,8 @@ Points: 83
         <time>2026-08-19 19:43</time>
         <p>Article URL: https://www.theverge.com/tech/981956/google-pixel-11-pro-fold-review
 Comments URL: https://news.ycombinator.com/item?id=49366264
-Points: 58
-# Comments: 129</p>
+Points: 61
+# Comments: 138</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -855,8 +1011,8 @@ Points: 58
         <time>2026-08-19 19:06</time>
         <p>Article URL: https://sprocketfox.io/xssfox/2026/07/01/cricut-unlock/
 Comments URL: https://news.ycombinator.com/item?id=49365841
-Points: 197
-# Comments: 47</p>
+Points: 201
+# Comments: 48</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -928,8 +1084,8 @@ Points: 197
         <time>2026-08-19 18:36</time>
         <p>Article URL: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs
 Comments URL: https://news.ycombinator.com/item?id=49365443
-Points: 247
-# Comments: 91</p>
+Points: 258
+# Comments: 93</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -941,8 +1097,8 @@ Points: 247
         <time>2026-08-19 18:33</time>
         <p>Article URL: https://go.dev/blog/go1.27
 Comments URL: https://news.ycombinator.com/item?id=49365405
-Points: 601
-# Comments: 159</p>
+Points: 615
+# Comments: 169</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -1036,8 +1192,8 @@ The post GitHub Copilot app for Beginners: Managing your work appeared first...<
         <time>2026-08-19 17:47</time>
         <p>Article URL: https://grapheneos.social/@GrapheneOS/117057099753905023
 Comments URL: https://news.ycombinator.com/item?id=49364745
-Points: 482
-# Comments: 198</p>
+Points: 509
+# Comments: 206</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -1070,8 +1226,8 @@ Points: 482
         <p>Previously: Stripe will reportedly acquire OpenRouter for $7B+ https://news.ycombinator.com/item?id=49323381
 
 Comments URL: https://news.ycombinator.com/item?id=49364559
-Points: 810
-# Comments: 413</p>
+Points: 826
+# Comments: 422</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -1219,8 +1375,8 @@ Th...</p>
         <time>2026-08-19 16:26</time>
         <p>Article URL: https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/
 Comments URL: https://news.ycombinator.com/item?id=49363668
-Points: 144
-# Comments: 58</p>
+Points: 148
+# Comments: 60</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -1302,6 +1458,21 @@ Points: 144
         <time>2026-08-19 15:44</time>
         <p>TerraPower&#x27;s nuclear power plant possesses a strategic advantage over competitors, especially when chasing after data center deals.</p>
       </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/ryu-ki/items/83897ed6ebd2199b250e?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">【やってみた】ハイクの日にHaikuに俳句を詠ませてみる〜字余り祭り〜</a></h2>
+        
+        <time>2026-08-19 15:44</time>
+        <p>本記事は 8/19 に投稿予定でしたが、色々あって間に合いませんでした。8/19 に投稿されたという体で読んでいただけますと幸いです。
+
+はじめに
+今日（8月19日）は何の日でしょう？
+そうです、「ハイクの日」です。
+ということで、Haiku に俳句を詠んでもらうこ...</p>
+      </article>
       <article class="entry" data-source="Publickey" data-labels="tech dev japan">
         <div class="meta">
           <span class="source" data-filter-source="Publickey">Publickey</span>
@@ -1342,8 +1513,8 @@ Points: 144
         <time>2026-08-19 15:28</time>
         <p>Article URL: https://www.casio.com/uk/watches/casio/product.F-B100W-1A/
 Comments URL: https://news.ycombinator.com/item?id=49362887
-Points: 353
-# Comments: 293</p>
+Points: 363
+# Comments: 301</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -1355,8 +1526,8 @@ Points: 353
         <time>2026-08-19 15:14</time>
         <p>Article URL: https://arxiv.org/abs/2608.16753
 Comments URL: https://news.ycombinator.com/item?id=49362728
-Points: 157
-# Comments: 186</p>
+Points: 161
+# Comments: 192</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -1367,6 +1538,16 @@ Points: 157
         
         <time>2026-08-19 15:01</time>
         <p>The investment comes amid Navi plans to go public.</p>
+      </article>
+      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.theguardian.com/australia-news/2026/aug/20/roblox-esafety-commissioner-children-adults-ntwnfb" target="_blank" rel="noopener">Roblox commits to privacy overhaul after eSafety discovers adults can contact children via gaming platform</a></h2>
+        
+        <time>2026-08-19 15:00</time>
+        <p>Regulator says verifiable safety measures are ‘critical’ to the online service’s viabilityFollow our Australia news live blog for latest updatesGet our breaking news email, free app or daily news podc...</p>
       </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
@@ -1431,16 +1612,6 @@ The post Understanding Anti-AI Public Opinion appeared first on Towards Data Sci
 いえらぶＧＲＯＵＰの開発部で執行役員を務めています、和田です。わだけんです。
 去年、新人にAIを一時的に禁止した話を書きました。1週間で1,000行持ってきたのに「なぜこう書いたか」が「AIがそう言ったので」で、コメント800件を超えても理解が進まず、一旦止めて...</p>
       </article>
-      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
-        <div class="meta">
-          <span class="source" data-filter-source="Engadget">Engadget</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.engadget.com/2239975/guerrilla-games-overhauling-horizon-hunters-gathering-live-service-co-op/" target="_blank" rel="noopener">Guerrilla is reportedly overhauling Horizon Hunters Gathering to make it more of a traditional co-op game</a></h2>
-        <a href="https://www.engadget.com/2239975/guerrilla-games-overhauling-horizon-hunters-gathering-live-service-co-op/" target="_blank" rel="noopener"><img class="thumb" src="https://www.engadget.com/img/gallery/guerrilla-is-reportedly-overhauling-horizon-hunters-gathering-to-make-it-more-of-a-traditional-co-op-game/l-intro-1787150598.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-19 14:47</time>
-        <p>Yet another Sony live-service game seems to be in trouble after reports of poor player feedback.</p>
-      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -1481,8 +1652,8 @@ The post Understanding Anti-AI Public Opinion appeared first on Towards Data Sci
         <time>2026-08-19 14:20</time>
         <p>Article URL: https://coca11272000.wixsite.com/manabukosaka
 Comments URL: https://news.ycombinator.com/item?id=49362001
-Points: 116
-# Comments: 12</p>
+Points: 125
+# Comments: 13</p>
       </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
@@ -1514,16 +1685,6 @@ Points: 116
         <time>2026-08-19 14:09</time>
         <p>Calendly is also releasing a meeting scheduling assistant called Callie.</p>
       </article>
-      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
-        <div class="meta">
-          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
-        </div>
-        <h2><a href="https://www.gizmodo.jp/article/promachocrinus-wbh/" target="_blank" rel="noopener">君はエイリアンか? はたまたイチゴか? 腕20本の動物が南極で発見</a></h2>
-        <a href="https://www.gizmodo.jp/article/promachocrinus-wbh/" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/gizmodo/dist/images/2023/08/15/480372d9020b01cd0026cf5f68588e45.jpg?w=1200" alt="" loading="lazy"></a>
-        <time>2026-08-19 14:00</time>
-        <p>カリフォルニア大学の科学者チームが南極近くの海でPromachocrinus属の生物を発見。20本の腕を持つ無脊椎生物。</p>
-      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -1544,18 +1705,8 @@ Points: 116
         <time>2026-08-19 13:21</time>
         <p>Article URL: https://www.raphaelbauer.com:443/posts/postgresql-everything/
 Comments URL: https://news.ycombinator.com/item?id=49361279
-Points: 351
-# Comments: 215</p>
-      </article>
-      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
-        <div class="meta">
-          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
-        </div>
-        <h2><a href="https://www.gizmodo.jp/article/microdot-technology-tatoo/" target="_blank" rel="noopener">スタンプ感覚で一生のこる。ヤバい予感がする最新タトゥー</a></h2>
-        <a href="https://www.gizmodo.jp/article/microdot-technology-tatoo/" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/loom/2026/08/17/03c66e72-6f7e-44db-8431-5e2ca4eba98e/original.jpg?w=1200" alt="" loading="lazy"></a>
-        <time>2026-08-19 13:00</time>
-        <p>このタイプでもタトゥーをしてからしばらくは献血できないのかな。｢技術的にはクールだけど、めちゃくちゃすごいアイデアかどうかは微妙｣なテックのカテゴリーに新たな仲間が加わりました。ロンドンに拠点を置くスタートアップ企業｢CipherX（サイフ…</p>
+Points: 355
+# Comments: 217</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -1567,7 +1718,7 @@ Points: 351
         <time>2026-08-19 12:19</time>
         <p>Article URL: https://yassa9.github.io/osint/gralhix-004/
 Comments URL: https://news.ycombinator.com/item?id=49360545
-Points: 464
+Points: 470
 # Comments: 78</p>
       </article>
       <article class="entry" data-source="MIT Technology Review" data-labels="tech research news">
@@ -1646,8 +1797,8 @@ The post Jigsaw Jeeves: Building a Puzzle Assistant using Computer Vision appear
         <time>2026-08-19 11:21</time>
         <p>Article URL: https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/
 Comments URL: https://news.ycombinator.com/item?id=49360015
-Points: 871
-# Comments: 136</p>
+Points: 883
+# Comments: 141</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -1658,16 +1809,6 @@ Points: 871
         <a href="https://www.wired.com/story/window-cleaning-robots-are-kinda-terrible/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/6a8544f2eab23e58b199ded0/master/pass/Window-Cleaning-Robots-Are-Not-for-Me.jpg" alt="" loading="lazy"></a>
         <time>2026-08-19 11:08</time>
         <p>I tested the top-of-the-line Ecovacs Winbot W2S Omni window-cleaning robot on my Victorian home, and it was an unmitigated disaster.</p>
-      </article>
-      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.theguardian.com/technology/2026/aug/19/ai-hiring-tools-discrimination" target="_blank" rel="noopener">Will AI give you the job? Automated hiring tools spark discrimination and secrecy lawsuits</a></h2>
-        
-        <time>2026-08-19 11:00</time>
-        <p>A rise in lawsuits over AI use in employment decisions is raising questions about how companies hire and fireFor the last four years, Erin Kistler has applied for thousands of jobs at companies like P...</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -1739,7 +1880,7 @@ Points: 871
         <time>2026-08-19 10:15</time>
         <p>Article URL: https://theremin.bizibah.com/
 Comments URL: https://news.ycombinator.com/item?id=49359425
-Points: 270
+Points: 271
 # Comments: 92</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
@@ -1838,6 +1979,17 @@ Todo/task-tracking tool...</p>
         <time>2026-08-19 09:00</time>
         <p>Flock’s surveillance cameras have already sparked outrage. WIRED reconstructed its next-generation AI system, already in use by some police, to confirm it goes much further than tracking license plate...</p>
       </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/nakasato310/items/b287530a0ce0c2a3641b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Oracle IntegrationのMCPサーバーを有効化して、MCPクライアントからツールを実行してみた</a></h2>
+        
+        <time>2026-08-19 08:39</time>
+        <p>はじめに
+Oracle Integration（OIC） は、Oracle Cloud Infrastructure（OCI）が提供するiPaaS（Integration Platform as a Service）です。Oracle SaaSやOCIサービス、オンプレミ...</p>
+      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -1848,25 +2000,42 @@ Todo/task-tracking tool...</p>
         <time>2026-08-19 08:32</time>
         <p>Twitter創業者のジャック・ドーシー氏が率いるBlockが、AIエージェントアプリ「Berd」をリリースしました。Berdでは複数のAIエージェントをキャラクターとして管理して作業を遂行できます。続きを読む...</p>
       </article>
-      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
-          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
         </div>
-        <h2><a href="https://www.theguardian.com/technology/2026/aug/19/unitree-shares-surge-humanoid-robot-firm-chinese-stock-market-debut" target="_blank" rel="noopener">Shares in humanoid robot firm Unitree surge 600% on Chinese stock market debut</a></h2>
+        <h2><a href="https://qiita.com/I635230/items/390d20b6c6e3eef92f45?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Claude Coworkの定期タスクが4回止まった。原因は全部承認の設定だった話</a></h2>
         
-        <time>2026-08-19 07:49</time>
-        <p>Company’s robots have gained global fame via videos of them performing martial arts and as dancers for pop starsUnitree, the world’s biggest humanoid robot maker, has made a spectacular entry on to Ch...</p>
+        <time>2026-08-19 08:18</time>
+        <p>1. はじめに
+Confluenceに毎日の作業メモページを作る、という定期タスクを動かしています。
+平日の朝7時に走って、翌営業日分のページをテンプレートから1枚作っておく、それだけの仕事です。ローカルで動かしていたものを、PCを開いていなくても走るようにクラウド(Cl...</p>
       </article>
-      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
-          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
         </div>
-        <h2><a href="https://gigazine.net/news/20260819-ai-agent-command/" target="_blank" rel="noopener">AIエージェントに「安全なコマンド」を許可しただけで任意コード実行、Dockerが解説するコマンド承認の落とし穴</a></h2>
+        <h2><a href="https://qiita.com/I635230/items/ed5423f7f6a13fb9c2d0?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">社内の発表会をすっぽかしたので、MTGの30分前にAlexaが教えてくれる仕組みを整備した話</a></h2>
         
-        <time>2026-08-19 07:15</time>
-        <p>AIを使ってプログラミングを支援する「AIコーディングエージェント」では、危険なコマンドを実行する前にユーザーへ確認を求める仕組みが使われています。しかしDockerは2026年8月18日に、安全に見えるコマンドをユーザーが承認しても攻撃者のコードが実行される可能性がある事例を紹介しました。続きを読む...</p>
+        <time>2026-08-19 07:47</time>
+        <p>1. はじめに
+先日、社内の発表会をすっぽかしてしまいました。
+弊社はフレックス制なので朝の出社時間が日によって異なり、いつもなら寝る前に「明日早めの予定合った気がするな」という感覚に頼ってカレンダーを確認するという風にしていました。
+しかし、その日はいつもは別の曜日に予...</p>
+      </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/Takashi_Masumori/items/cb042bed000014ae6747?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">「生成 AI で逆に忙しくなった」という意見について考えてみる</a></h2>
+        
+        <time>2026-08-19 07:47</time>
+        <p>はじめに
+最近、「生成 AI を使うようになったけど、逆に忙しくなった」「仕事がより大変になった」といった記事や意見を目にすることがあります。
+もちろん、個人の体感の話ですし、そう感じる人がいることは否定しません。ただ、「生成 AI を使うと仕事が忙しくなる」といった形で...</p>
       </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
@@ -2016,6 +2185,18 @@ https://...</p>
 
 パスワードなら、漏洩した文字列がそのまま不正ログイ...</p>
       </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/PDC-Kurashinak/items/a814c17b39b90287d735?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Webアプリ開発やAIエージェント構築によく使われるOAuthについて理解を深めたいよなぁ！</a></h2>
+        
+        <time>2026-08-19 03:24</time>
+        <p>どうもこんにちは。
+今回は、OAuthについてちゃんと理解をしなきゃいけないなぁと思い、理解を深めるために記事を書きました。
+ところでOAuthってなんて読むん？ググったら「オーオースですよ」って言われたけど。良いんか？「オーオース」で。まぁ「認証認可のおおーす的なやつ」っ...</p>
+      </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
           <span class="source" data-filter-source="Zenn">Zenn</span>
@@ -2043,37 +2224,17 @@ TrueType Collection（TTC）は，複数のフォントを一つのファイル�
           <span class="source" data-filter-source="Qiita">Qiita</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
         </div>
-        <h2><a href="https://qiita.com/nkstm_0410/items/6145b1aaf27c16366303?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">【2026年9月までに対応】Gemini API の Standard key を Auth key へ移行する手順と漏えい対策</a></h2>
+        <h2><a href="https://qiita.com/foovar/items/732af8e33c6292894e39?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">PHPでインボイスの消費税を計算したら1円ズレる — 端数処理は「税率ごとに1回」</a></h2>
         
-        <time>2026-08-19 00:49</time>
-        <p>ある日とつぜん、これまで動いていた Gemini API のリクエストが拒否されるようになった。
-そうならないためにも、Gemini API の API キーが Standard API key から Authorization key（Auth key）へ段階的に移行して...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/jqit_suwa/items/11f46a9fc9cb429ceaf5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Claude Code の fork、既定ONのはずが使えなかった — 環境変数1つで決まっていた</a></h2>
-        
-        <time>2026-08-18 23:56</time>
-        <p>Claude Code 2.1.232 で、サブエージェントの fork が既定で有効になりました。
-fork は、親の会話をまるごと引き継ぐサブエージェントです。前提を説明し直さずに作業を投げられます。
-使ってみようとしたら、こうなりました。
-Agent type &#x27;fo...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/jqit_suwa/items/90f0c5866fb3516c909b?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Claude Code をやめて Codex で続きから作業できた — ただし引き継がれたのは要約ではなかった</a></h2>
-        
-        <time>2026-08-18 23:33</time>
-        <p>AI エージェントを乗り換えると、前提の説明をやり直すことになります。
-Claude Code で「このプロジェクトは Node 18 では動かない」「認証は Cognito」と伝えてから、
-別の理由で Codex に移ると、また同じ説明から始まります。
-これを解決するとい...</p>
+        <time>2026-08-19 02:11</time>
+        <p>この記事は Zenn に投稿した記事 の転載です。内容は同じものです。
+
+本記事は自作の OSS（MIT ライセンス）の紹介を含みます。
+
+3行の請求書で1円ズレる
+税抜105円の商品を3行、税率10%、切捨て。消費税はいくらでしょうか。
+$tax = 0;
+fore...</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -2269,11 +2430,18 @@ Claude Codeのクラウドルーティン（定期実行エージェント）で
           <span class="source" data-filter-source="Qiita">Qiita</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
         </div>
-        <h2><a href="https://qiita.com/ryoji9702/items/238ce9ef6af93691d818?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">allowlist が破れる4パターン — Claude Code / Codex / Cursor の実CVE</a></h2>
+        <h2><a href="https://qiita.com/ssaita/items/dd81ec692840a3bb6303?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">「5年後どうなりたい？」に答えられないのを、自身のキャリア意識が低いからだと責めないでほしい</a></h2>
         
-        <time>2026-08-18 15:08</time>
-        <p>はじめに
-コーディングエージェントを常用していると、承認プロンプトが煩わしくなって settings.json に allowlist を書き足していきます。筆者の .claude/settings.local.json も、気づけば Bash(git:*) Bash(n...</p>
+        <time>2026-08-18 15:04</time>
+        <p>過去の自分自身と、同じ経験をしたことのある人を救いたい。
+
+TL;DR
+
+目標面談の「5年後どうなりたい？」に答えられなくても、あなたに何かが欠けているわけではない
+山に登る人間は3種類いると思っています
+
+① 登らないと危険が迫るから登る人
+② 頂上に目的があるから登る人...</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -2323,19 +2491,6 @@ Claude Codeのクラウドルーティン（定期実行エージェント）で
         <time>2026-08-18 15:00</time>
         <p>Attachment 14 of the Apple Developer Program License Agreement has been added to specify updated terms for apps in the European Union, including alternative distribution, alternative payments, and bus...</p>
       </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/maskot1977/items/beb19f99e921b50322af?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">「外国人だから厳しくする」のではない ― 外免切替から考える安全と人的資本の国家OS : システム設計視点の行動経済学 (18)</a></h2>
-        
-        <time>2026-08-18 15:00</time>
-        <p>user:
-「システム設計視点の行動経済学」、第18回を始めましょう。その前に、まず前回の復習として、
-少子化対策から人的資本投資へ ― 結婚・子育て・外国人材をつなぐ国家OSの再設計 : システム設計視点の行動経済学 (17)
-https://qiita.com/mas...</p>
-      </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
           <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
@@ -2367,18 +2522,6 @@ The post Building Enterprise Agent Systems that People can Trust, Verify...</p>
         <time>2026-08-18 13:58</time>
         <p>Each location will be a permanent community space to offer free workshops, networking events, pitch nights, content creation spaces, collaboration/co-working areas, and event hosting for developers, s...</p>
       </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/GeekMasahiro/items/4ea6e5cded806a54eee4?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">【応答時間 3.56 µs】AI AgentにCPUを持たないUSBホストをFPGAで作らせた話</a></h2>
-        
-        <time>2026-08-18 13:36</time>
-        <p>はじめに
-AI Agent（Claude Code）によってFPGAの論理回路開発が容易になれば、従来はCPU（ソフトウェア処理）が前提だった領域にも、FPGAを適用するという新たな選択肢が生まれるのではないかと考えています。
-そのPOC（概念実証）として、USBホストを...</p>
-      </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
           <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
@@ -2388,6 +2531,16 @@ AI Agent（Claude Code）によってFPGAの論理回路開発が容易になれ
         
         <time>2026-08-18 13:30</time>
         <p>Adding more communication pathways between agents doesn’t necessarily improve multi-agent performance. In a controlled, reproducible experiment across 50 runs, recovery remained remarkably stable from...</p>
+      </article>
+      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.theguardian.com/technology/2026/aug/18/meta-pays-influencers-teen-social-media-ban" target="_blank" rel="noopener">Reel-ing it in: Meta is paying influencers to promote teen accounts</a></h2>
+        
+        <time>2026-08-18 13:00</time>
+        <p>Tech Transparency Project’s report shows whenever governments mull platform regulations, company recruits influencers to promote its safety featuresIn July 2025, Meta gathered parenting influencers fr...</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -2524,6 +2677,16 @@ Prefill: 入力トー...</p>
           <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
+        <h2><a href="https://www.theguardian.com/technology/2026/aug/18/dickovers-baggravation-botiquette-18-new-words-tech-hellscape" target="_blank" rel="noopener">Dickovers, baggravation and botiquette: 18 new words to describe our tech hellscape</a></h2>
+        
+        <time>2026-08-18 09:00</time>
+        <p>There are many tech irritants that are a scourge of modern life, yet we have lacked the vocabulary to describe them ... until nowThe “dickover” is the scourge of the modern age. Coined in May by John ...</p>
+      </article>
+      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
         <h2><a href="https://www.theguardian.com/games/2026/aug/18/dressmaker-a-canvas-for-the-creativity-of-dream-dress-design" target="_blank" rel="noopener">Dressmaker – a canvas for the creativity of dream dress design</a></h2>
         
         <time>2026-08-18 09:00</time>
@@ -2600,6 +2763,18 @@ Prefill: 入力トー...</p>
         <p>BIツールの接続先をSnowflakeからDatabricksへ移行したところ、移行後の月額コストが事前の見積もりの約4倍になりました。ウェアハウスは最小サイズで、クエリの量も移行前とほぼ変わっていないのに、です。
 この記事は、その原因を課金データを分解しながら特定し、最終的に設定1箇所の変更で解消の目処を立てるまでの調査ログです。読み終わる頃には、サーバレスDWHの請求が「単価×クエリ量」だけで...</p>
       </article>
+      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Qiita">Qiita</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://qiita.com/jqit_suwa/items/acb61138c4550eef4803?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">14MBのAIモデルは本当に動いた — DLL 1個・RAM 37MB・1回0.5秒、ただし日本語は0/5</a></h2>
+        
+        <time>2026-08-18 05:03</time>
+        <p>GitHub Trending に「14MB のモデル」が来ていました。
+Cactus Compute の Needle 2 です。45M パラメータで、ツール呼び出しに特化しています。週で +3,627 スター伸びていました。
+14MB というのは、画像1枚くらいのサイズ...</p>
+      </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
           <span class="source" data-filter-source="Wired">Wired</span>
@@ -2609,20 +2784,6 @@ Prefill: 入力トー...</p>
         <a href="https://www.wired.com/story/noom-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b919468ebbf8f0cbc7a/master/pass/WIRED-Coupons-R2_9.png" alt="" loading="lazy"></a>
         <time>2026-08-18 05:00</time>
         <p>Discover the best ways to save on Noom subscriptions, including free trials, limited-time offers for GLP-1Rx Plus, and essential tips for redeeming your Noom discount.</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/take-yoda/items/4f561e8ad7c069c71001?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">生成AIによる処理結果をTP/FP/TN/FN×信頼区間でテストする</a></h2>
-        
-        <time>2026-08-18 04:17</time>
-        <p>株式会社ブレインパッドプロダクト開発部でRtoaster GenAIの開発をしている依田です。
-今回は生成AI機能の「信頼性」をどうテストするかというテーマで、ECサイトの予算抽出機能を題材にしたハンズオンをお届けします。
-
-はじめに
-生成AIを組み込んだ機能を作っていると...</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -2648,30 +2809,6 @@ Prefill: 入力トー...</p>
 2026年8月、AWS が Dogwood というオープンソースのポリシー言語を発表しました（Introducing Dogwood: runtime verification for AI agents）。
 AI エージェントのツール呼び出しを制御するための言語で、同日に発表された Amazon Bedrock AgentCore の tempora...</p>
       </article>
-      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.theguardian.com/news/2026/aug/18/the-long-read-democracy-v-the-machine-digital-age-warnings-computer-history-technology" target="_blank" rel="noopener">Democracy v the machine: the birth of the digital age and the warnings that were ignored</a></h2>
-        
-        <time>2026-08-18 04:00</time>
-        <p>Many hoped that the march of technology would usher in an egalitarian utopia – but some foresaw the threat it would pose to liberal society. Why did nobody listen?One of the stranger things about this...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/chomado/items/a91a87e22faf4b622640?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">学習メモ：Findyと考える「個人を超えたAIの生産性をどう測定するか」 #oreilly_chomado_findy</a></h2>
-        
-        <time>2026-08-18 03:57</time>
-        <p>イベント概要
-オライリーさんの月例イベント「Tech Leadership Tuesday」は、
-人事およびテクノロジー領域のリーダーを対象としたライブイベントで、毎月色んな方をホストに呼んでいらっしゃって、
-私たちは今月の分に呼んでいただきました！
-内田さんのお話がとて...</p>
-      </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
           <span class="source" data-filter-source="Zenn">Zenn</span>
@@ -2693,34 +2830,6 @@ hooks
 
 !
 Claude Codeは更新が速く、設定キーやフックの仕様は変わり得ます。導入時は公式ドキュメントで最新仕様...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/s_horikoshi/items/3266fc95d8e135f6f1cf?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">SES案件参画後30日で信頼を作る行動</a></h2>
-        
-        <time>2026-08-18 02:37</time>
-        <p>はじめに
-SES案件へ参画した直後は、次のような迷いが出やすくなります。
-
-何をどこまで質問してよいのか分からない
-早く成果を出そうとして、一人で作業を抱え込んでしまう
-進捗をどのタイミングで報告すべきか判断できない
-現場の用語、役割、完了条件を理解しないまま作業を...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/ta-ito0611/items/674a5246577f47b972d2?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">「作って終わり」のAIエージェントは死ぬ</a></h2>
-        
-        <time>2026-08-18 01:36</time>
-        <p>はじめに
-こんにちは！KDDIアイレットの伊藤です。
-「AI エージェントを開発したいが、どう設計すればいいかわからない」「いざ作ってみたものの、思ったほど成果が出ていない」「動き始めてから追加の構成が次々に必要になり、うまく回らなくなった」— そんな悩みはありませんか?...</p>
       </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
@@ -2787,27 +2896,6 @@ Android
 
 htt...</p>
       </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/shirok/items/6d67f981b547f181d644?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">OCI Data Catalog 第4回：Data LakeとADBのRDBMS、Vector Storeを統合し、Select AIとRAGでLakehouseを検索してみた</a></h2>
-        
-        <time>2026-08-17 21:29</time>
-        <p>■ はじめに
-こんにちは。
-OCI Data Catalogシリーズとして、これまで次の内容を実施しました。
-
-回
-内容
-
-第1回
-Object Storage上のCSV、ParquetファイルをOCI Data Catalogへハーベスト
-
-第2回
-Ora...</p>
-      </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
           <span class="source" data-filter-source="Zenn">Zenn</span>
@@ -2828,16 +2916,6 @@ Ora...</p>
         
         <time>2026-08-17 19:16</time>
         <p>This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&amp;#160;sign up here. Flock, the police-tech giant known for its network of som...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/Kinopee/items/747de22525344a796eed?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Cursor OriginとGitHubの違いを詳しく見る。単位はPull Requestではなくchange</a></h2>
-        
-        <time>2026-08-17 17:45</time>
-        <p>前編ではOriginが何か、どうセットアップするかを書きました。後編は、載せてみて引っかかったところです。いちばん大きいのはPull Requestの内部モデルで、単位がchange（版付きの差分）になっていること。あとはremote名の罠、Settingsの中身、CIとレ...</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -2920,6 +2998,16 @@ The post How canvases make agentic ...</p>
         <time>2026-08-17 15:40</time>
         <p>Modular社は、AIを高速に実行することを目指したPythonライクなプログラミング言語「Mojo」がバージョン1.0に到達したことを発表しました。 Mojo 1.0 is here.Since we open-sourced the ...</p>
       </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-application-platforms/" target="_blank" rel="noopener">Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud-Native Application Platforms</a></h2>
+        <a href="https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-application-platforms/" target="_blank" rel="noopener"><img class="thumb" src="https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/08/MQ-Cloud-Native-App-Platform-Blog-Thumbnail-2-1024x1024.webp" alt="" loading="lazy"></a>
+        <time>2026-08-17 15:00</time>
+        <p>Cloud-native platforms are becoming the foundation for AI transformation. Discover how Microsoft&#x27;s Azure application platform helps organizations modernize, innovate, and operate AI-powered applicatio...</p>
+      </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
           <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
@@ -2954,6 +3042,16 @@ AIコーディングエージェントに仕事を任せていると、たまに
         <time>2026-08-17 13:30</time>
         <p>Become a more productive software engineer with LLMs
 The post How to Perform Effective Project Management with AI appeared first on Towards Data Science.</p>
+      </article>
+      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.theguardian.com/technology/2026/aug/17/humiliated-sainsburys-store-pauses-ai-scanning-after-false-shoplifting-accusation" target="_blank" rel="noopener">Sainsbury’s store pauses AI scanning after false shoplifting accusation</a></h2>
+        
+        <time>2026-08-17 13:21</time>
+        <p>Supermarket chain says ‘human error’, not its Facewatch technology, to blame for ejecting a customerSainsbury’s has paused the use of AI face scanning in one of its stores after a customer was wrongly...</p>
       </article>
       <article class="entry" data-source="MIT Technology Review" data-labels="tech research news">
         <div class="meta">
@@ -3022,29 +3120,6 @@ https://linear.app/docs
         <time>2026-08-17 09:00</time>
         <p>When Xander first met Moxie, she taught him that when he was anxious, he could calm down by exhaling through his lips so that he buzzed like a bee. They practiced breathing like dragons to manage feel...</p>
       </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/alwaysdwysd/items/86fb61580d5ab267fff5?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">『ソフトウェアアーキテクチャの基礎』を読んで技術の深め方を考える</a></h2>
-        
-        <time>2026-08-17 08:51</time>
-        <p>本記事の目的
-
-アーキテクトに求められる知識のピラミッド、を知る
-資格試験は意味ないのでは？に答える
-そのための考え方を日々の行動に落とし込む
-
-知識の幅
-みんな大体最初はこんな感じ
-
-色つけます
-
-ちょっとずつ真ん中が増えていく。
-
-一番上のちゃんとわかっていること、...</p>
-      </article>
       <article class="entry" data-source="Google Blog - Technology" data-labels="tech google">
         <div class="meta">
           <span class="source" data-filter-source="Google Blog - Technology">Google Blog - Technology</span>
@@ -3055,50 +3130,6 @@ https://linear.app/docs
         <time>2026-08-17 08:00</time>
         <p>Low-angle view of a soccer player kicking a ball mid-air against a bright blue sky, with grass flying from their cleats.</p>
       </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/jqit_suwa/items/3906db61d153fe8691aa?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">Mermaidで書いた過去記事の図を、話題の図解スキルに食わせてみた — 色指定が全部捨てられた</a></h2>
-        
-        <time>2026-08-17 07:26</time>
-        <p>Qiita で Mermaid を使うと、日本語で崩れます。
-
-ノードのラベルが変な位置で折り返される
-ダークテーマで文字が見えなくなる
-
-subgraph のラベルが枠を突き抜ける
-
-自分は毎回これを踏んでいて、対策として  で改行位置を指定したり、color:...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/kurogoma939/items/565588e1b1dc66012b79?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">オントロジーについて</a></h2>
-        
-        <time>2026-08-17 07:16</time>
-        <p>AI時代のオントロジー入門
-
-文書検索を「組織の意味と行動の基盤」へ変える実装ガイド
-生成AIを社内文書へ接続すると、最初のデモはたいていうまくいく。
-規程を要約し、議事録を探し、過去の提案書から似た事例を見つけられるからだ。
-ところが、利用者が「この顧客に適用される契約...</p>
-      </article>
-      <article class="entry" data-source="Qiita" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Qiita">Qiita</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://qiita.com/kurogoma939/items/bd7d11ec543d7cb68c75?utm_campaign=popular_items&amp;utm_medium=feed&amp;utm_source=popular_items" target="_blank" rel="noopener">ドキュメント生成とAIとの向き合い方について</a></h2>
-        
-        <time>2026-08-17 07:15</time>
-        <p>はじめに
-AI がドキュメント生成を劇的に効率化してくれる時代になりました。しかし「全部AIに任せればいい」という考え方には大きな落とし穴があります。
-本記事では、私が実践している「人間が骨子を決め、音声で意図を吹き込み、LLMで仕上げる」ハイブリッド方式について紹介しま...</p>
-      </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
@@ -3108,16 +3139,6 @@ AI がドキュメント生成を劇的に効率化してくれる時代にな�
         
         <time>2026-08-17 04:00</time>
         <p>Guardian investigation finds apparent discrepancy between what tech company has said about its AI capacity – and the number of advanced chips it has in operationThe chips are quite small and some can ...</p>
-      </article>
-      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.theguardian.com/australia-news/2026/aug/17/australia-social-media-ban-report-ai-hallucinations-ntwnfb" target="_blank" rel="noopener">Report supporting Australia’s teen social media ban appears to contain AI hallucinations, Senate hears</a></h2>
-        
-        <time>2026-08-17 02:58</time>
-        <p>Exclusive: Guardian analysis finds one section of report includes links to academic articles that do not exist, but authors deny the references were made up by AIFollow our Australia news live blog fo...</p>
       </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
@@ -3236,16 +3257,6 @@ Codex を使って開発していると、調査や実装計画、コード変�
         <time>2026-08-16 13:00</time>
         <p>A small experiment in remote SQL execution
 The post Running SQL Concurrently Across Three Remote DuckDB Servers with Quack appeared first on Towards Data Science.</p>
-      </article>
-      <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.theguardian.com/film/2026/aug/16/directors-embracing-ai-film-making" target="_blank" rel="noopener">‘I see the incredible promise’: on set of an AI film shoot as new studios embrace controversial tech</a></h2>
-        
-        <time>2026-08-16 12:00</time>
-        <p>Amid fears for jobs, some film-makers say AI could enable them to bypass studio giants and take more creative risksNear the collonaded entrance to Sony Pictures’ historic Culver City film studio, a te...</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
