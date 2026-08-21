@@ -39,17 +39,18 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-08-21 18:40 UTC</div>
+      <div class="updated">Last updated: 2026-08-21 19:27 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (21)</summary>
+      <summary>Sources (22)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
         <button class="filter-btn source-btn" data-source="Amazon Science">Amazon Science</button>
         <button class="filter-btn source-btn" data-source="Android Developers">Android Developers</button>
         <button class="filter-btn source-btn" data-source="Apple Developer News">Apple Developer News</button>
+        <button class="filter-btn source-btn" data-source="Azure Blog">Azure Blog</button>
         <button class="filter-btn source-btn" data-source="Engadget">Engadget</button>
         <button class="filter-btn source-btn" data-source="GIGAZINE">GIGAZINE</button>
         <button class="filter-btn source-btn" data-source="GitHub Blog">GitHub Blog</button>
@@ -83,6 +84,7 @@
       <button class="filter-btn label-btn" data-label="gadget">gadget</button>
       <button class="filter-btn label-btn" data-label="google">google</button>
       <button class="filter-btn label-btn" data-label="japan">japan</button>
+      <button class="filter-btn label-btn" data-label="microsoft">microsoft</button>
       <button class="filter-btn label-btn" data-label="news">news</button>
       <button class="filter-btn label-btn" data-label="programming">programming</button>
       <button class="filter-btn label-btn" data-label="research">research</button>
@@ -90,6 +92,60 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
+        <div class="meta">
+          <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="startup">startup</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://techcrunch.com/2026/08/21/last-chance-save-up-to-300-on-your-techcrunch-disrupt-2026-ticket-today/" target="_blank" rel="noopener">Last chance: Save up to $300 on your TechCrunch Disrupt 2026 ticket today</a></h2>
+        
+        <time>2026-08-21 19:16</time>
+        <p>If you’ve been circling around Disrupt, then now’s the best time to lock in your pass and start getting ready to join the rest of the startup community gathering in San Francisco from October 13-15 at...</p>
+      </article>
+      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
+        <div class="meta">
+          <span class="source" data-filter-source="Engadget">Engadget</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.engadget.com/2241857/linkedin-says-its-ai-slop-button-is-working/" target="_blank" rel="noopener">LinkedIn says its AI slop button is working</a></h2>
+        <a href="https://www.engadget.com/2241857/linkedin-says-its-ai-slop-button-is-working/" target="_blank" rel="noopener"><img class="thumb" src="https://www.engadget.com/img/gallery/linkedin-says-its-ai-slop-button-is-working/l-intro-1787339421.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-21 19:11</time>
+        <p>LinkedIn says its AI slop button is working.</p>
+      </article>
+      <article class="entry" data-source="AWS Blog" data-labels="tech cloud aws">
+        <div class="meta">
+          <span class="source" data-filter-source="AWS Blog">AWS Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="aws">aws</span>
+        </div>
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/" target="_blank" rel="noopener">AWS Glue 6.0 now available with 30% lower price and full Apache Iceberg v3 support</a></h2>
+        <a href="https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/" target="_blank" rel="noopener"><img class="thumb" src="https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2026/07/21/2026-aws-glue-6.0-console.png" alt="" loading="lazy"></a>
+        <time>2026-08-21 18:53</time>
+        <p>AWS Glue 6.0 is built on a fully modernized runtime, Apache Spark 4.1, Python 3.12, and Scala 2.13,&amp;nbsp;delivering 30% lower pricing than previous AWS Glue versions.</p>
+      </article>
+      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
+        <div class="meta">
+          <span class="source" data-filter-source="Engadget">Engadget</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.engadget.com/2241834/season-two-of-netflixs-cyberpunk-2077-anime-streams-october-20/" target="_blank" rel="noopener">Season two of Netflix&#x27;s Cyberpunk 2077 anime streams October 20</a></h2>
+        <a href="https://www.engadget.com/2241834/season-two-of-netflixs-cyberpunk-2077-anime-streams-october-20/" target="_blank" rel="noopener"><img class="thumb" src="https://www.engadget.com/img/gallery/season-two-of-netflixs-cyberpunk-2077-anime-streams-october-20/l-intro-1787338189.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-21 18:51</time>
+        <p>Season two of Netflix&#x27;s Cyberpunk 2077 anime streams October 20</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/" target="_blank" rel="noopener">Scientists release biggest 2D map of the universe</a></h2>
+        
+        <time>2026-08-21 18:36</time>
+        <p>Direct link to Legacy Survey Sky Viewer: https://viewer.legacysurvey.org
+
+Comments URL: https://news.ycombinator.com/item?id=49392200
+Points: 23
+# Comments: 3</p>
+      </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
           <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
@@ -161,8 +217,8 @@ The post Running Codex as a Headless Agent appeared first on Towards Data Scienc
         <time>2026-08-21 17:33</time>
         <p>Article URL: https://circleback.ai/blog/how-we-rebuilt-our-electron-recording-engine-in-swift
 Comments URL: https://news.ycombinator.com/item?id=49391389
-Points: 22
-# Comments: 1</p>
+Points: 32
+# Comments: 5</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -174,8 +230,8 @@ Points: 22
         <time>2026-08-21 17:31</time>
         <p>Article URL: https://nooneshappy.com/article/when-the-shortage-is-the-strategy/
 Comments URL: https://news.ycombinator.com/item?id=49391358
-Points: 26
-# Comments: 18</p>
+Points: 31
+# Comments: 27</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -253,7 +309,7 @@ Points: 0
         <time>2026-08-21 16:50</time>
         <p>Article URL: http://gus-massa.blogspot.com/2026/08/another-better-lower-bound-for-n17.html
 Comments URL: https://news.ycombinator.com/item?id=49390775
-Points: 12
+Points: 18
 # Comments: 1</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
@@ -286,8 +342,8 @@ Points: 12
         <time>2026-08-21 16:27</time>
         <p>Article URL: https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/
 Comments URL: https://news.ycombinator.com/item?id=49390463
-Points: 26
-# Comments: 1...</p>
+Points: 31
+# Comments: 2...</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -309,8 +365,8 @@ Points: 26
         <time>2026-08-21 16:25</time>
         <p>Article URL: https://bandarlabs.github.io/Cobalt/
 Comments URL: https://news.ycombinator.com/item?id=49390427
-Points: 111
-# Comments: 42</p>
+Points: 174
+# Comments: 68</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -322,8 +378,8 @@ Points: 111
         <time>2026-08-21 16:16</time>
         <p>Article URL: https://blog.doubleword.ai/what-happens-when-a-gpu-reads-memory
 Comments URL: https://news.ycombinator.com/item?id=49390308
-Points: 37
-# Comments: 6</p>
+Points: 45
+# Comments: 10</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -335,8 +391,8 @@ Points: 37
         <time>2026-08-21 16:09</time>
         <p>Article URL: https://github.com/aravpanwar/decayfmt
 Comments URL: https://news.ycombinator.com/item?id=49390206
-Points: 16
-# Comments: 4</p>
+Points: 24
+# Comments: 7</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -378,19 +434,6 @@ Points: 16
         <time>2026-08-21 16:00</time>
         <p>A Google DeepMind engineer breaks full-stack development into five simple layers and explains how it affects everyday users.</p>
       </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://bastian.rieck.me/blog/2026/unix/" target="_blank" rel="noopener">LLMs are proof that Unix won</a></h2>
-        
-        <time>2026-08-21 15:59</time>
-        <p>Article URL: https://bastian.rieck.me/blog/2026/unix/
-Comments URL: https://news.ycombinator.com/item?id=49390066
-Points: 12
-# Comments: 4</p>
-      </article>
       <article class="entry" data-source="Amazon Science" data-labels="tech ai research">
         <div class="meta">
           <span class="source" data-filter-source="Amazon Science">Amazon Science</span>
@@ -411,8 +454,8 @@ Points: 12
         <time>2026-08-21 15:51</time>
         <p>Article URL: https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier/
 Comments URL: https://news.ycombinator.com/item?id=49389952
-Points: 29
-# Comments: 7</p>
+Points: 40
+# Comments: 10</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -457,8 +500,8 @@ Points: 14
         <time>2026-08-21 15:17</time>
         <p>Article URL: https://pointinthecloud.com/2026-08-19-144600.html
 Comments URL: https://news.ycombinator.com/item?id=49389441
-Points: 21
-# Comments: 1</p>
+Points: 48
+# Comments: 6</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -470,8 +513,8 @@ Points: 21
         <time>2026-08-21 15:17</time>
         <p>Article URL: https://www.felonybench.com/
 Comments URL: https://news.ycombinator.com/item?id=49389430
-Points: 157
-# Comments: 67</p>
+Points: 213
+# Comments: 94</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
@@ -493,20 +536,6 @@ The post The Types of Dimensions in a Star Schema, a...</p>
         <a href="https://www.wired.com/story/metas-big-reckoning-is-here/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/6a87451ce60bdcf9fa335d65/master/pass/Backchannel-Meta-Child-Safety-Trial-Biggest-Challenge-Yet-Business-2261841235.jpg" alt="" loading="lazy"></a>
         <time>2026-08-21 15:00</time>
         <p>Meta is in court again over child safety, and this time it’s a landmark case that could force significant changes to core features of Facebook and Instagram.</p>
-      </article>
-      <article class="entry" data-source="Hacker News" data-labels="tech news">
-        <div class="meta">
-          <span class="source" data-filter-source="Hacker News">Hacker News</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://lawrencecpaulson.github.io//2026/08/21/Lamport.html" target="_blank" rel="noopener">How I came to write that paper with Leslie Lamport</a></h2>
-        
-        <time>2026-08-21 14:46</time>
-        <p>https://www.microsoft.com/en-us/research/publication/specifi...
-
-Comments URL: https://news.ycombinator.com/item?id=49388963
-Points: 32
-# Comments: 9</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -548,8 +577,8 @@ Points: 32
         <time>2026-08-21 14:31</time>
         <p>Article URL: https://github.com/adnanakil/nobuzz/blob/main/README.md
 Comments URL: https://news.ycombinator.com/item?id=49388752
-Points: 78
-# Comments: 75</p>
+Points: 92
+# Comments: 81</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -621,8 +650,8 @@ Points: 78
         <time>2026-08-21 13:56</time>
         <p>Article URL: https://kagi.com/changelog#11296
 Comments URL: https://news.ycombinator.com/item?id=49388154
-Points: 741
-# Comments: 271</p>
+Points: 802
+# Comments: 281</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -634,7 +663,7 @@ Points: 741
         <time>2026-08-21 13:52</time>
         <p>Article URL: https://invertingvision.com/2026/08/10/kodaks-pre-invented-lunar-orbiter-camera-or-the-fate-of-samos-readout/
 Comments URL: https://news.ycombinator.com/item?id=49388095
-Points: 35
+Points: 39
 # Comm...</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
@@ -677,8 +706,8 @@ Points: 35
         <time>2026-08-21 13:35</time>
         <p>Article URL: https://arxiv.org/abs/2608.18214
 Comments URL: https://news.ycombinator.com/item?id=49387856
-Points: 79
-# Comments: 26</p>
+Points: 85
+# Comments: 28</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
@@ -700,6 +729,19 @@ The po...</p>
         <a href="https://www.theverge.com/streaming/983203/blue-eye-samurai-season-2-release-date-renewal" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Blue-Eye-Samurai-Season-2.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
         <time>2026-08-21 13:20</time>
         <p>Good news for Blue Eye Samurai fans: Netflix has shared the first trailer and release timeline for the second season of the animated series, and confirmed the series&#x27; return for a third and final seas...</p>
+      </article>
+      <article class="entry" data-source="Hacker News" data-labels="tech news">
+        <div class="meta">
+          <span class="source" data-filter-source="Hacker News">Hacker News</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://lina.sh/blog/hijacking-e164-arpa" target="_blank" rel="noopener">I accidentally logged hundreds of thousands of phone calls to military bases</a></h2>
+        
+        <time>2026-08-21 13:11</time>
+        <p>Article URL: https://lina.sh/blog/hijacking-e164-arpa
+Comments URL: https://news.ycombinator.com/item?id=49387570
+Points: 280
+# Comments: 34</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -1261,40 +1303,10 @@ PRUMについて気になった方は、コーポレートサイトもぜひご�
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener">B&amp;H Photo Promo Codes and Deals This August 2026</a></h2>
-        <a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea0772ca863bb4c1028b66/master/pass/WIRED-Coupons-4.jpg" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/ray-ban-promo-code/" target="_blank" rel="noopener">Ray-Ban Promo Codes: Save 50% in August 2026</a></h2>
+        <a href="https://www.wired.com/story/ray-ban-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9a4816461befb48207/master/pass/WIRED-Coupons-R2_12.png" alt="" loading="lazy"></a>
         <time>2026-08-21 05:00</time>
-        <p>Enjoy top deals on cameras, computers, and tech essentials at B&amp;amp;H Photo.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/nordvpn-coupon/" target="_blank" rel="noopener">NordVPN Coupons: 75% Off, Plus 3 Months Free in August 2026</a></h2>
-        <a href="https://www.wired.com/story/nordvpn-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076fca863bb4c1028b64/master/pass/WIRED-Coupons-11.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-21 05:00</time>
-        <p>Save up to 77% on 2-year plans and get 3 free months with our NordVPN discount codes.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/home-depot-promo-code/" target="_blank" rel="noopener">Home Depot Promo Codes: 30% Off in August 2026</a></h2>
-        <a href="https://www.wired.com/story/home-depot-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9c2c751893c256c1e8/master/pass/WIRED-Coupons-R2_13.png" alt="" loading="lazy"></a>
-        <time>2026-08-21 05:00</time>
-        <p>Save up to 50% today with the latest Home Depot promo codes for appliances, power tools, and more this August.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/ruggable-discount-code/" target="_blank" rel="noopener">Ruggable Discount Code: 30% Off Rugs | August 2026</a></h2>
-        <a href="https://www.wired.com/story/ruggable-discount-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b919468ebbf8f0cbc7a/master/pass/WIRED-Coupons-R2_9.png" alt="" loading="lazy"></a>
-        <time>2026-08-21 05:00</time>
-        <p>Keep your floors pristine and your budget intact. Save up to 30% off machine-washable rugs, runners, mats, and pillows using Ruggable coupons plus our expert advice.</p>
+        <p>Upgrade your frames with major savings on classic shapes, custom designs, and prescription lenses using these verified Ray-Ban discounts.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -1331,10 +1343,10 @@ PRUMについて気になった方は、コーポレートサイトもぜひご�
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/hoka-coupon-code/" target="_blank" rel="noopener">Hoka Coupon Codes: 30% Off in August 2026</a></h2>
-        <a href="https://www.wired.com/story/hoka-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076ea8e714f02ce0d63e/master/pass/WIRED-Coupons-15.jpg" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener">B&amp;H Photo Promo Codes and Deals This August 2026</a></h2>
+        <a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea0772ca863bb4c1028b66/master/pass/WIRED-Coupons-4.jpg" alt="" loading="lazy"></a>
         <time>2026-08-21 05:00</time>
-        <p>Unlock free expedited shipping or 10% off with today’s Hoka discount codes, plus save up to 30% with the best discounts for August 2026.</p>
+        <p>Enjoy top deals on cameras, computers, and tech essentials at B&amp;amp;H Photo.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -1361,10 +1373,40 @@ PRUMについて気になった方は、コーポレートサイトもぜひご�
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/ray-ban-promo-code/" target="_blank" rel="noopener">Ray-Ban Promo Codes: Save 50% in August 2026</a></h2>
-        <a href="https://www.wired.com/story/ray-ban-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9a4816461befb48207/master/pass/WIRED-Coupons-R2_12.png" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/nordvpn-coupon/" target="_blank" rel="noopener">NordVPN Coupons: 75% Off, Plus 3 Months Free in August 2026</a></h2>
+        <a href="https://www.wired.com/story/nordvpn-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076fca863bb4c1028b64/master/pass/WIRED-Coupons-11.jpg" alt="" loading="lazy"></a>
         <time>2026-08-21 05:00</time>
-        <p>Upgrade your frames with major savings on classic shapes, custom designs, and prescription lenses using these verified Ray-Ban discounts.</p>
+        <p>Save up to 77% on 2-year plans and get 3 free months with our NordVPN discount codes.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/home-depot-promo-code/" target="_blank" rel="noopener">Home Depot Promo Codes: 30% Off in August 2026</a></h2>
+        <a href="https://www.wired.com/story/home-depot-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9c2c751893c256c1e8/master/pass/WIRED-Coupons-R2_13.png" alt="" loading="lazy"></a>
+        <time>2026-08-21 05:00</time>
+        <p>Save up to 50% today with the latest Home Depot promo codes for appliances, power tools, and more this August.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/ruggable-discount-code/" target="_blank" rel="noopener">Ruggable Discount Code: 30% Off Rugs | August 2026</a></h2>
+        <a href="https://www.wired.com/story/ruggable-discount-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b919468ebbf8f0cbc7a/master/pass/WIRED-Coupons-R2_9.png" alt="" loading="lazy"></a>
+        <time>2026-08-21 05:00</time>
+        <p>Keep your floors pristine and your budget intact. Save up to 30% off machine-washable rugs, runners, mats, and pillows using Ruggable coupons plus our expert advice.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/hoka-coupon-code/" target="_blank" rel="noopener">Hoka Coupon Codes: 30% Off in August 2026</a></h2>
+        <a href="https://www.wired.com/story/hoka-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076ea8e714f02ce0d63e/master/pass/WIRED-Coupons-15.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-21 05:00</time>
+        <p>Unlock free expedited shipping or 10% off with today’s Hoka discount codes, plus save up to 30% with the best discounts for August 2026.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -1930,16 +1972,6 @@ Added a built-in &quot;Concise&quot; output style: Claude leads with result...</
         <time>2026-08-20 19:49</time>
         <p>A teen who died by suicide was reportedly part of the test.</p>
       </article>
-      <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
-        <div class="meta">
-          <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="startup">startup</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/" target="_blank" rel="noopener">Google gives publishers a new way to fight AI-driven traffic losses</a></h2>
-        
-        <time>2026-08-20 19:18</time>
-        <p>Google is giving publishers a new button that lets readers make them a preferred source across Search, Discover, and Google News, potentially boosting their traffic as AI search sends fewer clicks to ...</p>
-      </article>
       <article class="entry" data-source="Stack Overflow Blog" data-labels="tech dev programming">
         <div class="meta">
           <span class="source" data-filter-source="Stack Overflow Blog">Stack Overflow Blog</span>
@@ -1970,16 +2002,6 @@ Added a built-in &quot;Concise&quot; output style: Claude leads with result...</
         <time>2026-08-20 18:49</time>
         <p>Technology leaders don’t seem to understand society’s gripes about AI, but boy, are they posting through it.</p>
       </article>
-      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
-        <div class="meta">
-          <span class="source" data-filter-source="Engadget">Engadget</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.engadget.com/2241085/how-to-watch-gamescom-opening-night-live-showcase/" target="_blank" rel="noopener">How to watch Gamescom&#x27;s Opening Night Live showcase</a></h2>
-        <a href="https://www.engadget.com/2241085/how-to-watch-gamescom-opening-night-live-showcase/" target="_blank" rel="noopener"><img class="thumb" src="https://www.engadget.com/img/gallery/how-to-watch-gamescoms-opening-night-live-showcase/l-intro-1787250926.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-20 18:45</time>
-        <p>The two-hour stream will feature Final Fantasy 7 Revelation, Gears of War: E-Day and The Witcher 3: Songs of the Past.</p>
-      </article>
       <article class="entry" data-source="Stack Overflow Blog" data-labels="tech dev programming">
         <div class="meta">
           <span class="source" data-filter-source="Stack Overflow Blog">Stack Overflow Blog</span>
@@ -2000,16 +2022,6 @@ Added a built-in &quot;Concise&quot; output style: Claude leads with result...</
         <time>2026-08-20 18:36</time>
         <p>An update on the August 17 outage and the steps we&#x27;re taking to improve reliability.
 The post The August 17 outage, and the work ahead appeared first on The GitHub Blog.</p>
-      </article>
-      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
-        <div class="meta">
-          <span class="source" data-filter-source="Engadget">Engadget</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.engadget.com/2241074/chinese-video-platform-bilibili-is-going-global/" target="_blank" rel="noopener">Chinese video platform Bilibili is going global</a></h2>
-        <a href="https://www.engadget.com/2241074/chinese-video-platform-bilibili-is-going-global/" target="_blank" rel="noopener"><img class="thumb" src="https://www.engadget.com/img/gallery/chinese-video-platform-bilibili-is-going-global/l-intro-1787250589.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-20 18:31</time>
-        <p>The platform is expanding with a new international app and an English version of its website.</p>
       </article>
       <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
@@ -2461,20 +2473,20 @@ PRUMについて気になった方は、コーポレートサイトもぜひご�
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/chewy-promo-code/" target="_blank" rel="noopener">Chewy Promo Codes: $20 Off August 2026</a></h2>
-        <a href="https://www.wired.com/story/chewy-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea077015aa1d8092e99428/master/pass/WIRED-Coupons-6.jpg" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/dell-coupon-code/" target="_blank" rel="noopener">Dell Coupon Codes: 20% Off for August 2026</a></h2>
+        <a href="https://www.wired.com/story/dell-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076e571d60947a48460b/master/pass/WIRED-Coupons-16.jpg" alt="" loading="lazy"></a>
         <time>2026-08-20 05:00</time>
-        <p>Explore Chewy coupon codes for $30 off, $20 off your first order $49, 50% off pet food, and more August 2026 discounts.</p>
+        <p>Get 20% off with verified Dell promo code, plus today’s coupons for up to $600 off laptops, Alienware monitors, and all things tech.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/dell-coupon-code/" target="_blank" rel="noopener">Dell Coupon Codes: 20% Off for August 2026</a></h2>
-        <a href="https://www.wired.com/story/dell-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076e571d60947a48460b/master/pass/WIRED-Coupons-16.jpg" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/chewy-promo-code/" target="_blank" rel="noopener">Chewy Promo Codes: $20 Off August 2026</a></h2>
+        <a href="https://www.wired.com/story/chewy-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea077015aa1d8092e99428/master/pass/WIRED-Coupons-6.jpg" alt="" loading="lazy"></a>
         <time>2026-08-20 05:00</time>
-        <p>Get 20% off with verified Dell promo code, plus today’s coupons for up to $600 off laptops, Alienware monitors, and all things tech.</p>
+        <p>Explore Chewy coupon codes for $30 off, $20 off your first order $49, 50% off pet food, and more August 2026 discounts.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -3379,6 +3391,16 @@ The post How canvases make agentic ...</p>
         
         <time>2026-08-17 15:40</time>
         <p>Modular社は、AIを高速に実行することを目指したPythonライクなプログラミング言語「Mojo」がバージョン1.0に到達したことを発表しました。 Mojo 1.0 is here.Since we open-sourced the ...</p>
+      </article>
+      <article class="entry" data-source="Azure Blog" data-labels="tech cloud microsoft">
+        <div class="meta">
+          <span class="source" data-filter-source="Azure Blog">Azure Blog</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="cloud">cloud</span> <span class="label" data-filter-label="microsoft">microsoft</span>
+        </div>
+        <h2><a href="https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-application-platforms/" target="_blank" rel="noopener">Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud-Native Application Platforms</a></h2>
+        <a href="https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-cloud-native-application-platforms/" target="_blank" rel="noopener"><img class="thumb" src="https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/08/MQ-Cloud-Native-App-Platform-Blog-Thumbnail-2-1024x1024.webp" alt="" loading="lazy"></a>
+        <time>2026-08-17 15:00</time>
+        <p>Cloud-native platforms are becoming the foundation for AI transformation. Discover how Microsoft&#x27;s Azure application platform helps organizations modernize, innovate, and operate AI-powered applicatio...</p>
       </article>
       <article class="entry" data-source="Zenn" data-labels="tech dev japan">
         <div class="meta">
