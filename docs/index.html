@@ -39,7 +39,7 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-08-23 22:25 UTC</div>
+      <div class="updated">Last updated: 2026-08-23 23:24 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
@@ -92,6 +92,26 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
+        <div class="meta">
+          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
+        </div>
+        <h2><a href="https://www.gizmodo.jp/article/iphone12-6years-review/" target="_blank" rel="noopener">iPhone 12をお下がりで受け継いで6年弱。買い替え予定はありません</a></h2>
+        <a href="https://www.gizmodo.jp/article/iphone12-6years-review/" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/loom/2026/08/18/505ad65a-059a-4b4e-8a9e-83823a31133a/original.jpg?w=1200" alt="" loading="lazy"></a>
+        <time>2026-08-23 23:00</time>
+        <p>問題なく使えているからなぁ。巷では2026年9月にも「iPhone 18」シリーズが出るのでは？ とウワサが浮上していますよね。このタイミングで買い替えするか迷っている人もおられることでしょう。でも、最近のiPhoneは丈夫ですし、値上げも…</p>
+      </article>
+      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
+        <div class="meta">
+          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://gigazine.net/news/20260824-googles-backstory-ai-generated-detection/" target="_blank" rel="noopener">画像がAI生成かどうかを判別して出どころを調べるGoogleのAIツール「Backstory」はメディアのファクトチェックを迅速化している</a></h2>
+        
+        <time>2026-08-23 23:00</time>
+        <p>Google DeepMindは2025年、画像とテキストによる説明文を与えると画像がAI生成かどうかを判別し、これまでにどのような文脈で使われた画像なのかを調べるAIツール「Backstory」を発表しました。このBackstoryがメディアのファクトチェックを迅速化していると、ハーバード大学のジャーナリズム機関であるNieman Journalism Labが報じています。続きを読む...</p>
+      </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
           <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
@@ -308,10 +328,10 @@ The post Survival Analysis and the Cox Proportional Hazards Model: A Beginner-Fr
           <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.theguardian.com/games/2026/aug/24/michael-myers-halloween-video-game-banned-in-australia-drugs" target="_blank" rel="noopener">Illicit deeds have just gotten a new Halloween video game banned in Australia – and it’s not because of the violence</a></h2>
+        <h2><a href="https://www.theguardian.com/games/2026/aug/24/michael-myers-halloween-video-game-banned-in-australia-drugs" target="_blank" rel="noopener">The new Halloween video game has been banned in Australia – and not because of the violence</a></h2>
         
         <time>2026-08-23 15:00</time>
-        <p>Academics – and a former director of Australia’s Classification Board – say Halloween: The Game’s ban due to ‘incentivised drug use’ highlights an incoherent set of standardsFollow our Australia news ...</p>
+        <p>Academics and a former classification board director say Halloween: The Game’s ban due to ‘incentivised drug use’ highlights an incoherent set of standardsGet our breaking news email, free app or dail...</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -923,6 +943,40 @@ Claude Code に読ませている には、もう自分についてそれなり�
         <p>はじめに
 Amplify Gen 2 と Amazon Bedrock AgentCore で、業務で使える AWS 運用アシスタントを作ってみました。ブラウザのチャットから自然言語で AWS リソースを問い合わせ・操作できるアプリです。コーディングは Kiro に全面的...</p>
       </article>
+      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Zenn">Zenn</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://zenn.dev/kannna5296/articles/2026-08-22-pyconjp2026-quick-report" target="_blank" rel="noopener">初めてカンファレンス運営をやってみたぞい！ PyCon JP 2026</a></h2>
+        
+        <time>2026-08-23 04:12</time>
+        <p>https://x.com/pyconjapan/status/2091137686816145412?s=20
+僕のPyCon JP 2026（カンファレンス）が終わりました。
+実績「初めてのカンファレンス運営をやる」をPyCon JP 2026で達成したので、速報的にやったことと感想をバーっとまとめます。
+※個人の感想です!
+
+ 何をやっていたの
+「スポンサーチーム」というところで、スポンサー...</p>
+      </article>
+      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Zenn">Zenn</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://zenn.dev/biwacoder/articles/fbbf12f755f5d8" target="_blank" rel="noopener">C#において、例外を使うべきか戻り値にすべきか、迷わなくなる基準</a></h2>
+        
+        <time>2026-08-23 04:02</time>
+        <p>はじめに
+例外について、言語によって考え方も違うため、C#の例外の使い方に整理しておく。
+
+ 例外って言ってるのだから、制御できる失敗は、戻り値で処理する
+通常の制御フロー(if、戻り値)で管理できる失敗は、例外を使わず戻り値で処理する。
+これが原則で、例外はその原則から外れた場合にだけ使う道具だ。
+
+入力バリデーションの失敗 → 起こることが分かっていて、その場でユーザーに返せる → 戻り値
+検...</p>
+      </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="Hacker News">Hacker News</span>
@@ -1074,6 +1128,17 @@ Points: 136
         
         <time>2026-08-22 23:00</time>
         <p>肺塞栓症を患っていた男性が医療アドバイスを求めてChatGPTを利用したところ、不正確な回答をされ、その結果治療が遅れてしまったとして、その男性がChatGPT開発元のOpenAIを訴えたことが分かりました。続きを読む...</p>
+      </article>
+      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Zenn">Zenn</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://zenn.dev/kimushun1101/articles/family-ai-agents-on-discord" target="_blank" rel="noopener">家族で使うAIエージェントのDiscord運用</a></h2>
+        
+        <time>2026-08-22 22:28</time>
+        <p>はじめに
+もともと自分専用のAIエージェントをDiscordに常駐させて、メモの記録や調べ物をチャットから頼んでおりました。使っているうちに旅行の計画や献立の相談など家族に関わる話題が増えてきたため、妻も同じサーバーからエージェントに話しかけられる形に拡張しました。ただしClaude Maxのような個人向け定額プランは、アカウントを本人以外が使うと規約違反になってしまいます。本記事では、Anthr...</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -1450,16 +1515,6 @@ The post Why We Fine-Tuned SigLip (And Why That’s Not Always the Right Call) a
         <time>2026-08-22 12:00</time>
         <p>Hi, friends! Welcome to Installer No. 141, your guide to the best and Verge-iest stuff in the world. (If you&#x27;re new here, welcome, I&#x27;m newish here too, and also you can read all the old editions at th...</p>
       </article>
-      <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
-        <div class="meta">
-          <span class="source" data-filter-source="ギズモード・ジャパン">ギズモード・ジャパン</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="japan">japan</span> <span class="label" data-filter-label="gadget">gadget</span>
-        </div>
-        <h2><a href="https://www.gizmodo.jp/article/yona-yona-wobblybeerglass/" target="_blank" rel="noopener">水も飲まないと倒れるよ。あなたもこのビアグラスも</a></h2>
-        <a href="https://www.gizmodo.jp/article/yona-yona-wobblybeerglass/" target="_blank" rel="noopener"><img class="thumb" src="https://media.loom-app.com/loom/2026/08/11/af9750bf-93a9-4f98-bf0a-4cd78430749e/original.jpg?w=1200" alt="" loading="lazy"></a>
-        <time>2026-08-22 12:00</time>
-        <p>「よなよなエール」などのクラフトビールを製造・販売するヤッホーブルーイングが開発した「ふらつくビアグラス by よなよなエール」。このユニークな見た目のビアグラスはU字型になっており、左右にそれぞれ約270mlずつ注げる作りになっています。…</p>
-      </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
           <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
@@ -1598,6 +1653,19 @@ https://x.com/SOU_BTC/status/2091105357762560281
         <time>2026-08-22 08:28</time>
         <p>「個人開発したアプリがバズって、会社に辞表を叩きつけるんだ…！」——そんな夢を見たことがある人は、私だけではないはずです。
 結論から言います。個人開発、半年やってみたけど、勝てる気が全くしません。AI時代到来でアプリ開発は「ちょろい」と思っていたのに、実際にぶつかったのはア...</p>
+      </article>
+      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Zenn">Zenn</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://zenn.dev/marvelousu/articles/windows-mcp-vs-computer-use" target="_blank" rel="noopener">Claude Code のデスクトップ操作、内蔵の computer-use ではなく Windows-MCP を使っている理由</a></h2>
+        
+        <time>2026-08-22 08:27</time>
+        <p>Claude Code にデスクトップ操作を任せる手段には、内蔵の computer-use があります。画面を撮ってピクセル座標でクリックするこの方式のまま任せ続けてよいのか気になって代わりを探し、UI Automation で画面を構造として読む Windows-MCP に入れ替えました。メモ帳への入力という同じタスクを両方に実行させて、操作の中身がどこで変わるのかを確かめてみました。
+
+
+ ...</p>
       </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
@@ -2360,16 +2428,6 @@ PRUMについて気になった方は、コーポレートサイトもぜひご�
         <time>2026-08-21 07:40</time>
         <p>Ryan chats with Brian Alvey, CTO at WordPress VIP, about how AI agents are changing the business models of the web, what parts of how we build our sites won’t survive our current digital evolution, an...</p>
       </article>
-      <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
-        <div class="meta">
-          <span class="source" data-filter-source="GIGAZINE">GIGAZINE</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://gigazine.net/news/20260821-youtube-malware/" target="_blank" rel="noopener">YouTubeの有料動画広告がマルウェア配布に悪用されていた事例をセキュリティ企業が報告</a></h2>
-        
-        <time>2026-08-21 07:15</time>
-        <p>YouTubeで「株式チャートサービスのTradingViewを1年間無料で利用できる」と宣伝する有料動画広告が配信され、広告をクリックしたユーザーがマルウェア入りの偽アプリへ誘導されていたことをセキュリティ企業のSafeDepが報告しました。SafeDepが新たに解析した感染端末はMacでしたが、TradingViewなどを装った悪質な広告からWindows向けマルウェアを配布する攻撃も以前から...</p>
-      </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
           <span class="source" data-filter-source="Qiita">Qiita</span>
@@ -2408,26 +2466,6 @@ PRUMについて気になった方は、コーポレートサイトもぜひご�
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/nordvpn-coupon/" target="_blank" rel="noopener">NordVPN Coupons: 75% Off, Plus 3 Months Free in August 2026</a></h2>
-        <a href="https://www.wired.com/story/nordvpn-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076fca863bb4c1028b64/master/pass/WIRED-Coupons-11.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-21 05:00</time>
-        <p>Save up to 77% on 2-year plans and get 3 free months with our NordVPN discount codes.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/ruggable-discount-code/" target="_blank" rel="noopener">Ruggable Discount Code: 30% Off Rugs | August 2026</a></h2>
-        <a href="https://www.wired.com/story/ruggable-discount-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b919468ebbf8f0cbc7a/master/pass/WIRED-Coupons-R2_9.png" alt="" loading="lazy"></a>
-        <time>2026-08-21 05:00</time>
-        <p>Keep your floors pristine and your budget intact. Save up to 30% off machine-washable rugs, runners, mats, and pillows using Ruggable coupons plus our expert advice.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
         <h2><a href="https://www.wired.com/story/paramount-plus-coupon-code/" target="_blank" rel="noopener">Paramount+ Coupon Codes and Deals for August 2026</a></h2>
         <a href="https://www.wired.com/story/paramount-plus-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b985c0507c1bb18ab66/master/pass/WIRED-Coupons-R2_14.png" alt="" loading="lazy"></a>
         <time>2026-08-21 05:00</time>
@@ -2448,60 +2486,20 @@ PRUMについて気になった方は、コーポレートサイトもぜひご�
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/home-depot-promo-code/" target="_blank" rel="noopener">Home Depot Promo Codes: 30% Off in August 2026</a></h2>
-        <a href="https://www.wired.com/story/home-depot-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9c2c751893c256c1e8/master/pass/WIRED-Coupons-R2_13.png" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/nordvpn-coupon/" target="_blank" rel="noopener">NordVPN Coupons: 75% Off, Plus 3 Months Free in August 2026</a></h2>
+        <a href="https://www.wired.com/story/nordvpn-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076fca863bb4c1028b64/master/pass/WIRED-Coupons-11.jpg" alt="" loading="lazy"></a>
         <time>2026-08-21 05:00</time>
-        <p>Save up to 50% today with the latest Home Depot promo codes for appliances, power tools, and more this August.</p>
+        <p>Save up to 77% on 2-year plans and get 3 free months with our NordVPN discount codes.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
-        <h2><a href="https://www.wired.com/story/lenovo-coupon-code/" target="_blank" rel="noopener">Lenovo Coupon Codes: 15% Off in August 2026</a></h2>
-        <a href="https://www.wired.com/story/lenovo-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b909468ebbf8f0cbc77/master/pass/WIRED-Coupons-R2_8.png" alt="" loading="lazy"></a>
+        <h2><a href="https://www.wired.com/story/ruggable-discount-code/" target="_blank" rel="noopener">Ruggable Discount Code: 30% Off Rugs | August 2026</a></h2>
+        <a href="https://www.wired.com/story/ruggable-discount-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b919468ebbf8f0cbc7a/master/pass/WIRED-Coupons-R2_9.png" alt="" loading="lazy"></a>
         <time>2026-08-21 05:00</time>
-        <p>Whether you’re shopping for a ThinkPad, Yoga laptop, or Legion gaming PC, these Lenovo discount codes and promotions can help you save big on your next tech upgrade.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/valvoline-coupons/" target="_blank" rel="noopener">Valvoline Coupons and Promo Codes for August 2026</a></h2>
-        <a href="https://www.wired.com/story/valvoline-coupons/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b93a01a8e23b64ce24a/master/pass/WIRED-Coupons-R2_4.png" alt="" loading="lazy"></a>
-        <time>2026-08-21 05:00</time>
-        <p>We&#x27;ve gathered all the top Valvoline coupons and promo codes for August 2026, including deals on full synthetic oil changes and other essential maintenance.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/canon-promo-code/" target="_blank" rel="noopener">30% Off Canon Promo Codes | August 2026</a></h2>
-        <a href="https://www.wired.com/story/canon-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea077251891e6d3cb5d5cf/master/pass/WIRED-Coupons-3.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-21 05:00</time>
-        <p>Save an extra 10% or 30% with Canon coupon codes, plus up to $1,600 on cameras, printers, and more this August.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/hoka-coupon-code/" target="_blank" rel="noopener">Hoka Coupon Codes: 30% Off in August 2026</a></h2>
-        <a href="https://www.wired.com/story/hoka-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076ea8e714f02ce0d63e/master/pass/WIRED-Coupons-15.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-21 05:00</time>
-        <p>Unlock free expedited shipping or 10% off with today’s Hoka discount codes, plus save up to 30% with the best discounts for August 2026.</p>
-      </article>
-      <article class="entry" data-source="Wired" data-labels="tech culture news">
-        <div class="meta">
-          <span class="source" data-filter-source="Wired">Wired</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener">B&amp;H Photo Promo Codes and Deals This August 2026</a></h2>
-        <a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea0772ca863bb4c1028b66/master/pass/WIRED-Coupons-4.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-21 05:00</time>
-        <p>Enjoy top deals on cameras, computers, and tech essentials at B&amp;amp;H Photo.</p>
+        <p>Keep your floors pristine and your budget intact. Save up to 30% off machine-washable rugs, runners, mats, and pillows using Ruggable coupons plus our expert advice.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -2518,10 +2516,70 @@ PRUMについて気になった方は、コーポレートサイトもぜひご�
           <span class="source" data-filter-source="Wired">Wired</span>
           <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
         </div>
+        <h2><a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener">B&amp;H Photo Promo Codes and Deals This August 2026</a></h2>
+        <a href="https://www.wired.com/story/bh-photo-coupon/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea0772ca863bb4c1028b66/master/pass/WIRED-Coupons-4.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-21 05:00</time>
+        <p>Enjoy top deals on cameras, computers, and tech essentials at B&amp;amp;H Photo.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
         <h2><a href="https://www.wired.com/story/meta-quest-promo-code/" target="_blank" rel="noopener">Meta Quest Promo Codes and Coupons for August 2026</a></h2>
         <a href="https://www.wired.com/story/meta-quest-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b909468ebbf8f0cbc77/master/pass/WIRED-Coupons-R2_8.png" alt="" loading="lazy"></a>
         <time>2026-08-21 05:00</time>
         <p>Experience cutting-edge VR and save up to 20% with coupons for the latest games, Meta Quest 3, Ray-Ban AI glasses, and more deals.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/lenovo-coupon-code/" target="_blank" rel="noopener">Lenovo Coupon Codes: 15% Off in August 2026</a></h2>
+        <a href="https://www.wired.com/story/lenovo-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b909468ebbf8f0cbc77/master/pass/WIRED-Coupons-R2_8.png" alt="" loading="lazy"></a>
+        <time>2026-08-21 05:00</time>
+        <p>Whether you’re shopping for a ThinkPad, Yoga laptop, or Legion gaming PC, these Lenovo discount codes and promotions can help you save big on your next tech upgrade.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/hoka-coupon-code/" target="_blank" rel="noopener">Hoka Coupon Codes: 30% Off in August 2026</a></h2>
+        <a href="https://www.wired.com/story/hoka-coupon-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea076ea8e714f02ce0d63e/master/pass/WIRED-Coupons-15.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-21 05:00</time>
+        <p>Unlock free expedited shipping or 10% off with today’s Hoka discount codes, plus save up to 30% with the best discounts for August 2026.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/valvoline-coupons/" target="_blank" rel="noopener">Valvoline Coupons and Promo Codes for August 2026</a></h2>
+        <a href="https://www.wired.com/story/valvoline-coupons/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b93a01a8e23b64ce24a/master/pass/WIRED-Coupons-R2_4.png" alt="" loading="lazy"></a>
+        <time>2026-08-21 05:00</time>
+        <p>We&#x27;ve gathered all the top Valvoline coupons and promo codes for August 2026, including deals on full synthetic oil changes and other essential maintenance.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/home-depot-promo-code/" target="_blank" rel="noopener">Home Depot Promo Codes: 30% Off in August 2026</a></h2>
+        <a href="https://www.wired.com/story/home-depot-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/67b63b9c2c751893c256c1e8/master/pass/WIRED-Coupons-R2_13.png" alt="" loading="lazy"></a>
+        <time>2026-08-21 05:00</time>
+        <p>Save up to 50% today with the latest Home Depot promo codes for appliances, power tools, and more this August.</p>
+      </article>
+      <article class="entry" data-source="Wired" data-labels="tech culture news">
+        <div class="meta">
+          <span class="source" data-filter-source="Wired">Wired</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="culture">culture</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.wired.com/story/canon-promo-code/" target="_blank" rel="noopener">30% Off Canon Promo Codes | August 2026</a></h2>
+        <a href="https://www.wired.com/story/canon-promo-code/" target="_blank" rel="noopener"><img class="thumb" src="https://media.wired.com/photos/66ea077251891e6d3cb5d5cf/master/pass/WIRED-Coupons-3.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-21 05:00</time>
+        <p>Save an extra 10% or 30% with Canon coupon codes, plus up to $1,600 on cameras, printers, and more this August.</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -2560,6 +2618,25 @@ AIエージェントにうまく仕事をさせるには言語化が大事、チ
  そもそも claude のメモリとは
 理解しているつもりだったけどちゃんと調べてなかったので調べた
 https://code.claude.co...</p>
+      </article>
+      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
+        <div class="meta">
+          <span class="source" data-filter-source="Zenn">Zenn</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
+        </div>
+        <h2><a href="https://zenn.dev/loglass/articles/grpc-connect-http2-for-rest-devs" target="_blank" rel="noopener">gRPC / Connect / HTTP/2 を完全に理解したい</a></h2>
+        
+        <time>2026-08-21 04:02</time>
+        <p>はじめに
+!
+この記事は毎週必ず記事がでるテックブログ Loglass Tech Blog Sprint の157週目の記事です。
+3年間連続達成まで残り2週となりました！
+
+こんにちは、ログラスの小林です。
+直近 RESTではなく、protoベースのスキーマ駆動開発を行ってします。
+
+proto を書いて buf gen するとクラサバにコードが生成される
+gRPC は HTTP/2 で通信する...</p>
       </article>
       <article class="entry" data-source="Qiita" data-labels="tech dev japan">
         <div class="meta">
@@ -3155,18 +3232,6 @@ https://github.com/denoland/celld/issues/132
         <time>2026-08-19 05:18</time>
         <p>霊夢と魔理沙が、データフェッチ、レンダリング、Hono、Better Auth、Cloudflare Workersまで二歩手前から考える、初学者向けの実装・設計ガイド。</p>
       </article>
-      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Zenn">Zenn</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://zenn.dev/fjktkm/articles/95ec94e1c2ab38" target="_blank" rel="noopener">世界最大？Google Fonts 全部入りフォントを作ってみた</a></h2>
-        
-        <time>2026-08-19 02:30</time>
-        <p>1. はじめに
-TrueType Collection（TTC）は，複数のフォントを一つのファイルに格納するためのファイル形式です．主には同一のフォントファミリーにおいて Regular や Bold などの異なる太さのフォントをまとめるために使われます．フォント間で共通するテーブルを共有できるため，複数のフォントをまとめることでファイルサイズを削減できるという利点があります．
-ところで，Goog...</p>
-      </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
@@ -3287,21 +3352,6 @@ TrueType Collection（TTC）は，複数のフォントを一つのファイル�
         <time>2026-08-18 13:00</time>
         <p>Tech Transparency Project’s report shows whenever governments mull platform regulations, company recruits influencers to promote its safety featuresIn July 2025, Meta gathered parenting influencers fr...</p>
       </article>
-      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Zenn">Zenn</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://zenn.dev/nrs/articles/b920540a64e1a1" target="_blank" rel="noopener">ローカルLLM編成が単独のフロンティアAIを超えた日</a></h2>
-        
-        <time>2026-08-18 11:42</time>
-        <p>OpenAI や Anthropic のフロンティアモデルの性能はとてもよいのですが、経済性がよくありません。
-日次や週次のレート制限がどれだけあなたを苛立たせたでしょう。
-また、毎日の仕事道具の生殺与奪を誰かの方針に握られているのも気に入りません。
-この不快感を強く感じたシーンは何度もありました。
-OpenAI が誤って私を BAN した日（みんな大騒ぎしてましたね）。
-Anthropic が ...</p>
-      </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
@@ -3351,70 +3401,6 @@ Anthropic が ...</p>
         
         <time>2026-08-18 04:00</time>
         <p>Many hoped that the march of technology would usher in an egalitarian utopia – but some foresaw the threat it would pose to liberal society. Why did nobody listen?One of the stranger things about this...</p>
-      </article>
-      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Zenn">Zenn</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://zenn.dev/green_tea/articles/a994964786cb4f" target="_blank" rel="noopener">Claude Codeに見せない技術: AIに入力できないデータを分析する</a></h2>
-        
-        <time>2026-08-18 02:55</time>
-        <p>!
-本記事では、単にsettings.jsonにdenyを書くだけではなく、5層：
-
-データ分離
-permissions
-sandbox
-hooks
-運用ルール
-
-で、機密情報をAIに「見せられない」状態を作ります。あわせて、その設定漏れ・劣化[1]を自動検知する仕組みも用意します。
-
-!
-Claude Codeは更新が速く、設定キーやフックの仕様は変わり得ます。導入時は公式ドキュメントで最新仕様...</p>
-      </article>
-      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Zenn">Zenn</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://zenn.dev/moshjp/articles/39972d023f0440" target="_blank" rel="noopener">コーディングエージェントが実装するUIの品質を上げるためにやったこと</a></h2>
-        
-        <time>2026-08-18 01:00</time>
-        <p>デザインシステムの整備・運用をしているが、いざコーディングエージェントにUI実装をお願いしてみるとこれじゃない感がすごい。みたいな経験をしている方は少なくないはずです。
-例に漏れずMOSHでも同様の課題があり、このボトルネックが解消されれば開発効率上がるよねということで改善に取り組んでいます。
-ここ半年間ほどデザインシステムの整備を通してAI生成の精度に向き合っているのですが、割といい感じになって...</p>
-      </article>
-      <article class="entry" data-source="Zenn" data-labels="tech dev japan">
-        <div class="meta">
-          <span class="source" data-filter-source="Zenn">Zenn</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="dev">dev</span> <span class="label" data-filter-label="japan">japan</span>
-        </div>
-        <h2><a href="https://zenn.dev/itome/articles/e087c6d11d0bd2" target="_blank" rel="noopener">Rust製のマルチプラットフォーム開発フレームワーク「Whisker」を作りました</a></h2>
-        
-        <time>2026-08-18 00:00</time>
-        <p>こんにちは。itome(@itometeam)です。
-Rustでアプリが書けるフレームワークを作ったので、その紹介をします。
-
- TL;DR
-RustでひとつのコードベースからiOS/Androidアプリが作れるフレームワークです。
-すでに個人開発では使っており、AppStore/PlayStoreの審査も通ってプロダクションで使えています。
-
-
-
-iOS
-Android
-
-
-
-
-
-
-
-
-
-htt...</p>
       </article>
       <article class="entry" data-source="AWS Blog" data-labels="tech cloud aws">
         <div class="meta">
