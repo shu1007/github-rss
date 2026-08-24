@@ -39,11 +39,11 @@
   <div class="container">
     <header>
       <h1>RSS Reader</h1>
-      <div class="updated">Last updated: 2026-08-24 16:41 UTC</div>
+      <div class="updated">Last updated: 2026-08-24 17:33 UTC</div>
       <a class="add-feed" href="https://github.com/shu1007/github-rss/issues/new?title=add-feed&body=%23%23%23%20Feed%20URL%0A%28RSS%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%81%AEURL%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Feed%20Name%0A%28%E8%A1%A8%E7%A4%BA%E5%90%8D%E3%82%92%E5%85%A5%E5%8A%9B%29%0A%0A%23%23%23%20Labels%0A%28%E3%82%AB%E3%83%B3%E3%83%9E%E5%8C%BA%E5%88%87%E3%82%8A%E3%81%A7%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E5%85%A5%E5%8A%9B%E3%80%82%E4%BE%8B%3A%20tech%2C%20news%29%0A&labels=add-feed" target="_blank" rel="noopener">+ Add Feed</a>
     </header>
     <details class="sources">
-      <summary>Sources (20)</summary>
+      <summary>Sources (21)</summary>
       <div class="source-list">
         <button class="filter-btn source-btn active" data-source="all">All</button>
         <button class="filter-btn source-btn" data-source="AWS Blog">AWS Blog</button>
@@ -63,6 +63,7 @@
         <button class="filter-btn source-btn" data-source="TechCrunch">TechCrunch</button>
         <button class="filter-btn source-btn" data-source="The Guardian Tech">The Guardian Tech</button>
         <button class="filter-btn source-btn" data-source="The Verge">The Verge</button>
+        <button class="filter-btn source-btn" data-source="Towards Data Science">Towards Data Science</button>
         <button class="filter-btn source-btn" data-source="Wired">Wired</button>
         <button class="filter-btn source-btn" data-source="Zenn">Zenn</button>
         <button class="filter-btn source-btn" data-source="ギズモード・ジャパン">ギズモード・ジャパン</button>
@@ -76,6 +77,7 @@
       <button class="filter-btn label-btn" data-label="aws">aws</button>
       <button class="filter-btn label-btn" data-label="cloud">cloud</button>
       <button class="filter-btn label-btn" data-label="culture">culture</button>
+      <button class="filter-btn label-btn" data-label="datascience">datascience</button>
       <button class="filter-btn label-btn" data-label="dev">dev</button>
       <button class="filter-btn label-btn" data-label="engineering">engineering</button>
       <button class="filter-btn label-btn" data-label="gadget">gadget</button>
@@ -88,6 +90,47 @@
       <button class="filter-btn label-btn" data-label="tech">tech</button>
     </div>
     <main>
+      <article class="entry" data-source="The Verge" data-labels="tech news culture">
+        <div class="meta">
+          <span class="source" data-filter-source="The Verge">The Verge</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
+        </div>
+        <h2><a href="https://www.theverge.com/policy/983864/zillow-redfin-ftc-settlement" target="_blank" rel="noopener">Zillow and Redfin settle FTC antitrust case over their rental listings partnership</a></h2>
+        <a href="https://www.theverge.com/policy/983864/zillow-redfin-ftc-settlement" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STKS500_FTC_B.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
+        <time>2026-08-24 17:01</time>
+        <p>The FTC and Zillow have announced a settlement that ends the case alleging that a 2025 &quot;partnership&quot; between Zillow and Redfin violated antitrust laws. The FTC had alleged Zillow agreed to pay Redfin ...</p>
+      </article>
+      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
+        <div class="meta">
+          <span class="source" data-filter-source="Engadget">Engadget</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
+        </div>
+        <h2><a href="https://www.engadget.com/2242821/espn-is-raising-prices-on-most-of-its-streaming-subscriptions/" target="_blank" rel="noopener">ESPN is raising prices on most of its streaming subscriptions, even bundles with Disney+</a></h2>
+        <a href="https://www.engadget.com/2242821/espn-is-raising-prices-on-most-of-its-streaming-subscriptions/" target="_blank" rel="noopener"><img class="thumb" src="https://www.engadget.com/img/gallery/espn-is-raising-prices-on-most-of-its-streaming-subscriptions-even-bundles-with-disney/l-intro-1787590062.jpg" alt="" loading="lazy"></a>
+        <time>2026-08-24 16:49</time>
+        <p>ESPN&#x27;s Unlimited tier will cost $32 per month as of September 17.</p>
+      </article>
+      <article class="entry" data-source="The Verge" data-labels="tech news culture">
+        <div class="meta">
+          <span class="source" data-filter-source="The Verge">The Verge</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
+        </div>
+        <h2><a href="https://www.theverge.com/transportation/983765/robotaxi-waymo-zoox-tesla-rules-pushback-nhtsa" target="_blank" rel="noopener">Robotaxis are real now — so is the pushback</a></h2>
+        <a href="https://www.theverge.com/transportation/983765/robotaxi-waymo-zoox-tesla-rules-pushback-nhtsa" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25415564/STK418_Autonomous_Vehicles_Cvirginia_D.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
+        <time>2026-08-24 16:42</time>
+        <p>Robotaxis are expanding. So is the fight over the rules governing them. In New York, Gov. Kathy Hochul withdrew a proposal earlier this year that would have opened the door to driverless robotaxis out...</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/10-positions-for-enterprise-rag-that-mainstream-tutorials-get-wrong/" target="_blank" rel="noopener">10 Positions for Enterprise RAG That Mainstream Tutorials Get Wrong</a></h2>
+        
+        <time>2026-08-24 16:30</time>
+        <p>Enterprise Document Intelligence [Vol.1 #M3] - The ten positions the series argues from, and the map of every article that argues them
+The post 10 Positions for Enterprise RAG That Mainstream Tutorial...</p>
+      </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
           <span class="source" data-filter-source="Engadget">Engadget</span>
@@ -187,6 +230,16 @@
         
         <time>2026-08-24 15:00</time>
         <p>Inside the frontier lab’s push to bring AI agents from software engineers to the masses.</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/can-an-llm-forget-the-right-things/" target="_blank" rel="noopener">Can an LLM Forget the Right Things?</a></h2>
+        
+        <time>2026-08-24 15:00</time>
+        <p>Most LLM inference runtimes have no idea a physical deadline exists. This one refuses admission rather than miss a 33ms robot control cycle, evicts KV cache by meaning instead of age, and is written e...</p>
       </article>
       <article class="entry" data-source="The Verge" data-labels="tech news culture">
         <div class="meta">
@@ -328,6 +381,16 @@
         <time>2026-08-24 13:45</time>
         <p>Berry Street founder Noah Kotlove and Healthify founder Tushar Vashisht will act as co-CEOs of the new entity.</p>
       </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/speculative-decoding-on-cpus-nearly-4x-faster-token-generation-with-dflash/" target="_blank" rel="noopener">Speculative Decoding on CPUs: Nearly 4x Faster Token Generation with DFlash</a></h2>
+        
+        <time>2026-08-24 13:30</time>
+        <p>Speculative decoding can turn underused CPU compute into faster token generation, without changing the model&#x27;s output. In our vLLM tests, DFlash delivered 3.92x the autoregressive throughput with Qwen...</p>
+      </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
           <span class="source" data-filter-source="Engadget">Engadget</span>
@@ -407,6 +470,16 @@
         <a href="https://www.technologyreview.com/2026/08/24/1142863/the-download-kids-outlearning-ai-space-travel-agents/" target="_blank" rel="noopener"><img class="thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/01/Small-Reactor-Tablet-top.jpg?fit=2880,1920" alt="" loading="lazy"></a>
         <time>2026-08-24 12:10</time>
         <p>This is today&amp;#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&amp;#8217;s going on in the world of technology. Kids outlearn AI—and we still don’t know why Teach...</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/ai-agents-dont-need-more-context-they-need-typed-context/" target="_blank" rel="noopener">AI Agents Don’t Need More Context — They Need Typed Context</a></h2>
+        
+        <time>2026-08-24 12:00</time>
+        <p>AI agents don’t just have a context problem—they have a context typing problem. When instructions, memory, retrieved evidence, and tool outputs are flattened into one string, their semantic boundaries...</p>
       </article>
       <article class="entry" data-source="ギズモード・ジャパン" data-labels="tech japan gadget">
         <div class="meta">
@@ -1182,17 +1255,7 @@ Flutterエンジニアとして現場で開発してきた自分が、初めて�
         <h2><a href="https://techcrunch.com/2026/08/23/uber-faces-fine-of-nearly-1b-over-automated-driver-suspensions/" target="_blank" rel="noopener">Uber faces fine of nearly $1B over automated driver suspensions</a></h2>
         
         <time>2026-08-23 19:30</time>
-        <p>The Dutch Data Protection Authority is fining Uber €825 million in the second largest penalty issued under Europe’s GDPR.</p>
-      </article>
-      <article class="entry" data-source="The Verge" data-labels="tech news culture">
-        <div class="meta">
-          <span class="source" data-filter-source="The Verge">The Verge</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
-        </div>
-        <h2><a href="https://www.theverge.com/23987993/gta-6-news-trailers-rockstar-games" target="_blank" rel="noopener">GTA VI: all the news on Rockstar’s next entry in the Grand Theft Auto series</a></h2>
-        <a href="https://www.theverge.com/23987993/gta-6-news-trailers-rockstar-games" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/VINTAGE_VICE_CITY_PACK_02.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
-        <time>2026-08-23 19:14</time>
-        <p>It’s been over a decade and two console generations since GTA V came out, and its sequel is still a work in progress. GTA VI has faced multiple delays, with developer Rockstar Games bumping back its p...</p>
+        <p>The Dutch Data Protection Authority is fining Uber €825 million in the second-largest penalty issued under Europe’s GDPR.</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -1265,6 +1328,17 @@ Flutterエンジニアとして現場で開発してきた自分が、初めて�
         <a href="https://www.engadget.com/2240179/using-usb-c-laptop-charger-for-phone-safety-tips/" target="_blank" rel="noopener"><img class="thumb" src="https://www.engadget.com/img/gallery/is-it-safe-to-use-a-usb-c-laptop-charger-on-your-phone/l-intro-1787160171.jpg" alt="" loading="lazy"></a>
         <time>2026-08-23 17:30</time>
         <p>If you&#x27;ve ever wondered whether you can just charge your phone with the cable for your laptop, read on and find out how to tell.</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/a-first-look-at-survival-analysis-and-the-cox-model/" target="_blank" rel="noopener">Survival Analysis and the Cox Proportional Hazards Model: A Beginner-Friendly Guide</a></h2>
+        
+        <time>2026-08-23 17:00</time>
+        <p>From Kaplan-Meier curves to hazard ratios with runnable Python Code throughout
+The post Survival Analysis and the Cox Proportional Hazards Model: A Beginner-Friendly Guide appeared first on Towards Da...</p>
       </article>
       <article class="entry" data-source="Engadget" data-labels="tech gadget news">
         <div class="meta">
@@ -1356,15 +1430,16 @@ Flutterエンジニアとして現場で開発してきた自分が、初めて�
         <time>2026-08-23 15:00</time>
         <p>Most published authors have, without their knowledge or consent, contributed to the development of the same AI tools that threaten to undermine their livelihoods. That seems illegal, right?</p>
       </article>
-      <article class="entry" data-source="The Verge" data-labels="tech news culture">
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
         <div class="meta">
-          <span class="source" data-filter-source="The Verge">The Verge</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="news">news</span> <span class="label" data-filter-label="culture">culture</span>
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
         </div>
-        <h2><a href="https://www.theverge.com/entertainment/983177/jane-schoenbrun-were-all-going-to-the-worlds-fair-horror-movie-review" target="_blank" rel="noopener">We’re All Going to the World’s Fair is an intimate coming-of-age horror film</a></h2>
-        <a href="https://www.theverge.com/entertainment/983177/jane-schoenbrun-were-all-going-to-the-worlds-fair-horror-movie-review" target="_blank" rel="noopener"><img class="thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/MV5BNGQyNmE1ZDctNzlhYS00NDQyLWIwNjctYTQzNGFkZTNiZmUwXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw%40%40._V1_.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="" loading="lazy"></a>
+        <h2><a href="https://towardsdatascience.com/parse-the-folder-not-just-the-pdfs-the-relational-tables-rag-needs-on-a-case-file/" target="_blank" rel="noopener">Parse the Folder, Not Just the PDFs: The Relational Tables RAG Needs on a Case File</a></h2>
+        
         <time>2026-08-23 15:00</time>
-        <p>Jane Schoenbrun&#x27;s latest film, Teenage Sex and Death at Camp Miasma, is making a splash in theaters right now. So it seems like the perfect time to revisit their first film, We&#x27;re All Going to the Wor...</p>
+        <p>Enterprise Document Intelligence [Vol.1 #14D] - The index lists what the case type demands before any folder is opened, and the two questions worth building for are not retrieval questions at all
+The ...</p>
       </article>
       <article class="entry" data-source="GIGAZINE" data-labels="tech news gadget japan">
         <div class="meta">
@@ -1401,16 +1476,6 @@ Points: 21
 Comments URL: https://news.ycombinator.com/item?id=49409184
 Points: 5
 # Comments: 3</p>
-      </article>
-      <article class="entry" data-source="Engadget" data-labels="tech gadget news">
-        <div class="meta">
-          <span class="source" data-filter-source="Engadget">Engadget</span>
-          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="gadget">gadget</span> <span class="label" data-filter-label="news">news</span>
-        </div>
-        <h2><a href="https://www.engadget.com/2240148/wi-fi-6-vs-wi-fi-7-whats-the-difference-and-which-is-better-for-home-internet/" target="_blank" rel="noopener">Wi-Fi 6 vs Wi-Fi 7: What&#x27;s the difference and which is better for home internet?</a></h2>
-        <a href="https://www.engadget.com/2240148/wi-fi-6-vs-wi-fi-7-whats-the-difference-and-which-is-better-for-home-internet/" target="_blank" rel="noopener"><img class="thumb" src="https://www.engadget.com/img/gallery/wi-fi-6-vs-wi-fi-7-whats-the-difference-and-which-is-better-for-home-internet/l-intro-1787151357.jpg" alt="" loading="lazy"></a>
-        <time>2026-08-23 14:30</time>
-        <p>Wi-Fi 6 Vs Wi-Fi 7: What&#x27;s The Difference And Which Is Better For Home Internet?</p>
       </article>
       <article class="entry" data-source="Hacker News" data-labels="tech news">
         <div class="meta">
@@ -1523,6 +1588,17 @@ Points: 87
         
         <time>2026-08-23 13:00</time>
         <p>The long-running series in which readers answer other readers’ questions probes an intriguing scientific question in relation to the climate emergencyReaders reply: Is it inevitable that consumerism w...</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/bug-detection-blind-spots-in-ai-coding-harnesses-gstack-and-beyond/" target="_blank" rel="noopener">Bug Detection Blind Spots in AI Coding Harnesses (GStack and Beyond)</a></h2>
+        
+        <time>2026-08-23 13:00</time>
+        <p>28 debugging experiments reveal that AI struggles less with complexity than with missing information.
+The post Bug Detection Blind Spots in AI Coding Harnesses (GStack and Beyond) appeared first on To...</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -1944,6 +2020,17 @@ Points: 19
 
 そのマシンで、物理メモリの一部故障に続いて、CPU クーラーの冷却液がうまく循環しなくなったとみられる不調が発生しました。起動直後から CPU 温度...</p>
       </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/building-a-proper-backend-for-my-langgraph-ai-agent/" target="_blank" rel="noopener">Building a Proper Backend for My LangGraph AI Agent</a></h2>
+        
+        <time>2026-08-22 17:00</time>
+        <p>Turning a demo agent into something that can keep real booking data
+The post Building a Proper Backend for My LangGraph AI Agent appeared first on Towards Data Science.</p>
+      </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
           <span class="source" data-filter-source="TechCrunch">TechCrunch</span>
@@ -1973,6 +2060,17 @@ Points: 19
         
         <time>2026-08-22 15:20</time>
         <p>U.S. battery startups pulled in $500 million in grants from the Department of Energy, throwing a lifeline to an industry that was on the ropes after EV incentives were slashed.</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/multi-document-rag-a-folder-of-unrelated-pdfs-is-one-long-document-with-a-nested-outline/" target="_blank" rel="noopener">Multi-Document RAG: A Folder of Unrelated PDFs Is One Long Document with a Nested Outline</a></h2>
+        
+        <time>2026-08-22 15:00</time>
+        <p>Enterprise Document Intelligence [Vol.1 #14B] - No shared fields means no index to build. One summary line per file plus each file’s own table of contents, and retrieval routes down two levels
+The pos...</p>
       </article>
       <article class="entry" data-source="TechCrunch" data-labels="tech startup news">
         <div class="meta">
@@ -2024,6 +2122,17 @@ APIがあることと、その設計図が読める形で配られているこ�
 「結局、うちの場合はどれで繋ぐのが一番ラクで、いくらかかるのか」
 
 これ...</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/why-we-fine-tuned-siglip-and-why-thats-not-always-the-right-call/" target="_blank" rel="noopener">Why We Fine-Tuned SigLip (And Why That’s Not Always the Right Call)</a></h2>
+        
+        <time>2026-08-22 13:00</time>
+        <p>LoRA fine-tuning solved our under-labeling problem. Whether it makes sense for you depends on three questions. 
+The post Why We Fine-Tuned SigLip (And Why That’s Not Always the Right Call) appeared fi...</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -2262,6 +2371,38 @@ httptest.NewServerと名前はかなり似ていますが、実際にAPIクラ�
         <time>2026-08-21 18:53</time>
         <p>AWS Glue 6.0 is built on a fully modernized runtime, Apache Spark 4.1, Python 3.13, and Scala 2.13,&amp;nbsp;delivering 30% lower pricing than previous AWS Glue versions.</p>
       </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/running-codex-as-a-headless-agent/" target="_blank" rel="noopener">Running Codex as a Headless Agent</a></h2>
+        
+        <time>2026-08-21 18:00</time>
+        <p>Turning Codex from an interactive assistant into a programmable automation component
+The post Running Codex as a Headless Agent appeared first on Towards Data Science.</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/estimating-from-no-data-deriving-a-continuous-score-from-categories-2/" target="_blank" rel="noopener">Estimating from No Data: Deriving a Continuous Score from Categories</a></h2>
+        
+        <time>2026-08-21 17:09</time>
+        <p>A walkthrough of and the maths behind using low-capacity networks to acquire fine-grained scoring when only categorical labelling is available for training
+The post Estimating from No Data: Deriving a...</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/retrieve-one-row-from-a-table-not-the-whole-table-row-level-chunks-for-rag/" target="_blank" rel="noopener">Retrieve One Row from a Table, Not the Whole Table: Row-Level Chunks for RAG</a></h2>
+        
+        <time>2026-08-21 16:30</time>
+        <p>Enterprise Document Intelligence [Vol.1 #7sexies] - The unit of retrieval doesn’t have to be a page or a paragraph. When the corpus carries tables, each body row with its column headers is a chunk in ...</p>
+      </article>
       <article class="entry" data-source="Netflix Tech Blog" data-labels="tech dev engineering">
         <div class="meta">
           <span class="source" data-filter-source="Netflix Tech Blog">Netflix Tech Blog</span>
@@ -2291,6 +2432,17 @@ httptest.NewServerと名前はかなり似ていますが、実際にAPIクラ�
         
         <time>2026-08-21 15:57</time>
         <p>Extendable framework enables testing agents on the full set of capabilities required to successfully complete a procedure, not isolated proxy tasks.</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/what-are-the-types-of-dimensions-in-a-star-schema-and-how-to-use-them/" target="_blank" rel="noopener">The Types of Dimensions in a Star Schema, and How to Use Them</a></h2>
+        
+        <time>2026-08-21 15:00</time>
+        <p>Dimensions are one of the two main object types in dimensional modelling. But what are the different types of dimensions? And how can you use them?
+The post The Types of Dimensions in a Star Schema, a...</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -2353,6 +2505,17 @@ Next.jsやReactで、もう互換性のない前バージョンの書き方で�
  この記事は誰に向けたものか
 バックアップを運用していて、それが本当に戻せるか確かめる手立てを持っていない人に...</p>
       </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/bayesian-guardrails-for-ai-decisions-measuring-uncertainty-before-automating-decisions/" target="_blank" rel="noopener">Bayesian Guardrails for AI Decisions: Measuring Uncertainty Before Automating Decisions</a></h2>
+        
+        <time>2026-08-21 13:30</time>
+        <p>AI systems should not automate a decision simply because they can provide a prediction. A decision system should consider how uncertain the prediction is and defer if a mistake would be costly.
+The po...</p>
+      </article>
       <article class="entry" data-source="MIT Technology Review" data-labels="tech research news">
         <div class="meta">
           <span class="source" data-filter-source="MIT Technology Review">MIT Technology Review</span>
@@ -2362,6 +2525,17 @@ Next.jsやReactで、もう互換性のない前バージョンの書き方で�
         <a href="https://www.technologyreview.com/2026/08/21/1142762/the-download-space-mirrors-threats-ai-designed-drugs-credit/" target="_blank" rel="noopener"><img class="thumb" src="https://wp.technologyreview.com/wp-content/uploads/2025/12/SB1-top_3.jpg?fit=3840,2560" alt="" loading="lazy"></a>
         <time>2026-08-21 12:10</time>
         <p>This is today&amp;#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&amp;#8217;s going on in the world of technology. This company’s plans to deploy space mirrors could...</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/how-benders-decomposition-works-part-ii-feasibility-cuts/" target="_blank" rel="noopener">How Benders Decomposition Works, Part II: Feasibility Cuts</a></h2>
+        
+        <time>2026-08-21 12:00</time>
+        <p>Learning about Farkas&#x27; lemma and how it can inform Benders decomposition to learn from infeasibility, applied to the capacitated facility location problem.
+The post How Benders Decomposition Works, Pa...</p>
       </article>
       <article class="entry" data-source="Wired" data-labels="tech culture news">
         <div class="meta">
@@ -2864,6 +3038,28 @@ gRPC は HTTP/2 で通信する...</p>
         <p>An update on the August 17 outage and the steps we&#x27;re taking to improve reliability.
 The post The August 17 outage, and the work ahead appeared first on The GitHub Blog.</p>
       </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/how-to-effectively-align-your-intents-with-claude-code/" target="_blank" rel="noopener">How to Effectively Align Your Intent with Claude Code</a></h2>
+        
+        <time>2026-08-20 18:00</time>
+        <p>Improve your proficiency with Claude Code.
+The post How to Effectively Align Your Intent with Claude Code appeared first on Towards Data Science.</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/the-llm-judge-that-kept-agreeing-with-itself/" target="_blank" rel="noopener">The LLM Judge That Kept Agreeing With Itself</a></h2>
+        
+        <time>2026-08-20 16:30</time>
+        <p>What a production incident taught me about trusting a model to judge another model&#x27;s work
+The post The LLM Judge That Kept Agreeing With Itself appeared first on Towards Data Science.</p>
+      </article>
       <article class="entry" data-source="MIT Technology Review" data-labels="tech research news">
         <div class="meta">
           <span class="source" data-filter-source="MIT Technology Review">MIT Technology Review</span>
@@ -2894,6 +3090,17 @@ The post The August 17 outage, and the work ahead appeared first on The GitHub B
         <time>2026-08-20 15:02</time>
         <p>Googleは、Dart言語によるアプリケーションフレームワークの最新版「Flutter 3.47」正式リリースを発表しました。 We’ve pieced together something special... Flutter 3.47...</p>
       </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/three-kinds-of-rag-corpus-and-what-it-costs-to-build-for-the-wrong-one/" target="_blank" rel="noopener">Three Kinds of RAG Corpus, and What It Costs to Build for the Wrong One</a></h2>
+        
+        <time>2026-08-20 15:00</time>
+        <p>Enterprise Document Intelligence [Vol.1 #14A] - Three questions tell you which shape a document collection has, and each shape wants a different architecture
+The post Three Kinds of RAG Corpus, and Wh...</p>
+      </article>
       <article class="entry" data-source="The Guardian Tech" data-labels="tech news">
         <div class="meta">
           <span class="source" data-filter-source="The Guardian Tech">The Guardian Tech</span>
@@ -2903,6 +3110,17 @@ The post The August 17 outage, and the work ahead appeared first on The GitHub B
         
         <time>2026-08-20 14:57</time>
         <p>Trade body says local chains would have to balance concerns with potential benefits of AI-enabled technologyCinemas across the UK are considering banning customers from wearing Meta’s smart glasses am...</p>
+      </article>
+      <article class="entry" data-source="Towards Data Science" data-labels="tech ai datascience">
+        <div class="meta">
+          <span class="source" data-filter-source="Towards Data Science">Towards Data Science</span>
+          <span class="label" data-filter-label="tech">tech</span> <span class="label" data-filter-label="ai">ai</span> <span class="label" data-filter-label="datascience">datascience</span>
+        </div>
+        <h2><a href="https://towardsdatascience.com/how-to-fine-tune-an-llm-an-end-to-end-guide/" target="_blank" rel="noopener">How to Fine-Tune an LLM: An End-to-End Guide</a></h2>
+        
+        <time>2026-08-20 13:30</time>
+        <p>A hands-on guide to fine-tuning LLMs for the real world
+The post How to Fine-Tune an LLM: An End-to-End Guide appeared first on Towards Data Science.</p>
       </article>
       <article class="entry" data-source="MIT Technology Review" data-labels="tech research news">
         <div class="meta">
